@@ -1,0 +1,57 @@
+<mat-toolbar>
+  <img src="../../../assets/GreenRexPeas.png" alt="Flowers in Chania" height="60px">
+  <div class="tittle">REXSF</div>
+</mat-toolbar>
+
+<!-- <div class="tab">
+ <li [value]="path" *ngFor="let path of paths">{{path}}</li>
+  <div data-value="regular_expresion" *ngFor="let regular_expresion of regular_expresions" >
+    <li>{{regular_expresion.name}}</li>
+    <div data-value="regex" *ngFor="let regex of regular_expresion.regexes">
+      <li>{{regex.name}} -- {{regex.regex}}</li>
+    </div>
+  </div>
+
+</div> -->
+
+<div class="div_botones">
+ <!-- <li [value]="path" *ngFor="let path of paths">{{path}}</li> -->
+  <div class="div_botones_tipo_regex" >
+    <button class="botones_tipo_regex" *ngFor="let regular_expresion of regular_expresions" data-value="regular_expresion" (click)="setTable(regular_expresion)">{{regular_expresion.name}}</button>
+  </div>
+</div>
+<div class="example" *ngFor="let rex for selected_regular_exp8resion_regexes">
+  <li>{{rex}}</li>
+</div>
+<div class="search-container">
+  <div class="row search-row">
+    <label style=margin-bottom:10px for="searchInput">Search:</label>
+    <input type="search" (keyup)="onSearchChanges()" class="form-control" [formControl]="searchFormControl" id="searchInput" aria-describedby="searchInfo" placeholder="">
+    <small id="searchInfo" class="form-text text-muted"></small>
+  </div>
+</div>
+<div class = "div_tabla">
+  <table id ="tabla" mat-table [dataSource]="selected_regular_expresion_regexes" class="mat-elevation-z8 demo-table">
+    <ng-container matColumnDef="Name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">{{element.name}}</td>
+      
+    </ng-container>
+
+    <ng-container matColumnDef="Regex">
+      <th mat-header-cell *matHeaderCellDef>Regex</th>
+      <td mat-cell *matCellDef="let element">{{element.regex}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="Case Sensitive">
+      <th mat-header-cell *matHeaderCellDef>Case Sensitive</th>
+      <td mat-cell *matCellDef="let element">{{element.caseinsensitive}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr
+        mat-row
+        *matRowDef="let row; columns: displayedColumns;"
+    ></tr>
+  </table>
+</div>

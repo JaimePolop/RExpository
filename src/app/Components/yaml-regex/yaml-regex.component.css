@@ -1,0 +1,81 @@
+/* @import '~@swimlane/ngx-datatable/index.css';
+@import '~@swimlane/ngx-datatable/themes/bootstrap.scss';
+@import '~@swimlane/ngx-datatable/themes/material.scss';
+@import '~@swimlane/ngx-datatable/themes/dark.scss';
+@import '~@swimlane/ngx-datatable/assets/icons.css'; */
+
+.search-container {
+    padding: 30px 25px;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 70%;
+}
+
+.mat-toolbar{
+    color: white;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: x-large;
+    padding-left: 30px;
+}
+
+.tittle{
+    padding-left: 20x;
+    font-family: Impact;
+    font-size: xx-large;
+    color: greenyellow;
+}
+
+.botones_tipo_regex{
+    border: 1.5px solid #59b800;
+    margin-right: 20px;
+    background: #e7ffd3;
+    color: #59b800;
+    transition: all .35s;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    font-size: medium;
+    padding: 7px;
+    border-radius: 15px;
+    
+}
+.botones_tipo_regex:hover {
+    background: #59b800;
+    color: #e7ffd3;
+  }
+  
+.botones_tipo_regex:focus {
+    outline: none;
+    border: 2px solid #59b800;
+  }
+
+.div_botones_tipo_regex{
+    margin-left: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.mat-column-Regex{
+    padding-left: 1%;
+}
+
+.mat-header-cell{
+    width: 150px;
+}
+.mat-cell{
+    padding-left: 20px;
+}
+.mat-table{
+    width: 90%;
+}
+.div_tabla{
+    margin-left: 0%;
+    padding-left: 5%;
+    margin-bottom: 30px;
+}
+
+/* .tab{
+    background-color: grey;
+    color: white;
+} */
