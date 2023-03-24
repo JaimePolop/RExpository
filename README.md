@@ -1,4 +1,4 @@
-![My Image](GreenRexPeas.png)
+![My Image](../../../assets/GreenRexPeas.png)
 # REx
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
