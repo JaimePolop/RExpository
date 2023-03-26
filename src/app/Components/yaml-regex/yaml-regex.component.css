@@ -4,20 +4,15 @@
 @import '~@swimlane/ngx-datatable/themes/dark.scss';
 @import '~@swimlane/ngx-datatable/assets/icons.css'; */
 
-.search-container {
-    padding: 30px 25px;
-    margin: 0;
-    overflow: hidden;
-    padding-left: 5%;
-    padding-right: 70%;
-}
+
+
 
 .mat-toolbar{
     color: white;
     background-color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: x-large;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-size: xx-large;
     padding-left: 30px;
 }
 
@@ -26,6 +21,14 @@
     font-family: Impact;
     font-size: xx-large;
     color: greenyellow;
+}
+
+.intro-text{
+    text-align: justify; 
+    margin-top: 50px; 
+    font-family: sans, sans-serif;
+    margin-bottom: 50px;
+    margin-left: 23%;
 }
 
 .botones_tipo_regex{
@@ -56,6 +59,15 @@
     margin-bottom: 30px;
     align-items: center;
 }
+
+.search-container {
+    padding: 30px 25px;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 7%;
+    padding-right: 70%;
+}
+
 .mat-column-Regex{
     padding-left: 1%;
 }
@@ -74,8 +86,3 @@
     padding-left: 5%;
     margin-bottom: 30px;
 }
-
-/* .tab{
-    background-color: grey;
-    color: white;
-} */

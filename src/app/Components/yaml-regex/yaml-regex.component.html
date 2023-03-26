@@ -1,8 +1,14 @@
 <mat-toolbar>
-  <img src="../../../assets/GreenRexPeas.png" alt="Flowers in Chania" height="60px">
-  <div class="tittle">REXSF</div>
+  <img src="../../../assets/GreenRexPeas.png" height="80px" style="margin-left:37% ;">
+  <div class="tittle" style="font-size: 40px;">REX</div>
 </mat-toolbar>
 
+<div class="intro-text">
+<p> REX is a colaborative list of regular expresions that can be used to bypass certain security restrictions.</p><br>
+
+
+<p>REX is a project created by Jaime Polop, in colaboration with <a href="https://github.com/carlospolop/PEASS-ng" style="color: rgb(1, 173, 1);">PEASS-ng</a>, where everyone can contribute with additional regular expresions.</p>
+</div>
 <!-- <div class="tab">
  <li [value]="path" *ngFor="let path of paths">{{path}}</li>
   <div data-value="regular_expresion" *ngFor="let regular_expresion of regular_expresions" >
@@ -17,6 +23,7 @@
 <div class="div_botones">
  <!-- <li [value]="path" *ngFor="let path of paths">{{path}}</li> -->
   <div class="div_botones_tipo_regex" >
+    <button class="botones_tipo_regex"   (click)="setTableToAll()"> All</button>
     <button class="botones_tipo_regex" *ngFor="let regular_expresion of regular_expresions" data-value="regular_expresion" (click)="setTable(regular_expresion)">{{regular_expresion.name}}</button>
   </div>
 </div>
@@ -45,7 +52,15 @@
 
     <ng-container matColumnDef="Case Sensitive">
       <th mat-header-cell *matHeaderCellDef>Case Sensitive</th>
-      <td mat-cell *matCellDef="let element">{{element.caseinsensitive}}</td>
+      <td mat-cell *matCellDef="let element" >
+        <div *ngIf="element.caseinsensitive==true"><img src="../../../assets/tick.png" style="height: 30px;"></div>
+        <div *ngIf="!element.caseinsensitive"></div>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Copy Regex">
+      <th mat-header-cell *matHeaderCellDef style="width: 50px;">Copy Regex</th>
+      <td mat-cell *matCellDef="let element"><img src="../../../assets/clipboard.png" style="height: 30px; cursor: pointer;" (click)="copyRegex(element.regex)"></td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

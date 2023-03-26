@@ -74,7 +74,10 @@ regular_expresions:
     
     #- name: Authorization Bearer # Too many false positives
     #  regex: 'bearer [a-zA-Z0-9_\.=\-]+'
-  
+    - name: Adafruit API Key
+      regex: >
+        (?:adafruit)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9_-]{32})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: Adobe Client Id (Oauth Web)
       regex: >
         (adobe[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-f0-9]{32})['"]
@@ -88,6 +91,10 @@ regular_expresions:
     - name: Age Secret Key
       regex: >
         AGE-SECRET-KEY-1[QPZRY9X8GF2TVDW0S3JN54KHCE6MUA7L]{58}
+    
+    - name: Airtable API Key
+      regex: >
+        (?:airtable)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{17})(?:['|\"|\n|\r|\s|\x60|;]|$)
     
     - name: Alchemi API Key
       regex: >
@@ -127,6 +134,9 @@ regular_expresions:
 
     - name: AWS Secret Key
       regex: aws(.{0,20})?['"][0-9a-zA-Z\/+]{40}['"]
+
+    - name: AWS AppSync GraphQL Key
+      regex: da2-[a-z0-9]{26}
     
     #B
     #- name: Base32 #Too many false positives
@@ -163,6 +173,10 @@ regular_expresions:
         (bitquery[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([A-Za-z0-9]{32})['"]
       caseinsensitive: True
     
+    - name: Bittrex Access Key and Access Key
+      regex: >
+        (?:bittrex)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{32})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: Birise API Key
       regex: >
         (bitrise[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-zA-Z0-9-_]{86})['"]
@@ -209,6 +223,10 @@ regular_expresions:
         (coinapi[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12})['"]
       caseinsensitive: True
     
+    - name: Coinbase Access Token
+      regex: >
+        (?:coinbase)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9_-]{64})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: Coinlayer API Key
       regex: >
         (coinlayer[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{32})['"]
@@ -218,6 +236,10 @@ regular_expresions:
       regex: >
         (coinlib[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{16})['"]
       caseinsensitive: True
+
+    - name: Confluent Access Token & Secret Key
+      regex: >
+        (?:confluent)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{16})(?:['|\"|\n|\r|\s|\x60|;]|$)
 
     - name: Contentful delivery API Key
       regex: >
@@ -242,10 +264,18 @@ regular_expresions:
         (ddownload[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{22})['"]
       caseinsensitive: True
     
+    - name: Defined Networking API token
+      regex: >
+        (?:dnkey)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}(dnkey-[a-z0-9=_\-]{26}-[a-z0-9=_\-]{52})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: Discord API Key, Client ID & Client Secret
       regex: >
         ((discord[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-h0-9]{64}|[0-9]{18}|[a-z0-9=_\-]{32})['"])
       caseinsensitive: True
+    
+    - name: Droneci Access Token
+      regex: >
+        (?:droneci)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{32})(?:['|\"|\n|\r|\s|\x60|;]|$)
     
     - name: Dropbox API Key
       regex: >
@@ -269,13 +299,21 @@ regular_expresions:
         dt0c01\.[a-zA-Z0-9]{24}\.[a-z0-9]{64}
 
     #E
-    - name: EasyPost API Key & test API Key
+    - name: EasyPost API Key
       regex: >
-        EZAK[a-zA-Z0-9]{54}|EZTK[a-zA-Z0-9]{54}
+        EZAK[a-zA-Z0-9]{54}
+
+    - name: EasyPost test API Key
+      regex: >
+        EZTK[a-zA-Z0-9]{54}
 
     - name: Etherscan API Key
       regex: >
         (etherscan[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([A-Z0-9]{34})['"]
+
+    - name: Etsy Access Token
+      regex: >
+        (?:etsy)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{24})(?:['|\"|\n|\r|\s|\x60|;]|$)
 
     #F
     - name: Facebook Access Token
@@ -302,25 +340,66 @@ regular_expresions:
         (finicity[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-f0-9]{32}|[a-z0-9]{20})['"]
       caseinsensitive: True
     
+    - name: Flickr Access Token
+      regex: >
+        (?:flickr)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{32})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: Flutterweave Keys
       regex: >
         FLWPUBK_TEST-[a-hA-H0-9]{32}-X|FLWSECK_TEST-[a-hA-H0-9]{32}-X|FLWSECK_TEST[a-hA-H0-9]{12}
+
     - name: Frame.io API Key
       regex: >
         fio-u-[a-zA-Z0-9-_=]{64}
+
+    - name: Freshbooks Access Token
+      regex: >
+        (?:freshbooks)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{64})(?:['|\"|\n|\r|\s|\x60|;]|$)
     
     #G
     - name: Github
       regex: >
         github(.{0,20})?['"][0-9a-zA-Z]{35,40}
+
+    #- name: Github App Token, OAuth Access Token, Personal Access Token & Refresh Token
+    # regex: >
+    #   (ghu|ghs)_[0-9a-zA-Z]{36}|gho_[0-9a-zA-Z]{36}|ghp_[0-9a-zA-Z]{36}|ghr_[0-9a-zA-Z]{76}
     
-    - name: Github App Token, OAuth Access Token, Personal Access Token & Refresh Token
+    - name: Github App Token
       regex: >
-        (ghu|ghs)_[0-9a-zA-Z]{36}|gho_[0-9a-zA-Z]{36}|ghp_[0-9a-zA-Z]{36}|ghr_[0-9a-zA-Z]{76}
+        (ghu|ghs)_[0-9a-zA-Z]{36}
+
+    - name: Github OAuth Access Token
+      regex: >
+        gho_[0-9a-zA-Z]{36}
+
+    - name: Github Personal Access Token
+      regex: >
+        ghp_[0-9a-zA-Z]{36}
+
+    - name: Github Refresh Token
+      regex: >
+        ghr_[0-9a-zA-Z]{76}
+      
+    - name: GitHub Fine-Grained Personal Access Token
+      regex: >
+        github_pat_[0-9a-zA-Z_]{82}
     
     - name: Gitlab Personal Access Token
       regex: >
         glpat-[0-9a-zA-Z\-]{20}
+
+    - name: GitLab Pipeline Trigger Token
+      regex: >
+        glptt-[0-9a-f]{40}
+    
+    - name: GitLab Runner Registration Token
+      regex: >
+        GR1348941[0-9a-zA-Z\-\_]{20}
+
+    - name: Gitter Access Token
+      regex: >
+        (?:gitter)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9_-]{40})(?:['|\"|\n|\r|\s|\x60|;]|$)
 
     - name: GoCardless API Key
       regex: >
@@ -344,14 +423,27 @@ regular_expresions:
     - name: Google Oauth Access Token
       regex: 'ya29\.[0-9A-Za-z_\-]+'
 
-    - name: Google API Key, Drive Oauth, Oauth Access Token, Service Account, Signed storage URLs, Legacy creds and Signed policy documents in HTML
-      regex: >
-        (AIza[0-9A-Za-z_\-]{35})|([0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com)|(ya29\.[0-9A-Za-z_\-]+)|("type": "service_account")|(storage.googleapis.com.*?Goog-Signature=[a-f0-9]+)|([^{}]*?client_id[^{}]*?client_secret.*)|(<form action.*googleapis.com.*name="signature" value=".*">)
+    - name: Google (GCP) Service-account
+      regex: '\"type\": \"service_account\"'
+      
+
+    # - name: Google API Key, Drive Oauth, Oauth Access Token, Service Account, Signed storage URLs, Legacy creds and Signed policy documents in HTML
+    #   regex: >
+    #     (AIza[0-9A-Za-z_\-]{35})|([0-9]+-[0-9A-Za-z_]{32}\.apps\.googleusercontent\.com)|(ya29\.[0-9A-Za-z_\-]+)|("type": "service_account")|(storage.googleapis.com.*?Goog-Signature=[a-f0-9]+)|([^{}]*?client_id[^{}]*?client_secret.*)|(<form action.*googleapis.com.*name="signature" value=".*">)
 
     - name: Grafana API Key
       regex: >
         eyJrIjoi[a-z0-9-_=]{72,92}
       caseinsensitive: True
+
+    - name: Grafana cloud api token
+      regex: >
+        (glc_[A-Za-z0-9+/]{32,400}={0,2})(?:['|\"|\n|\r|\s|\x60|;]|$)
+    
+    - name: Grafana service account token
+      regex: >
+        (glsa_[A-Za-z0-9]{32}_[A-Fa-f0-9]{8})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     #H
     - name: Hashicorp Terraform user/org API Key
       regex: >
@@ -385,10 +477,37 @@ regular_expresions:
     - name: Jenkins Creds
       regex: >
         <[a-zA-Z]*>{[a-zA-Z0-9=+/]*}<
+
+    - name: JSON Web Token
+      regex: >
+        (ey[0-9a-z]{30,34}\.ey[0-9a-z-\/_]{30,500}\.[0-9a-zA-Z-\/_]{10,200}={0,2})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
+    #K
+
+    - name: Kraken Access Token
+      regex: >
+        (?:kraken)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9\/=_\+\-]{80,90})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
+    - name: Kucoin Access Token
+      regex: >
+        (?:kucoin)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-f0-9]{24})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
+    - name: Kucoin Secret Key
+      regex: >
+        (?:kucoin)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     #L
+    - name: Launchdarkly Access Token
+      regex: >
+        (?:launchdarkly)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9=_\-]{40})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: Linear API Key & Client Secret/ID
       regex: >
         (lin_api_[a-zA-Z0-9]{40})|((linear[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-f0-9]{32})['"])
+
+    - name: Linear Client Secret/ID
+      regex: >
+        ((linear[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-f0-9]{32})['"])
 
     - name: LinkedIn Client ID
       regex: >
@@ -398,11 +517,14 @@ regular_expresions:
       regex: >
         linkedin(.{0,20})?['"][0-9a-z]{16}['"]
 
-    
     - name: Lob API Key
       regex: >
         ((lob[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]((live|test)_[a-f0-9]{35})['"])|((lob[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]((test|live)_pub_[a-f0-9]{31})['"])
       caseinsensitive: True
+
+    - name: Lob Publishable API Key
+      regex: >
+        (?:lob)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}((test|live)_pub_[a-f0-9]{31})(?:['|\"|\n|\r|\s|\x60|;]|$)
     
     #M
     - name: MailboxValidator
@@ -410,27 +532,51 @@ regular_expresions:
         (mailbox.?validator[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([A-Z0-9]{20})['"]
       caseinsensitive: True
 
-    - name: Mailchamp API Key
+    - name: Mailchimp API Key
       regex: '[0-9a-f]{32}-us[0-9]{1,2}'
     
-    - name: Mailgun API Key, Public Validation Key & Webhook signing key
+    # - name: Mailgun API Key, Public Validation Key & Webhook signing key
+    #   regex: >
+    #     key-[0-9a-zA-Z]{32}'|pubkey-[a-f0-9]{32}|[a-h0-9]{32}-[a-h0-9]{8}-[a-h0-9]{8}
+    
+    - name: Mailgun API Key
       regex: >
-        key-[0-9a-zA-Z]{32}'|pubkey-[a-f0-9]{32}|[a-h0-9]{32}-[a-h0-9]{8}-[a-h0-9]{8}
+        key-[0-9a-zA-Z]{32}'
+    
+    - name: Mailgun Public Validation Key
+      regex: >
+        pubkey-[a-f0-9]{32}
+
+    - name: Mailgun Webhook signing key
+      regex: >
+        [a-h0-9]{32}-[a-h0-9]{8}-[a-h0-9]{8}
 
     - name: Mapbox API Key
       regex: '(pk\.[a-z0-9]{60}\.[a-z0-9]{22})'
       caseinsensitive: True
     
+    - name: Mattermost Access Token
+      regex: >
+        (?:mattermost)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{26})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: MessageBird API Key & API client ID
       regex: >
         (messagebird[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{25}|[a-h0-9]{8}-[a-h0-9]{4}-[a-h0-9]{4}-[a-h0-9]{4}-[a-h0-9]{12})['"]
       caseinsensitive: True
+
+    - name: Microsoft Teams Webhook
+      regex: >
+        https:\/\/[a-z0-9]+\.webhook\.office\.com\/webhookb2\/[a-z0-9]{8}-([a-z0-9]{4}-){3}[a-z0-9]{12}@[a-z0-9]{8}-([a-z0-9]{4}-){3}[a-z0-9]{12}\/IncomingWebhook\/[a-z0-9]{32}\/[a-z0-9]{8}-([a-z0-9]{4}-){3}[a-z0-9]{12}
 
     - name: MojoAuth API Key
       regex: >
         [a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}
 
     #N
+    - name: Netlify Access Token
+      regex: >
+        (?:netlify)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9=_\-]{40,46})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: New Relic User API Key, User API ID & Ingest Browser API Key
       regex: >
         (NRAK-[A-Z0-9]{27})|((newrelic[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([A-Z0-9]{64})['"])|(NRJS-[a-f0-9]{19})
@@ -442,8 +588,16 @@ regular_expresions:
     - name: Npm Access Token
       regex: >
         (npm_[a-zA-Z0-9]{36})
+    
+    - name: Nytimes Access Token
+      regex: >
+        (?:nytimes|new-york-times,|newyorktimes)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9=_\-]{32})(?:['|\"|\n|\r|\s|\x60|;]|$)
 
     #O
+    - name: Okta Access Token
+      regex: >
+        (?:okta)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9=_\-]{42})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: ORB Intelligence Access Key
       regex: >
         ['"][a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}['"]
@@ -454,6 +608,10 @@ regular_expresions:
         (pastebin[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{32})['"]
       caseinsensitive: True
 
+    - name: PayPal Braintree Access Token
+      regex: >
+        access_token\\$production\\$[0-9a-z]{16}\\$[0-9a-f]{32}
+
     - name: Picatic API Key
       regex: 'sk_live_[0-9a-z]{32}'
 
@@ -462,17 +620,42 @@ regular_expresions:
         (pinata[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{64})['"]
       caseinsensitive: True
 
-    - name: Planetscale API Key & Password
+    - name: Planetscale API Key
       regex: >
-        pscale_tkn_[a-zA-Z0-9_\.\-]{43}|pscale_pw_[a-zA-Z0-9_\.\-]{43}
+        pscale_tkn_[a-zA-Z0-9_\.\-]{43}
+    
+    - name: PlanetScale OAuth token
+      regex: >
+        pscale_oauth_[a-zA-Z0-9_\.\-]{32,64})
+
+    - name: Planetscale Password
+      regex: >
+        pscale_pw_[a-zA-Z0-9_\.\-]{43}
+    
+    - name: Plaid API Token
+      regex: >
+        (?:plaid)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}(access-(?:sandbox|development|production)-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
+    - name: Plaid Client ID
+      regex: >
+        (?:plaid)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{24})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
+    - name: Plaid Secret key
+      regex: >
+        (?:plaid)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{30})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
+    - name: Prefect API token
+      regex: >
+        (pnu_[a-z0-9]{36})(?:['|\"|\n|\r|\s|\x60|;]|$)
     
     - name: Postman API Key
       regex: >
         PMAK-[a-fA-F0-9]{24}-[a-fA-F0-9]{34}
-    
+
     - name: Private Keys
       regex: >
         -----BEGIN PRIVATE KEY-----|-----BEGIN RSA PRIVATE KEY-----|-----BEGIN OPENSSH PRIVATE KEY-----|-----BEGIN PGP PRIVATE KEY BLOCK-----|-----BEGIN DSA PRIVATE KEY-----|-----BEGIN EC PRIVATE KEY-----
+    
     - name: Pulumi API Key
       regex: >
         pul-[a-f0-9]{40}
@@ -488,11 +671,27 @@ regular_expresions:
       caseinsensitive: True
 
     #R
+    - name: RapidAPI Access Token
+      regex: >
+        (?:rapidapi)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9_-]{50})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: Rubygem API Key
       regex: >
         rubygems_[a-f0-9]{48}
 
+    - name: Readme API token
+      regex: >
+        rdme_[a-z0-9]{70}
+
     #S
+    - name: Sendbird Access ID
+      regex: >
+        (?:sendbird)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
+    - name: Sendbird Access Token
+      regex: >
+        (?:sendbird)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-f0-9]{40})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: Sendgrid API Key
       regex: >
         SG\.[a-zA-Z0-9_\.\-]{66}
@@ -501,9 +700,21 @@ regular_expresions:
       regex: >
         xkeysib-[a-f0-9]{64}-[a-zA-Z0-9]{16}
     
+    - name: Sentry Access Token
+      regex: >
+        (?:sentry)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-f0-9]{64})(?:['|\"|\n|\r|\s|\x60|;]|$)}
+
     - name: Shippo API Key, Access Token, Custom Access Token, Private App Access Token & Shared Secret
       regex: >
         shippo_(live|test)_[a-f0-9]{40}|shpat_[a-fA-F0-9]{32}|shpca_[a-fA-F0-9]{32}|shppa_[a-fA-F0-9]{32}|shpss_[a-fA-F0-9]{32}
+
+    - name: Sidekiq Secret
+      regex: >
+        (?:BUNDLE_ENTERPRISE__CONTRIBSYS__COM|BUNDLE_GEMS__CONTRIBSYS__COM)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-f0-9]{8}:[a-f0-9]{8})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
+    - name: Sidekiq Sensitive URL
+      regex: >
+        http(?:s??):\/\/)([a-f0-9]{8}:[a-f0-9]{8})@(?:gems.contribsys.com|enterprise.contribsys.com
 
     - name: Slack Token
       regex: 'xox[baprs]-([0-9a-zA-Z]{10,48})?'
@@ -533,8 +744,24 @@ regular_expresions:
       regex: >
         (sk|pk)_(test|live)_[0-9a-z]{10,32}|k_live_[0-9a-zA-Z]{24}
       caseinsensitive: True
+
+    - name: SumoLogic Access ID
+      regex: >
+        (?:sumo)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{14})(?:['|\"|\n|\r|\s|\x60|;]|$)
+    
+    - name: SumoLogic Access Token
+      regex: >
+        (?:sumo)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{64})(?:['|\"|\n|\r|\s|\x60|;]|$)
     
     #T
+    - name: Telegram Bot API Token
+      regex: >
+        [0-9]+:AA[0-9A-Za-z\\-_]{33}
+
+    - name: Travis CI Access Token
+      regex: >
+        (?:travis)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{22})(?:['|\"|\n|\r|\s|\x60|;]|$)
+
     - name: Trello API Key
       regex: >
         (trello[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-z]{32})['"]
@@ -549,6 +776,10 @@ regular_expresions:
     - name: Twitter Client ID
       regex: >
         [tT][wW][iI][tT][tT][eE][rR](.{0,20})?['"][0-9a-z]{18,25}
+
+    - name: Twitter Bearer Token
+      regex: >
+        (?:twitter)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}(A{22}[a-zA-Z0-9%]{80,100})(?:['|\"|\n|\r|\s|\x60|;]|$)
 
     - name: Twitter Oauth
       regex: >
@@ -569,13 +800,29 @@ regular_expresions:
 
     #- name: Vault Token #False +
     #  regex: '[sb]\.[a-zA-Z0-9]{24}'
+    #Y
+    - name: Yandex Access Token
+      regex: >
+        (?:yandex)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}(t1\.[A-Z0-9a-z_-]+[=]{0,2}\.[A-Z0-9a-z_-]{86}[=]{0,2})(?:['|\"|\n|\r|\s|\x60|;]|$)
+    
+    - name: Yandex API Key
+      regex: >
+        (?:yandex)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}(AQVN[A-Za-z0-9_\-]{35,38})(?:['|\"|\n|\r|\s|\x60|;]|$)  
+    
+    - name: Yandex AWS Access Token
+      regex: >
+        (?:yandex)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}(YC[a-zA-Z0-9_\-]{38})(?:['|\"|\n|\r|\s|\x60|;]|$)  
     
     #W
     - name: Web3 API Key
       regex: >
         (web3[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.?[A-Za-z0-9-_.+/=]*)['"]
       caseinsensitive: True
-
+    
+    #Z
+    - name: Zendesk Secret Key
+      regex: >
+        (?:zendesk)(?:[0-9a-z\-_\t .]{0,20})(?:[\s|']|[\s|"]){0,3}(?:=|>|:=|\|\|:|<=|=>|:)(?:'|\"|\s|=|\x60){0,5}([a-z0-9]{40})(?:['|\"|\n|\r|\s|\x60|;]|$)
     
 
  # Misc
@@ -584,6 +831,10 @@ regular_expresions:
     - name: Generic API Key
       regex: >
         ((key|api|token|secret|password)[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z_=\-]{8,64})['"]
+    
+    - name: Generic Secret
+      regex: >
+        [sS][eE][cC][rR][eE][tT].*['|\"][0-9a-zA-Z]{32,45}['|\"]
         
     # Disable in winpeas because of RegexDoS (for some reason)
     - name: Basic Auth

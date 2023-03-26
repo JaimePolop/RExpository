@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import {map} from 'rxjs/operators';
+import {elementAt, map} from 'rxjs/operators';
 import {HttpClient} from '@angular/common/http';
 import { parse, stringify } from 'yaml'
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import {MatToolbarModule} from '@angular/material/toolbar'; 
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { YamlRegexDetailsComponent } from '../yaml-regex-details/yaml-regex-details.component';
+import {Clipboard} from '@angular/cdk/clipboard';
 
 
 
@@ -24,20 +25,21 @@ export class YamlRegexComponent {
   public regular_expresions:any;
   public regular_expresion:any;
   public selected_regular_expresion:any;
-  public selected_regular_expresion_regexes:any;
+  public selected_regular_expresion_regexes:any=[];
+  public all_regex: any[] = [];
+  public array_all_regex:any= [];
   regex:any;
-  displayedColumns = ['Name', 'Regex', 'Case Sensitive'];
+  displayedColumns = ['Name', 'Regex', 'Case Sensitive', 'Copy Regex'];
   
   //tableDetails: YamlRegexDetailsComponent = new YamlRegexDetailsComponent;
   
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private clipboard: Clipboard) {
     this.searchFormControl = new FormControl();
     this.getYAML().subscribe(data => {
 
       this.parsedYamlObject = data;
       this.getRegexPath();
       this.getRegex();
-      //console.log(data);
     })
 
   }
@@ -50,25 +52,32 @@ export class YamlRegexComponent {
     this.selected_regular_expresion_regexes = this.selected_regular_expresion["regexes"].filter((x: any) =>
       JSON.stringify(x).toLowerCase().includes(this.searchFormControl.value.toLowerCase())
     );
-    //console.log(this.regular_expresions);
   }
 
   public getRegexPath(){
     this.paths = this.parsedYamlObject.paths;
-    //console.log( this.paths);
   }
 
   public getRegex(){
     this.regular_expresions = this.parsedYamlObject.regular_expresions;
     for (let regular_expresion of this.regular_expresions){
-      //console.log(regular_expresion.regexes);
+      this.all_regex.push(regular_expresion.regexes);
+      console.log(this.all_regex);
       for(let regex of regular_expresion.regexes){
         //console.log(regex);
       }
     }
-    
+
+    //Array for the button All
+    this.all_regex.forEach((element:any)=>{
+      element.forEach((element2:any)=>{
+        this.array_all_regex.push(element2);
+      })
+      
+    });
   }
 
+  //Parse the YAML
   public getYAML(): Observable<any> {
     return this.http.get("./assets/regex.yaml", {
       observe: 'body',
@@ -79,14 +88,21 @@ export class YamlRegexComponent {
     );
   }
 
+  //Rest of the buttons
   public setTable(regular_expresion: any){
     this.selected_regular_expresion = regular_expresion;
     this.selected_regular_expresion_regexes = this.selected_regular_expresion["regexes"];
-    console.log(this.selected_regular_expresion_regexes);
+    //console.log(this.selected_regular_expresion_regexes);
+  }
+  
+  //All button
+  public setTableToAll(){
+    this.selected_regular_expresion_regexes=this.array_all_regex;
+    
   }
 
+  copyRegex(regular_expresion: any) {
+    this.clipboard.copy(regular_expresion);
+  }
 
-  // private onSearchChanges(){
-
-  // }
 }
