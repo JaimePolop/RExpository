@@ -6,7 +6,6 @@ import { parse, stringify } from 'yaml'
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import {MatToolbarModule} from '@angular/material/toolbar'; 
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { YamlRegexDetailsComponent } from '../yaml-regex-details/yaml-regex-details.component';
 import {Clipboard} from '@angular/cdk/clipboard';
 
 
@@ -31,7 +30,6 @@ export class YamlRegexComponent {
   regex:any;
   displayedColumns = ['Name', 'Regex', 'Case Sensitive', 'Copy Regex'];
   
-  //tableDetails: YamlRegexDetailsComponent = new YamlRegexDetailsComponent;
   
   constructor(private http: HttpClient, private clipboard: Clipboard) {
     this.searchFormControl = new FormControl();
