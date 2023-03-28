@@ -1,5 +1,5 @@
 <mat-toolbar>
-  <img src="../../../assets/GreenRexPeas.png" height="80px" style="margin-left:37% ;">
+  <img src="assets/GreenRexPeas.png" height="80px" style="margin-left:37% ;">
   <div class="tittle" style="font-size: 40px;">REx</div>
 </mat-toolbar>
 
@@ -53,14 +53,14 @@
     <ng-container matColumnDef="Case Sensitive">
       <th mat-header-cell *matHeaderCellDef>Case Sensitive</th>
       <td mat-cell *matCellDef="let element" >
-        <div *ngIf="element.caseinsensitive==true"><img src="../../../assets/tick.png" style="height: 30px;"></div>
+        <div *ngIf="element.caseinsensitive==true"><img src="assets/tick.png" style="height: 30px;"></div>
         <div *ngIf="!element.caseinsensitive"></div>
       </td>
     </ng-container>
 
     <ng-container matColumnDef="Copy Regex">
       <th mat-header-cell *matHeaderCellDef style="width: 50px;">Copy Regex</th>
-      <td mat-cell *matCellDef="let element"><img src="../../../assets/clipboard.png" style="height: 30px; cursor: pointer;" (click)="copyRegex(element.regex)"></td>
+      <td mat-cell *matCellDef="let element"><img src="assets/clipboard.png" style="height: 30px; cursor: pointer;" (click)="copyRegex(element.regex)"></td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
