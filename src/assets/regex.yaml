@@ -1156,11 +1156,9 @@ regular_expresions:
         digitalocean_ssh_key_body|digitalocean_ssh_key_ids|docker_hub_password|docker_key|docker_pass|docker_passwd|
         docker_password|dockerhub_password|dockerhubpassword|dot-files|dotfiles|droplet_travis_password|dynamoaccesskeyid|
         dynamosecretaccesskey|elastica_host|elastica_port|elasticsearch_password|encryption_key|encryption_password|
-        env.heroku_api_key|env.sonatype_password|eureka.awssecretkey)[a-z0-9_ .,<\-]{0,25}(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]
-        ([0-9a-zA-Z\-_=]{8,64})['"]
+        env.heroku_api_key|env.sonatype_password|eureka.awssecretkey)[a-z0-9_ .,<\-]{0,25}(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z\-_=]{8,64})['"]
       example: >
-        docker_hub_password6o9k8,bqbc9t6:{#RW('
-
+        ci_deploy_passwordh2<fz4a391<f5_-yjohawcvzb<='Mq8vj49=sMta2mf3wwWjBNU6'
     - name: Usernames
       regex: >
         username.*[=:].+

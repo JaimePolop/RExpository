@@ -44,6 +44,7 @@ export class YamlRegexComponent {
   ngOnInit(): void {
     this.getRegex();
     this.searchFormControl = new FormControl();
+    
   }
 
   public onSearchChanges() {
@@ -60,19 +61,22 @@ export class YamlRegexComponent {
     this.regular_expresions = this.parsedYamlObject.regular_expresions;
     for (let regular_expresion of this.regular_expresions){
       this.all_regex.push(regular_expresion.regexes);
-      console.log(this.all_regex);
+      //console.log(this.all_regex);
       for(let regex of regular_expresion.regexes){
         //console.log(regex);
       }
     }
 
     //Array for the button All
+    //this.all_regex.sort();
     this.all_regex.forEach((element:any)=>{
       element.forEach((element2:any)=>{
         this.array_all_regex.push(element2);
       })
       
     });
+    
+    this.setTableToAll();
   }
 
   //Parse the YAML
@@ -96,7 +100,6 @@ export class YamlRegexComponent {
   //All button
   public setTableToAll(){
     this.selected_regular_expresion_regexes=this.array_all_regex;
-    
   }
 
   copyRegex(regular_expresion: any) {
