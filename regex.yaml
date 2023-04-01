@@ -716,7 +716,7 @@ regular_expresions:
         (mailbox.?validator[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([A-Z0-9]{20})['"]
       caseinsensitive: True
       example: >
-        mailboxvalidator9yd94h6tb8y6nu4z_e3q8||:Z5"RKCRZI36NPR2I3WGN5H9"
+        mailboxCvalidator="ZKLAP8XCH2748GFZO5YQ"
 
     - name: Mailchimp API Key
       regex: '[0-9a-f]{32}-us[0-9]{1,2}'
@@ -759,7 +759,7 @@ regular_expresions:
         (messagebird[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{25}|[a-h0-9]{8}-[a-h0-9]{4}-[a-h0-9]{4}-[a-h0-9]{4}-[a-h0-9]{12})['"]
       caseinsensitive: True
       example: >
-        messagebirdr1jzvp8n4-xdreu0bsoxu||:""c3bd8ac7-d1hb-a6dh-a2g7-098ce54fc680'
+        messagebird-clientid='45a929hf-bc4e-0b17-1bae-4hbce55dg348'
 
     - name: Microsoft Teams Webhook
       regex: >
@@ -784,13 +784,13 @@ regular_expresions:
       example: >
         NRJS-a22f182e458a8b3c1be
       #NRAK-C2HZWJP41J7MJLAV32NSW039XGU
-      #newrelicigywq0u8,xd 318r||:(m;%'NG4IBRA7ID0U40W9578QLT817B6NDSG8GTGYOH2G4XYCQ6ODS071YDEIMX68GFC9'
+      #newrelic-api-id='NG4IBRA7ID0U40W9578QLT817B6NDSG8GTGYOH2G4XYCQ6ODS071YDEIMX68GFC9'
     
     - name: Nownodes
       regex: >
         (nownodes[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([A-Za-z0-9]{32})['"]
       example: >
-        nownodesm.262t55ce3_kllbz zgg8x8<=0P'VBTE61CaqyKs9tqL6yhxhG39l5cnVTLP"
+        nownodes="Aj1oaOKzBMQbeJmbDJrQynPdnQZLNVs4"
     
     - name: Npm Access Token
       regex: >
@@ -820,7 +820,7 @@ regular_expresions:
         (pastebin[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{32})['"]
       caseinsensitive: True
       example: >
-        pastebineogol37t4r.6fh.vf_gqjais2>;0r'i7oebqjseaz6ykkiounpy7qsg0dodtvz"
+        pastebin-apikey='i7oebqjseaz6ykkiounpy7qsg0dodtvz'
 
     - name: PayPal Braintree Access Token
       regex: >
@@ -837,7 +837,7 @@ regular_expresions:
         (pinata[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{64})['"]
       caseinsensitive: True
       example: >
-        pinatav2xi<=B;"0qzrcgwdjf75gqo8k1jmahsx0z9yfhn29r6qrtpbebb8cpxwze1jw87w7rnco5rt"
+        pinata-apikey="0qzrcgwdjf75gqo8k1jmahsx0z9yfhn29r6qrtpbebb8cpxwze1jw87w7rnco5rt"
 
     - name: Planetscale API Key
       regex: >
@@ -906,7 +906,7 @@ regular_expresions:
         (quip[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-zA-Z0-9]{15}=\|[0-9]{10}\|[a-zA-Z0-9\/+]{43}=)['"]
       caseinsensitive: True
       example: >
-        quipi7.._sfusw1iji=>"bxDk2qf5kMCjvHe=|6089852739|ijF16gCoM/lvmNJrTLLWfeHAB9Lkili+f/hCqKk5s1M="
+        quipyz_apikey=0qwpo80D0HbsZ6qU=|7730442444|9ldkdNqLwO1OIzhfGRq7GIO9FAl5OcDj2DkMtjJm2Og='
 
     #R
     - name: RapidAPI Access Token
@@ -981,7 +981,7 @@ regular_expresions:
         (smartsheet[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{26})['"]
       caseinsensitive: True
       example: >
-        smartsheet lev758t||:"2dqi66zfexrmtmgo6fwbpwr4dk'
+        smartsheet-apikey='2dqi66zfexrmtmgo6fwbpwr4dk'
 
     - name: Square Access Token
       regex: 'sqOatp-[0-9A-Za-z_\-]{22}'
@@ -1036,7 +1036,7 @@ regular_expresions:
       regex: >
         (trello[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-z]{32})['"]
       example: >
-        trellopwt:X'fefv0v1t1u0kcu27aghl6x7rkgh22o9j'
+        trellop-apikey='fefv0v1t1u0kcu27aghl6x7rkgh22o9j'
 
     - name: Twilio API Key
       regex: 'SK[0-9a-fA-F]{32}'
@@ -1046,7 +1046,7 @@ regular_expresions:
       regex: >
         (twitch[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{30})['"]
       example: >
-        twitchscj3f8a19 urngemh5atbc=WYR"m1apxmp9wx0zho75dqepftliue4lki'
+        twitch-apikey='m1apxmp9wx0zho75dqepftliue4lki'
 
     - name: Twitter Client ID
       regex: >
@@ -1090,7 +1090,7 @@ regular_expresions:
     - name: Yandex Access Token
       regex: >
         (t1\.[A-Z0-9a-z_-]+[=]{0,2}\.[A-Z0-9a-z_-]{86}[=]{0,2})
-      example: t1.2vcwEjKuuJjkP9b5NkRJ93V5SScXDHBdOuZH0CWlsHymfUF6EJxBYbjjIcczQN8zvw-=.ee616UxmVtx5pKiMdQYY_vODtk6K60vynnhrWDxWPDFaDsjwH9WG5AlwqRIGkE51d3ZPp7v0C_klpYPdKp7djA==
+      example: t1.yandex-access-token=.dlYbt__bUqHydFrwsu9ZwyaXntQILjfpFiwqYAaOsjiwA1WCyR-CNuYIWb2_7Elc8nXTfRVK8018V9cxpEWzte
     
     - name: Yandex API Key
       regex: >
@@ -1108,7 +1108,7 @@ regular_expresions:
         (web3[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.?[A-Za-z0-9-_.+/=]*)['"]
       caseinsensitive: True
       example: >
-        web3.tc9m1n_nn5ghk7c.bby=^(;'_WfF7x3Cey.NMZS4K6MDz7ONmYT9iEqn2MiqenLs0o69VIc18GYOqfhpDp-OQcqFj9mtfo0InxQCQeCD1Rhjo4esJoQlNRfsrtiweSfHCM17Ir.RPigbHjYLwNTSgsp_0QhqIO7z0+YkXOS7w==uwx-eDPuj7nDSwxIUFPkyw4QIhg5YNZMkncDx1_i0/OQ/GJ'
+        web3-apikey='_WfF7x3Cey.NMZS4K6MDz7ONmYT9iEqn2MiqenLs0o69VIc18GYOqfhpDp-OQcqFj9mtfo0InxQCQeCD1Rhjo4esJoQlNRfsrtiweSfHCM17Ir.RPigbHjYLwNTSgsp_0QhqIO7z0+YkXOS7w==uwx-eDPuj7nDSwxIUFPkyw4QIhg5YNZMkncDx1_i0/OQ/GJ'
     
     #Z
     - name: Zendesk Secret Key
@@ -1124,7 +1124,7 @@ regular_expresions:
       regex: >
         ((key|api|token|secret|password)[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z_=\-]{8,64})['"]
       example: >
-        secretnp9n4s2j1imp664y.3 215f.9=^J1f"FLdz-Wt1CQYcl9EywqaeZ2_IL65oH5HwL7jUWpdFucN"
+        secret-key="FLdz-Wt1CQYcl9EywqaeZ2_IL65oH5HwL7jUWpdFucN"
     
     - name: Generic Secret
       regex: >
@@ -1170,7 +1170,7 @@ regular_expresions:
         dynamosecretaccesskey|elastica_host|elastica_port|elasticsearch_password|encryption_key|encryption_password|
         env.heroku_api_key|env.sonatype_password|eureka.awssecretkey)[a-z0-9_ .,<\-]{0,25}(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z\-_=]{8,64})['"]
       example: >
-        ci_deploy_passwordh2<fz4a391<f5_-yjohawcvzb<='Mq8vj49=sMta2mf3wwWjBNU6'
+        aws_token='-A1nivVI1TSm_e4Og2akP_3vI9FxGj'
     - name: Usernames
       regex: >
         username.*[=:].+
