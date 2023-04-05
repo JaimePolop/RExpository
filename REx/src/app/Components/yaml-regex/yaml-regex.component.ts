@@ -16,8 +16,9 @@ import {Clipboard} from '@angular/cdk/clipboard';
   styleUrls: ['./yaml-regex.component.css']
 })
 export class YamlRegexComponent {
-
   
+  public all_button:any;
+  public misc_button:any;
   public searchFormControl: FormControl<string>;
   public parsedYamlObject: any;
   public paths:any;
@@ -44,8 +45,8 @@ export class YamlRegexComponent {
   ngOnInit(): void {
     this.getRegex();
     this.searchFormControl = new FormControl();
-    
   }
+
 
   public onSearchChanges() {
     this.selected_regular_expresion_regexes = this.selected_regular_expresion["regexes"].filter((x: any) =>
@@ -58,7 +59,9 @@ export class YamlRegexComponent {
   }
 
   public getRegex(){
+    
     this.regular_expresions = this.parsedYamlObject.regular_expresions;
+    //console.log(this.regular_expresions);
     for (let regular_expresion of this.regular_expresions){
       this.all_regex.push(regular_expresion.regexes);
       //console.log(this.all_regex);
@@ -68,14 +71,14 @@ export class YamlRegexComponent {
     }
 
     //Array for the button All
-    //this.all_regex.sort();
+    this.selected_regular_expresion=[];
+    console.log(this.selected_regular_expresion);
     this.all_regex.forEach((element:any)=>{
       element.forEach((element2:any)=>{
         this.array_all_regex.push(element2);
       })
-      
     });
-    
+    this.selected_regular_expresion["regexes"]=this.array_all_regex;
     this.setTableToAll();
   }
 
@@ -94,12 +97,12 @@ export class YamlRegexComponent {
   public setTable(regular_expresion: any){
     this.selected_regular_expresion = regular_expresion;
     this.selected_regular_expresion_regexes = this.selected_regular_expresion["regexes"];
-    //console.log(this.selected_regular_expresion_regexes);
   }
   
   //All button
   public setTableToAll(){
     this.selected_regular_expresion_regexes=this.array_all_regex;
+
   }
 
   copyRegex(regular_expresion: any) {
