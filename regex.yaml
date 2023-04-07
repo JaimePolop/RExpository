@@ -1,17 +1,3 @@
-paths:
-  - $HOMESEARCH 
-  - /etc 
-  - /opt 
-  - /tmp 
-  - /private
-  - /Applications
-  - /var/www
-  - /var/log
-  - /private/var/log
-  - /usr/local/www/ 
-  - $backup_folders_row
-
-
 regular_expresions:
   # Hashes passwords
   - name: Hashed Passwords
@@ -78,7 +64,7 @@ regular_expresions:
     #  regex: 'AKC[a-zA-Z0-9]{10,}' # False +
     
     #- name: Artifactory Password
-    #  regex: 'AP[\dABCDEF][a-zA-Z0-9]{8,}'
+    #  regex: 'AP[0-9ABCDEF][a-zA-Z0-9]{8,}'
     
     #- name: Authorization Basic # Too many false positives
     #  regex: 'basic [a-zA-Z0-9_:\.=\-]+'
@@ -132,7 +118,7 @@ regular_expresions:
     
     - name: Artifactory API Key & Password
       regex: >
-        ["']AKC[a-zA-Z0-9]{10,}["']|["']AP[\dABCDEF][a-zA-Z0-9]{8,}["']
+        ["']AKC[a-zA-Z0-9]{10,}["']|["']AP[0-9ABCDEF][a-zA-Z0-9]{8,}["']
       example: >
         "AP6XBwIRozqtcJXCax1Sqnerb9X5n0krYeBD93A7UtUuiQczuWM3lwGybD7T7sFNc17f7iw2TMwjWI4ySAiOcBjbvrIGrFz45pRpcvj"
     
@@ -227,7 +213,7 @@ regular_expresions:
 
     - name: Birise API Key
       regex: >
-        (bitrise[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-zA-Z0-9-_]{86})['"]
+        (bitrise[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-zA-Z0-9_\-]{86})['"]
       caseinsensitive: True
       example: >
         bitrisejme="BzVkwOcKAqUPeFAiQCAdlREdK6gUOMIKl3TXKnkxn2frFtkzgw4iDfnI-fkfP3HHXSnt6R9ebZdsNieCm9zQ6m"
@@ -460,7 +446,7 @@ regular_expresions:
 
     - name: Frame.io API Key
       regex: >
-        fio-u-[a-zA-Z0-9-_=]{64}
+        fio-u-[a-zA-Z0-9_=\-]{64}
       example: >
         fio-u-Qq8OTgvWoXvJNK815rMihgunAdKXk9X0n8P_j52CJKtcpww1h1VCZ4UD9Wd4IhMW
 
@@ -524,7 +510,7 @@ regular_expresions:
     
     - name: GitLab Runner Registration Token
       regex: >
-        GR1348941[0-9a-zA-Z\-\_]{20}
+        GR1348941[0-9a-zA-Z\_\-]{20}
       example: >
         GR1348941RzEF5zAQQ0ljjE72T-33
 
@@ -535,7 +521,7 @@ regular_expresions:
 
     - name: GoCardless API Key
       regex: >
-        live_[a-zA-Z0-9-_=]{40}
+        live_[a-zA-Z0-9_=\-]{40}
       example: >
         live_tQ-4JaiqLoamdNuNMtwbP52m-HgqyS52gVedEBoC
 
@@ -577,15 +563,15 @@ regular_expresions:
 
     - name: Grafana API Key
       regex: >
-        eyJrIjoi[a-z0-9-_=]{72,92}
+        eyJrIjoi[a-z0-9_=\-]{72,92}
       caseinsensitive: True
       example: eyJrIjoi-grafana-api-key=-asadcaxcpg319pihinvbs=bm-qhxyoag6ol0hdhjdb7b5tl1dx_uqhl
 
     - name: Grafana cloud api token
       regex: >
-        (glc_[A-Za-z0-9+/]{32,400}={0,2})
+        glc_[A-Za-z0-9\+/]{32,}={0,2}
       example: > 
-        glc_vC2f5kkH7NDcyRd/8I9mSPmKsrpwDpWHCmjxNOjmXLN+AuYmh0y9gA5/tKzN8VgnWDIBKdrqR4r8e/KhBLj9enKbBTBWijoLPr56IfwbrjIdh4M+4O1B6/X3BD0b5qkBNV7TTwatcJC4mvIq0VEySn2bfnsXQIxtuqaPw/xc3/9PmALD/EHfoR6ebEGgMO1C2lW81Nz6Js94BX5eMDPn/0+WRwMrYnxNxqwJr7yI0Kw0ZfNDC+ROHE7XjcDfRmzUvn7mZoxePoI4aYd0RAUmzbfCs/bwSWzWVuLkc63uNsNApUSMhQG5Vndb/QQGzb79XX+yHuXrLYy=
+        glc_vC2f5kkH7NDcyRd/8I9mSPmKsrpwDpWHCmjxNOjmXLN+AuYmh0y9gA5/X3BD0b5qkBNV7TTwatcJC4mvIq0VEySn2bfnsXQIxtuqaPw/xc3/9PmALD/EHfoR6ebEGgMO1C2lW81Nz6Js94BX5eMDPn/0+WRwMrYnxNxqwJr7yI0Kw0ZfNDC+ROHE7XjcDfRmzUvn7mZoxePoI4aYd0RAUmzbfCs/bwSWzWVuLkc63uNsNApUSMhQG5Vndb/QQGzb79XX+yHuXrLYy=
     
     - name: Grafana service account token
       regex: >
@@ -595,7 +581,7 @@ regular_expresions:
     #H
     - name: Hashicorp Terraform user/org API Key
       regex: >
-        [a-z0-9]{14}\.atlasv1\.[a-z0-9-_=]{60,70}
+        [a-z0-9]{14}\.atlasv1\.[a-z0-9_=\-]{60,70}
       example: >
         izk1hawfnui5xc.atlasv1.kxfv6ncrmadace26slc1-sbbaim4yw5k2f2-y4-8wtv_ukr=61-bnatt71551o6qgeo5
 
@@ -642,7 +628,7 @@ regular_expresions:
 
     - name: JSON Web Token
       regex: >
-        (ey[0-9a-z]{30,34}\.ey[0-9a-z-\/_]{30,500}\.[0-9a-zA-Z-\/_]{10,200}={0,2})
+        (ey[0-9a-z]{30,34}\.ey[0-9a-z\/_\-]{30,}\.[0-9a-zA-Z\/_\-]{10,}={0,2})
       example: >
         ey1j0if36vnu4kd71g19bwm90albqy3ghdpo.ey_-l6_8nramid0tsubb0y4uuf/m7e/wv804gd19bl4r3ddohfiqqfhavbaa9koe_4_34s_4uo70w_gec8t1-jvnqn9qxgdtav_pq_h0km0lh/v51ymqd7s-rd2bx8v0v4zceq4bojrtltxh.LIlpO2lRyoIXqI33jrJ6BNyh_BbGH-nsqjRTABzoOURRhK1NhKtzBmOwRd4Q1pBWAOJC_PyAmTPIxise9MU0zNO6bycbx==
 
@@ -880,7 +866,7 @@ regular_expresions:
 
     - name: Private Keys
       regex: >
-        -----BEGIN PRIVATE KEY-----|-----BEGIN RSA PRIVATE KEY-----|-----BEGIN OPENSSH PRIVATE KEY-----|-----BEGIN PGP PRIVATE KEY BLOCK-----|-----BEGIN DSA PRIVATE KEY-----|-----BEGIN EC PRIVATE KEY-----
+        \-\-\-\-\-BEGIN PRIVATE KEY\-\-\-\-\-|\-\-\-\-\-BEGIN RSA PRIVATE KEY\-\-\-\-\-|\-\-\-\-\-BEGIN OPENSSH PRIVATE KEY\-\-\-\-\-|\-\-\-\-\-BEGIN PGP PRIVATE KEY BLOCK\-\-\-\-\-|\-\-\-\-\-BEGIN DSA PRIVATE KEY\-\-\-\-\-|\-\-\-\-\-BEGIN EC PRIVATE KEY\-\-\-\-\-
       example: -----BEGIN PGP PRIVATE KEY BLOCK-----
 
     - name: Pulumi API Key
@@ -890,7 +876,7 @@ regular_expresions:
     
     - name: PyPI upload token
       regex: >
-        pypi-AgEIcHlwaS5vcmc[A-Za-z0-9-_]{50,1000}
+        pypi-AgEIcHlwaS5vcmc[A-Za-z0-9_\-]{50,}
       example: pypi-AgEIcHlwaS5vcmcMSAFV3tdkC4E3igwL3BBXYihtA9DksF308NrGABBCUo5XUqOrRwHr6wlGdBtV7sdbF9rYRz_K4sestJOyVhDUmGe7sAlXq7IWa2U8wPA5dxzGyoBOOq71P53rgGUvI-OG4VXe8qauHENTvW2H-bHS3jvBP3AKWAi3ux3qxl4oyp7752I8sF3Ho6YA6yIwQLBGWk_tQueTkxSVSTqfDUmbDd87AZXWLG1q5YCPS1vxU5CAr-2iQMp3B94c7wVkbO1gt3HGPMZhk8BFQF0k24PigC4q4ZUP917XJsC9GOfdJkZxoBOtjf8df2xJyriDxNlD3Xd4g5ugEkwg-isiulEMHJSl89WJbGcXWmdUJIPAfmcI6QjaoYEemlEkRxHlOWa_tavMHnARKCkLq2XAB65WpKipsD3WlqPw2A8ekc131ok2psVtFnxE6RFmYB2QacVa1ZQ8bd8Z5V5InAEDA7cBkhcaBFhgcfJRr0YBUmUB2BpZFimgOn3gewiBNU_NRPSK0v319k7CQI57gzyU9BajW3vVte8RKorviV94fytNx-epCP
 
     #Q
@@ -992,7 +978,7 @@ regular_expresions:
         sq0csp-6NsAS fw9NQQ6nnOMzqHt-JJEDHIxuBSFjoU37VqTda
  
     - name: Stytch API Key
-      regex: 'secret-.*-[a-zA-Z0-9-_=]{36}'
+      regex: 'secret-.*-[a-zA-Z0-9_=\-]{36}'
       example: >
         secret-2&5="]g`/7%1!fM|+nw*T:>QQZsZEe-IRtV|w<W.bgX=Zpp5fL*V$O*~@U_drVBL:{vN+38(B|;7&_0jgw72)F 90a)-nJ5L5Uaz9rY_VrHI1wI0IUhbnzo=Y0RolqMU
 
@@ -1098,7 +1084,7 @@ regular_expresions:
     #W
     - name: Web3 API Key
       regex: >
-        (web3[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.?[A-Za-z0-9-_.+/=]*)['"]
+        (web3[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([A-Za-z0-9_=\-]+\.[A-Za-z0-9_=\-]+\.?[A-Za-z0-9_.+/=\-]*)['"]
       caseinsensitive: True
       example: >
         web3-apikey='_WfF7x3Cey.NMZS4K6MDz7ONmYT9iEqn2MiqenLs0o69VIc18GYOqfhpDp-OQcqFj9mtfo0InxQCQeCD1Rhjo4esJoQlNRfsrtiweSfHCM17Ir.RPigbHjYLwNTSgsp_0QhqIO7z0+YkXOS7w==uwx-eDPuj7nDSwxIUFPkyw4QIhg5YNZMkncDx1_i0/OQ/GJ'
@@ -1161,7 +1147,7 @@ regular_expresions:
         digitalocean_ssh_key_body|digitalocean_ssh_key_ids|docker_hub_password|docker_key|docker_pass|docker_passwd|
         docker_password|dockerhub_password|dockerhubpassword|dot-files|dotfiles|droplet_travis_password|dynamoaccesskeyid|
         dynamosecretaccesskey|elastica_host|elastica_port|elasticsearch_password|encryption_key|encryption_password|
-        env.heroku_api_key|env.sonatype_password|eureka.awssecretkey)[a-z0-9_ .,<\-]{0,25}(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z\-_=]{8,64})['"]
+        env.heroku_api_key|env.sonatype_password|eureka.awssecretkey)[a-z0-9_ .,<\-]{0,25}(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z_=\-]{8,64})['"]
       example: >
         aws_token='-A1nivVI1TSm_e4Og2akP_3vI9FxGj'
     - name: Usernames

@@ -28,7 +28,7 @@ type Config struct {
 
 func main() {
 	// Read YAML config file
-	configFile, err := ioutil.ReadFile("../regex.yaml")
+	configFile, err := ioutil.ReadFile("../../regex.yaml")
 	if err != nil {
 		panic(err)
 	}

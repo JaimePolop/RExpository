@@ -1,4 +1,4 @@
-module example.com/mymodule
+module github.com/jaimepolop/Rex-exampleMatcher
 
 go 1.20
 
