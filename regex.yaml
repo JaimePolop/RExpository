@@ -941,7 +941,7 @@ regular_expresions:
 
     - name: Sidekiq Sensitive URL
       regex: >
-        (?:gems.contribsys.com|enterprise.contribsys.com)
+        ([a-f0-9]{8}:[a-f0-9]{8})@(?:gems.contribsys.com|enterprise.contribsys.com)
       example: >
         https://8ffd9ff3:69359946@enterprisebcontribsysrcom
 
