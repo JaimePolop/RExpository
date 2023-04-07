@@ -19,20 +19,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Setup Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-
     - name: Install yq
-      run: pip install yq
-
-    - name: Make exampleMatcher.sh executable
-      run: chmod +x tests/bash/exampleMatcher.sh
+      run: |
+        wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+        chmod +x /usr/local/bin/yq
 
     - name: Run exampleMatcher.sh
       run: |
         cd tests/bash
+        chmod +x ./exampleMatcher.sh
         ./exampleMatcher.sh
     
     - name: Setup Go
