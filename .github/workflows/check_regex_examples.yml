@@ -3,10 +3,10 @@ name: Check Regex Examples
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
     types:
       - opened
   workflow_dispatch:
