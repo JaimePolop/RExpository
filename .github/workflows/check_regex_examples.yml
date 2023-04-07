@@ -1,4 +1,4 @@
-name: Run Bash Script
+name: Check Regex Examples
 
 on:
   push:
@@ -37,9 +37,6 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: '1.16'
-
-    - name: Check Go files
-      run: go fmt ./...
 
     - name: Run Go module (exampleMatcher.go)
       run: go run test/go/exampleMatcher.go
