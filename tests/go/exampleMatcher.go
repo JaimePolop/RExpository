@@ -40,6 +40,7 @@ func main() {
     
 	// Check file content against each regex pattern
 	var any_error bool = false
+	var cont int = 0
 	for _, pattern := range config.RegularExpressions {
 		for _, regex := range pattern.Regexes {
 			rex:= strings.Replace(regex.Regex, "\n", "", -1)
@@ -50,8 +51,12 @@ func main() {
 				fmt.Printf("NO MATCHES FOUND with %s: regex (%s)\n  example (%s)\n", regex.Name, rex, regex.Example)
 				any_error = true
 			}
+			cont++
 		}
 	}
+
+	fmt.Printf("Checked %d examples\n", cont)
+
 	if (any_error) {
 		os.Exit(1)
 	}else {

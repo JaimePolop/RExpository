@@ -34,7 +34,7 @@ while IFS=$'\t' read -r rex_name rex_regex rex_example _; do
 
   # Add cont
   cont=$((cont+1))
-done < <(yq -o=json $yaml_file | jq -r '.regular_expresions[] | .regexes[] | [.name, .regex, .example] | @tsv')
+done < <(yq $yaml_file | jq -r '.regular_expresions[] | .regexes[] | [.name, .regex, .example] | @tsv')
 
 
 echo "Checked $cont examples"
