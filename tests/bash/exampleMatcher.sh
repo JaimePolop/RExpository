@@ -11,6 +11,7 @@ fi
 yaml_file="../../regex.yaml"
 verbose=""
 failure=0
+cont=0
 
 
 while IFS=$'\t' read -r rex_name rex_regex rex_example _; do
@@ -30,9 +31,13 @@ while IFS=$'\t' read -r rex_name rex_regex rex_example _; do
     echo "Failure ($rex_name): Regex '$rex_regex' did not match the example '$rex_example'"
     failure=$((failure+1))
   fi
+
+  # Add cont
+  cont=$((cont+1))
 done < <(yq -o=json $yaml_file | jq -r '.regular_expresions[] | .regexes[] | [.name, .regex, .example] | @tsv')
 
 
+echo "Checked $cont examples"
 
 if [ $failure -eq 0 ]; then
   echo "All examples matched their regular expressions"

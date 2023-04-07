@@ -39,4 +39,4 @@ jobs:
         go-version: '1.16'
 
     - name: Run Go module (exampleMatcher.go)
-      run: go run test/go/exampleMatcher.go
+      run: go run tests/go/exampleMatcher.go
