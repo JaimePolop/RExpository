@@ -31,7 +31,9 @@ jobs:
       run: chmod +x tests/bash/exampleMatcher.sh
 
     - name: Run exampleMatcher.sh
-      run: ./tests/bash/exampleMatcher.sh
+      run: |
+        cd tests/bash
+        ./exampleMatcher.sh
     
     - name: Setup Go
       uses: actions/setup-go@v2
