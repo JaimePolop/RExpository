@@ -72,7 +72,7 @@ export class YamlRegexComponent {
 
     //Array for the button All
     this.selected_regular_expresion=[];
-    console.log(this.selected_regular_expresion);
+    //console.log(this.selected_regular_expresion);
     this.all_regex.forEach((element:any)=>{
       element.forEach((element2:any)=>{
         this.array_all_regex.push(element2);

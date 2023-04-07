@@ -87,9 +87,8 @@ regular_expresions:
     #  regex: 'bearer [a-zA-Z0-9_\.=\-]+'
     
     - name: Adafruit API Key
-      regex: >
-        ([a-z0-9_-]{32})
-      example: 2oqjh-chbd_pn795_860j-rujabwdq3q
+      regex: '([a-z0-9_-]{32})'
+      example: 16bkl1dofm2-ct-93a8cpdd58pu98dtc
 
     - name: Adobe Client Id (Oauth Web)
       regex: >
@@ -231,7 +230,7 @@ regular_expresions:
         (bitrise[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-zA-Z0-9-_]{86})['"]
       caseinsensitive: True
       example: >
-        bitrise-key>'tq5XEPf7tiqkW6HPD_5DK101aiWxbW5yawWNRKXDsFQp61xrgi90VZdulEak-B-Z3VJk7uRrUHpiZH35FQUR6D'
+        bitrisejme="BzVkwOcKAqUPeFAiQCAdlREdK6gUOMIKl3TXKnkxn2frFtkzgw4iDfnI-fkfP3HHXSnt6R9ebZdsNieCm9zQ6m"
     
     - name: Block API Key
       regex: >
@@ -329,7 +328,7 @@ regular_expresions:
         (charity.?search[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-z0-9]{32})['"]
       caseinsensitive: True
       example: >
-        charity-apikey="k84l8827en0rtdabp66rmumgzn5hq9uo"
+        charitysearch-apikey="bcd9589xb6xbrkmhotwvjem16q27a48d"
     
     #D
     - name: Databricks API Key
@@ -645,10 +644,7 @@ regular_expresions:
       regex: >
         (ey[0-9a-z]{30,34}\.ey[0-9a-z-\/_]{30,500}\.[0-9a-zA-Z-\/_]{10,200}={0,2})
       example: >
-        eyw738x5rmlbuxpjzz071dq9pkaeimjuck.ey-d2cmljew/7lqyoavfxa/g709612eb-azlec29ffyyx96p/53-w-yd16zjcaefrapyb109hpa8n4zwbuw2smy7e-2amutjbf1ri0x5h0nrvjzy1_w4obb4s5-
-        p120oqts8yb21ymsysz831i9g6jy1f9zc-1/w772lqtv-f_-dtnspzwzaff5a7mutf1hvyn/bkdcps9e-
-        y_gzxtsj4--gxt4z8qp4w3g0yyeepef5cx1626-5b6rn4tq9vu8qzzltzq40g7wlux1ocs8cz3ae9eyqpcicbu3jkrjwx38905rjx8a-2ll1lvqp0wk3e1qds-qu6zuvg-lfm8l6xemh7baz449zsyl1hv1.-_u/3/X-
-        _M9GFJQdvTx7lgfpk7uHYU2n04oCGj9vzcxr=
+        ey1j0if36vnu4kd71g19bwm90albqy3ghdpo.ey_-l6_8nramid0tsubb0y4uuf/m7e/wv804gd19bl4r3ddohfiqqfhavbaa9koe_4_34s_4uo70w_gec8t1-jvnqn9qxgdtav_pq_h0km0lh/v51ymqd7s-rd2bx8v0v4zceq4bojrtltxh.LIlpO2lRyoIXqI33jrJ6BNyh_BbGH-nsqjRTABzoOURRhK1NhKtzBmOwRd4Q1pBWAOJC_PyAmTPIxise9MU0zNO6bycbx==
 
     #K
 
@@ -708,7 +704,6 @@ regular_expresions:
       regex: >
         ((test|live)_pub_[a-f0-9]{31})
       example: live_pub_f85c6881326b1054d35a88edfaeeb5c
-      #example test_pub_3ee7bc634d0742e5ce2ddabf17ba1d4
     
     #M
     - name: MailboxValidator
@@ -736,12 +731,12 @@ regular_expresions:
     - name: Mailgun Public Validation Key
       regex: >
         pubkey-[a-f0-9]{32}
-      example: 
+      example: pubkey-520f647b5c0aef421bb2dd609a2f2435
 
     - name: Mailgun Webhook signing key
       regex: >
         [a-h0-9]{32}-[a-h0-9]{8}-[a-h0-9]{8}
-      example: pubkey-8817c864e4e99ddd1c757d8eda7c58bb
+      example: 332f30ehda61ggg1gc3cd272c1eh275c-d6cadcge-abd44751
 
     - name: Mapbox API Key
       regex: '(pk\.[a-z0-9]{60}\.[a-z0-9]{22})'
@@ -824,9 +819,9 @@ regular_expresions:
 
     - name: PayPal Braintree Access Token
       regex: >
-        access_token\\$production\\$[0-9a-z]{16}\\$[0-9a-f]{32}
+        access_token\$production\$[0-9a-z]{16}\$[0-9a-f]{32}
       example: >
-        access_token\production\17ydacsbgr9xcwf1\d3888a9ac840be31a586fcd9aa060c22
+        access_token$production$0ryxj99lrf9du9nd$dd5c8484b79bfe6fc0083d479ade256d
 
     - name: Picatic API Key
       regex: 'sk_live_[0-9a-z]{32}'
@@ -847,7 +842,7 @@ regular_expresions:
     
     - name: PlanetScale OAuth token
       regex: >
-        (pscale_oauth_[a-zA-Z0-9_\.\-]{32,64}))
+        (pscale_oauth_[a-zA-Z0-9_\.\-]{32,64})
       example: >
         pscale_oauth_s81e5G44cwgi0l6_6YyRIxRLtXSJcaVB-8UtQ-hU-X_SS75J
 
@@ -861,8 +856,6 @@ regular_expresions:
       regex: >
        (access-(?:sandbox|development|production)-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})
       example: access-production-e76e4577-7d49-3798-55dd-ae74fbfbc35c
-      #example: access-sandbox-5625b595-97be-8eb8-f069-0d54400a4435
-      #example: access-development-6f72ef8c-b722-16c4-deeb-9c4cce8165d7
 
     - name: Plaid Client ID
       regex: >
@@ -906,7 +899,7 @@ regular_expresions:
         (quip[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([a-zA-Z0-9]{15}=\|[0-9]{10}\|[a-zA-Z0-9\/+]{43}=)['"]
       caseinsensitive: True
       example: >
-        quipyz_apikey=0qwpo80D0HbsZ6qU=|7730442444|9ldkdNqLwO1OIzhfGRq7GIO9FAl5OcDj2DkMtjJm2Og='
+        quip-apikey= "ynkkxF8S9sm67Z8=|8554544522|S2Ortt+EcWPwdb0gi8c/XWXXAX30nIJH7pdygqsMnXp='
 
     #R
     - name: RapidAPI Access Token
