@@ -1,6 +1,6 @@
 # REx
 
-![My Image](REx/src/assets/GreenRexPeas.png | width=100)
+![My Image](REx/src/assets/GreenRexPeas.png =250x250)
 
 ### Access directly with this link https://jaimepolop.github.io/REx/!!
 
