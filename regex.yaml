@@ -1169,6 +1169,11 @@ regular_expresions:
       example: >
         pwde[yKl#'qw^Q4"p,\2YpAPrZ.=NFX$nZ>[Ht:K((47vqC+*"=,[kn%*mJ;o\UMQ\ 3S.$W
     
+    - name: Config Secrets
+      regex: >
+        passwd.*|creden.*|^kind:\W?Secret|\Wenv:|\Wsecret:|\WsecretName:|^kind:\W?EncryptionConfiguration|\-\-encryption\-provider\-config
+      example: " secret: 'lala'"
+    
     - name: Passwords
       regex: >
         passw.*[=:].+
