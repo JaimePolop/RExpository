@@ -16,7 +16,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## TODOs
 
-- Better SEO name
 - Improve Go client:
     - Add param to pass the folder to search into
     - Add param to pass a github folder (`git log -p` & `git checkout branch`)
