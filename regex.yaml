@@ -943,7 +943,7 @@ regular_expresions:
       regex: >
         ([a-f0-9]{8}:[a-f0-9]{8})@(?:gems.contribsys.com|enterprise.contribsys.com)
       example: >
-        https://8ffd9ff3:69359946@enterprisebcontribsysrcom
+        8ffd9ff3:69359946@enterprisebcontribsysrcom
 
     - name: Slack Token
       regex: 'xox[baprs]-([0-9a-zA-Z]{10,48})?'

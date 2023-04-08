@@ -13,3 +13,17 @@ REx is a project created by Jaime Polop, in colaboration with [PEASS-ng](https:/
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+
+## TODOs
+
+- Better SEO name
+- Add "False Possitives" field
+    - Uncomment known ones
+    - Add potential ones
+    - Add this info in the web page
+- Improve Go client:
+    - Add param to pass the folder to search into
+    - Add param to pass a github folder (`git log -p` & `git checkout branch`)
+        - Add extra para to indicate to search in all branches
+    - Add param to pass a single github repo url
+    - Add param to pass a file with a bunch of github repo urls
