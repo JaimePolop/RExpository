@@ -1152,9 +1152,9 @@ regular_expresions:
     
     - name: Generic Secret
       regex: >
-        [sS][eE][cC][rR][eE][tT].*['|"][0-9a-zA-Z]{32,45}['|"]
+        [sS][eE][cC][rR][eE][tT].*['"][0-9a-zA-Z]{32,45}['"]
       example: >
-        sECret = "asdiwubeyfvwDEf6ed"
+        sECret = "aso3pje4ghu4gbf3rgu3gr3rg34gdiwubeyfvwDEf6ed"
         
     # Disable in winpeas because of RegexDoS (for some reason)
     - name: Basic Auth
