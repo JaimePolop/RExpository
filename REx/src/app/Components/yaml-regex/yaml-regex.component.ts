@@ -29,7 +29,7 @@ export class YamlRegexComponent {
   public all_regex: any[] = [];
   public array_all_regex:any= [];
   regex:any;
-  displayedColumns = ['Name', 'Regex', 'Case Sensitive', 'Copy Regex'];
+  displayedColumns = ['Name', 'Regex', 'Case Sensitive', 'False Positives', 'Copy Regex'];
   
   
   constructor(private http: HttpClient, private clipboard: Clipboard) {
