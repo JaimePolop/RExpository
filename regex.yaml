@@ -1171,7 +1171,7 @@ regular_expresions:
     
     - name: Config Secrets
       regex: >
-        passwd.*|creden.*|^kind:\W?Secret|\Wenv:|\Wsecret:|\WsecretName:|^kind:\W?EncryptionConfiguration|\-\-encryption\-provider\-config
+        passwd.*|creden.*|^kind:[^a-zA-Z0-9_]?Secret|[^a-zA-Z0-9_]env:|secret:|secretName:|^kind:[^a-zA-Z0-9_]?EncryptionConfiguration|\-\-encryption\-provider\-config
       example: " secret: 'lala'"
     
     - name: Simple Passwords
