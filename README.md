@@ -17,10 +17,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## TODOs
 
 - Better SEO name
-- Add "False Possitives" field
-    - Uncomment known ones
-    - Add potential ones
-    - Add this info in the web page
 - Improve Go client:
     - Add param to pass the folder to search into
     - Add param to pass a github folder (`git log -p` & `git checkout branch`)
