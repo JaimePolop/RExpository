@@ -69,6 +69,14 @@
         </td>
       </ng-container>
 
+      <ng-container matColumnDef="False Positives">
+        <th mat-header-cell *matHeaderCellDef>False Positives</th>
+        <td mat-cell *matCellDef="let element" >
+          <div *ngIf="element.falsePositives==true"><img src="assets/tick.png" style="height: 30px;"></div>
+          <div *ngIf="!element.falsePositives"></div>
+        </td>
+      </ng-container>
+      
       <ng-container matColumnDef="Copy Regex">
         <th mat-header-cell *matHeaderCellDef style="width: 50px; padding-left: 15px">Copy Regex</th>
         <td mat-cell *matCellDef="let element"><img src="assets/clipboard.png" style="height: 30px; cursor: pointer;" (click)="copyRegex(element.regex)"></td>
