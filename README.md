@@ -1,4 +1,4 @@
-# REx
+# RExpository
 
 <img src="REx/src/assets/GreenRexPeas.png" width="480">
 
