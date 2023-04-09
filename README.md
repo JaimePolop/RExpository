@@ -2,7 +2,7 @@
 
 <img src="REx/src/assets/GreenRexPeas.png" width="480">
 
-### Access directly with this link https://github.com/JaimePolop/RExpository!!
+### Access directly with this link https://jaimepolop.github.io/RExpository/!!
 
 
 Welcome REx, a collection of regular expressions, also known as regex, a sequence of characters that define a search pattern. They allow you to search for and manipulate text with precision and speed.
