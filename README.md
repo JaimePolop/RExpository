@@ -29,3 +29,6 @@ Options:
   -h                                            Show the usage of the script. 
 ```
 
+## Let's improve RExpository together
+
+Contribute reading the **[CONTRIBUTING.md](https://github.com/JaimePolop/RExpository/blob/main/CONTRIBUTING.md)** file.
