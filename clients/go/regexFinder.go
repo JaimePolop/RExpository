@@ -43,72 +43,115 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	// Parse YAML config file
 	var config Config
-	err = yaml.Unmarshal(configFile, &config)
-	if err != nil {
-		panic(err)
-	}
-
-	// Remove the regexes with falsePositives set to true
-	for i, pattern := range config.RegularExpressions {
-		filteredRegexes := make([]Regex, 0, len(pattern.Regexes))
-		for _, regex := range pattern.Regexes {
-			if !strings.EqualFold(regex.FalsePositives, "true") {
-				filteredRegexes = append(filteredRegexes, regex)
-			}
-		}
-		config.RegularExpressions[i].Regexes = filteredRegexes
-	}
+	var isFaslePos bool
     
 	args := os.Args[1:]
 	if len(args) == 0 {
-		fmt.Println("Usage: -d regex-search <dir> | -r <github-repo> | -f <github-repos-file>")
+		fmt.Println("Usage: -d <dir> | -r <github-repo> | -rs <github-repo> <github-repo>")
 		return
 	}
 
-	for i := 0; i < len(args); i++ {
-        if args[i] == "-c" {
-            
-            configFile = args[i+1]
-            break
-        }
-    }
+	isFaslePos = checkIfFaslePos(args)
+	if(isFaslePos){
+		// Parse YAML config file
+		err = yaml.Unmarshal(configFile, &config)
+		if err != nil {
+			panic(err)
+		}
 
+	}else{
+		// Parse YAML config file
+		err = yaml.Unmarshal(configFile, &config)
+		if err != nil {
+			panic(err)
+		}
+			
+		// Remove the regexes with falsePositives set to true
+		for i, pattern := range config.RegularExpressions {
+			filteredRegexes := make([]Regex, 0, len(pattern.Regexes))
+			for _, regex := range pattern.Regexes {
+				if !strings.EqualFold(regex.FalsePositives, "true") {
+					filteredRegexes = append(filteredRegexes, regex)
+				}
+			}
+			config.RegularExpressions[i].Regexes = filteredRegexes
+		}
+	}
 	switch arg := args[0]; arg {
 	case "-h":
-		fmt.Println("Usage: -d regex-search <dir> | -r <github-repo> | -f <github-repos-file>")
+		fmt.Println("Usage: -d regex-search <dir> | -r <github-repo> | -rs <github-repo> <github-repo> [-c]")
 	case "-d":
-		if len(args) < 2 {
-			fmt.Println("Usage: regex-search -d <dir>")
-			return
+		if(isFaslePos){
+			if len(args) < 3 {
+				fmt.Println("Usage: regex-search -d <dir> -c")
+				return
+			}
+		}else{
+			if len(args) < 2 {
+				fmt.Println("Usage: regex-search -d <dir>")
+				return
+			}
 		}
 		dir := args[1]
 		searchRegexInDir(dir, config, "")
 	case "-r":
-		if len(args) < 2 {
-			fmt.Println("Usage: regex-search -r <github-repo>")
-			return
+		if(isFaslePos){
+			if len(args) < 3 {
+				fmt.Println("Usage: regex-search -r <github-repo> -c")
+				return
+			}
+		}else{
+			if len(args) < 2 {
+				fmt.Println("Usage: regex-search -r <github-repo>")
+				return
+			}
 		}
 		repoUrl := args[1]
 		searchRegexInRepoGithub(repoUrl, config)
 		
 	case "-rs":
-		if len(args) < 2 {
-			fmt.Println("Usage: regex-search -rs <github-repo> <github-repo>")
-			return
-		}
-		if len(args) == 2 {
-			fmt.Println("Usage: regex-search -rs <github-repo> <github-repo>. Add more repos or change to -r")
-			return
-		}
-		for i := 1; i < len(os.Args); i++ {
-			repoUrl := os.Args[i];
-			searchRegexInRepoGithub(repoUrl,config)
+		if(isFaslePos){
+			if len(args) < 3 {
+				fmt.Println("Usage: regex-search -rs <github-repo> <github-repo> -c")
+				return
+			}
+			if len(args) == 3 {
+				fmt.Println("Usage: regex-search -rs <github-repo> <github-repo> -c. Add more repos or change to -r")
+				return
+			}
+			for i := 2; i < len(os.Args)-1; i++ {
+				repoUrl := os.Args[i];
+				searchRegexInRepoGithub(repoUrl,config)
+			}
+		}else{
+			if len(args) < 2 {
+				fmt.Println("Usage: regex-search -rs <github-repo> <github-repo>")
+				return
+			}
+			if len(args) == 2 {
+				fmt.Println("Usage: regex-search -rs <github-repo> <github-repo>. Add more repos or change to -r")
+				return
+			}
+			for i := 2; i < len(os.Args); i++ {
+				repoUrl := os.Args[i];
+				searchRegexInRepoGithub(repoUrl,config)
+			}
 		}
 	default:
-		fmt.Println("Usage: regex-search <dir> | <github-repo> | <github-repos-file>")
+		fmt.Println("Usage: -d regex-search <dir> | -r <github-repo> | -rs <github-repo> <github-repo> optional[-c]")
 	}
+}
+
+func checkIfFaslePos(args []string) bool{
+	var isFaslePos bool = false
+	for i := 0; i < len(args); i++ {
+        if args[i] == "-c" {
+			isFaslePos := true
+			return isFaslePos
+		}
+	}
+	return isFaslePos
 }
 
 func searchRegexInDir(dir string, config Config, repoName string){

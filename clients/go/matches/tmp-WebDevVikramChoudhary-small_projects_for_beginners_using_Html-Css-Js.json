@@ -1,0 +1,1604 @@
+[
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " 24a9b0f7aa4dab02dff769cd11881817168706a8\n",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " bb6eb342645801dabcca6129335ce65c540e73d1\n",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " 80302d579498d05ec856bdc08426a88dc094b001\n",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " c967396cedf9573fdcf4fcce4db81894f67a6fee\n",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " 00efe021aeaf89311f9a10ed60178e0a9741d207\n",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " 1e5aa1c3c83ad69a070ba253ed538ccb71b5e824\n",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " a19cf3e25734a162ec95da0876857881a3b190c1\n",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " 58f5aed814a76b56997780dda86b91eb2cbc4e79\n",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " e9d40b56ce4d837f27dfc6a6b6436dbdaf362183\n",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "24a9b0f7aa4dab02dff769cd11881817",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "bb6eb342645801dabcca6129335ce65c",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "b3610dfe-b8fa-4701-9393-2c36a069",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "a332a05d-d774-4fd2-8531-ab97682a",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "80302d579498d05ec856bdc08426a88d",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "iconfinder_16769_blackhole_eclip",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "iconfinder_16769_blackhole_eclip",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "iconfinder_16769_blackhole_eclip",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "iconfinder_16769_blackhole_eclip",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "c967396cedf9573fdcf4fcce4db81894",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "00efe021aeaf89311f9a10ed60178e0a",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "1e5aa1c3c83ad69a070ba253ed538ccb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "a19cf3e25734a162ec95da0876857881",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "58f5aed814a76b56997780dda86b91eb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "-webkit-animation-iteration-coun",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "-webkit-animation-timing-functio",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6436dbd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "24a9b0f7aa4dab02d",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "ff769cd1188181716",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "bb6eb342645801dab",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "cca6129335ce65c54",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "80302d579498d05ec",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "856bdc08426a88dc0",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "c967396cedf9573fd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "cf4fcce4db81894f6",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "00efe021aeaf89311",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "f9a10ed60178e0a97",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "1e5aa1c3c83ad69a0",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "70ba253ed538ccb71",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "a19cf3e25734a162e",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "c95da0876857881a3",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "58f5aed814a76b569",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "97780dda86b91eb2c",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "e9d40b56ce4d837f2",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "7dfc6a6b6436dbdaf",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "4233H232",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "3V63H26Z",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "24a9b0f7aa4dab02dff769cd11881817",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "bb6eb342645801dabcca6129335ce65c",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "80302d579498d05ec856bdc08426a88d",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c967396cedf9573fdcf4fcce4db81894",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "00efe021aeaf89311f9a10ed60178e0a",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "1e5aa1c3c83ad69a070ba253ed538ccb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "a19cf3e25734a162ec95da0876857881",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "58f5aed814a76b56997780dda86b91eb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6436dbd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "24a9b0f7aa4dab02",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "dff769cd11881817",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "bb6eb342645801da",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "bcca6129335ce65c",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "80302d579498d05e",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "c856bdc08426a88d",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "c967396cedf9573f",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "dcf4fcce4db81894",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "00efe021aeaf8931",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "1f9a10ed60178e0a",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "1e5aa1c3c83ad69a",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "070ba253ed538ccb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "a19cf3e25734a162",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "ec95da0876857881",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "58f5aed814a76b56",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "997780dda86b91eb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "e9d40b56ce4d837f",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "27dfc6a6b6436dbd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "24a9b0f7aa4dab02dff769cd11881817",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "bb6eb342645801dabcca6129335ce65c",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "80302d579498d05ec856bdc08426a88d",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c967396cedf9573fdcf4fcce4db81894",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "00efe021aeaf89311f9a10ed60178e0a",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "1e5aa1c3c83ad69a070ba253ed538ccb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "a19cf3e25734a162ec95da0876857881",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "58f5aed814a76b56997780dda86b91eb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6436dbd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "24a9b0f7aa4dab02dff769cd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "bb6eb342645801dabcca6129",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "80302d579498d05ec856bdc0",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "c967396cedf9573fdcf4fcce",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "00efe021aeaf89311f9a10ed",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "1e5aa1c3c83ad69a070ba253",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "a19cf3e25734a162ec95da08",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "58f5aed814a76b56997780dd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "e9d40b56ce4d837f27dfc6a6",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "24a9b0f7aa4dab02dff769cd11881817",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "bb6eb342645801dabcca6129335ce65c",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "80302d579498d05ec856bdc08426a88d",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c967396cedf9573fdcf4fcce4db81894",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "00efe021aeaf89311f9a10ed60178e0a",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "1e5aa1c3c83ad69a070ba253ed538ccb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "a19cf3e25734a162ec95da0876857881",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "58f5aed814a76b56997780dda86b91eb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6436dbd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "24a9b0f7aa4dab02dff769cd11881817168706a8",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "bb6eb342645801dabcca6129335ce65c540e73d1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "80302d579498d05ec856bdc08426a88dc094b001",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "c967396cedf9573fdcf4fcce4db81894f67a6fee",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "00efe021aeaf89311f9a10ed60178e0a9741d207",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "1e5aa1c3c83ad69a070ba253ed538ccb71b5e824",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "a19cf3e25734a162ec95da0876857881a3b190c1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "58f5aed814a76b56997780dda86b91eb2cbc4e79",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6436dbdaf362183",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "['\"][a-h0-9]{8}-[a-h0-9]{4}-[a-h0-9]{4}-[a-h0-9]{4}-[a-h0-9]{12}['\"]",
+    "match": "\"b3610dfe-b8fa-4701-9393-2c36a069038b\"",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Hubspot API Key"
+  },
+  {
+    "regex": "['\"][a-h0-9]{8}-[a-h0-9]{4}-[a-h0-9]{4}-[a-h0-9]{4}-[a-h0-9]{12}['\"]",
+    "match": "\"a332a05d-d774-4fd2-8531-ab97682a63e9\"",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Hubspot API Key"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "24a9b0f7aa4dab02dff769cd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "bb6eb342645801dabcca6129",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "80302d579498d05ec856bdc0",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "c967396cedf9573fdcf4fcce",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "00efe021aeaf89311f9a10ed",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "1e5aa1c3c83ad69a070ba253",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "a19cf3e25734a162ec95da08",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "58f5aed814a76b56997780dd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "e9d40b56ce4d837f27dfc6a6",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})",
+    "match": "b3610dfe-b8fa-4701-9393-2c36a069038b",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Kucoin Secret Key"
+  },
+  {
+    "regex": "([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})",
+    "match": "a332a05d-d774-4fd2-8531-ab97682a63e9",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Kucoin Secret Key"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "24a9b0f7aa4dab02dff769cd11881817168706a8",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "bb6eb342645801dabcca6129335ce65c540e73d1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "80302d579498d05ec856bdc08426a88dc094b001",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "c967396cedf9573fdcf4fcce4db81894f67a6fee",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "00efe021aeaf89311f9a10ed60178e0a9741d207",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "1e5aa1c3c83ad69a070ba253ed538ccb71b5e824",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "a19cf3e25734a162ec95da0876857881a3b190c1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "58f5aed814a76b56997780dda86b91eb2cbc4e79",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6436dbdaf362183",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "24a9b0f7aa4dab02dff769cd11",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "bb6eb342645801dabcca612933",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "80302d579498d05ec856bdc084",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "c967396cedf9573fdcf4fcce4d",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "00efe021aeaf89311f9a10ed60",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "1e5aa1c3c83ad69a070ba253ed",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "a19cf3e25734a162ec95da0876",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "58f5aed814a76b56997780dda8",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}",
+    "match": "b3610dfe-b8fa-4701-9393-2c36a069038b",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "MojoAuth API Key"
+  },
+  {
+    "regex": "[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}",
+    "match": "a332a05d-d774-4fd2-8531-ab97682a63e9",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "MojoAuth API Key"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "24a9b0f7aa4dab02dff769cd11881817168706a8",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "bb6eb342645801dabcca6129335ce65c540e73d1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "80302d579498d05ec856bdc08426a88dc094b001",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_sun_ic",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_sun_ic",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_sun_ic",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_sun_ic",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "c967396cedf9573fdcf4fcce4db81894f67a6fee",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "00efe021aeaf89311f9a10ed60178e0a9741d207",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "1e5aa1c3c83ad69a070ba253ed538ccb71b5e824",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "a19cf3e25734a162ec95da0876857881a3b190c1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "58f5aed814a76b56997780dda86b91eb2cbc4e79",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6436dbdaf362183",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "24a9b0f7aa4dab02dff769cd11881817",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "bb6eb342645801dabcca6129335ce65c",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "b3610dfe-b8fa-4701-9393-2c36a069",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "a332a05d-d774-4fd2-8531-ab97682a",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "80302d579498d05ec856bdc08426a88d",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "iconfinder_16769_blackhole_eclip",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "iconfinder_16769_blackhole_eclip",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "iconfinder_16769_blackhole_eclip",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "iconfinder_16769_blackhole_eclip",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "c967396cedf9573fdcf4fcce4db81894",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "00efe021aeaf89311f9a10ed60178e0a",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "1e5aa1c3c83ad69a070ba253ed538ccb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "a19cf3e25734a162ec95da0876857881",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "58f5aed814a76b56997780dda86b91eb",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "-webkit-animation-iteration-coun",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "-webkit-animation-timing-functio",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6436dbd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{42})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_su",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Okta Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{42})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_su",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Okta Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{42})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_su",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Okta Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{42})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_su",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Okta Access Token"
+  },
+  {
+    "regex": "['\"][a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}['\"]",
+    "match": "\"b3610dfe-b8fa-4701-9393-2c36a069038b\"",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "ORB Intelligence Access Key"
+  },
+  {
+    "regex": "['\"][a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}['\"]",
+    "match": "\"a332a05d-d774-4fd2-8531-ab97682a63e9\"",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "ORB Intelligence Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "24a9b0f7aa4dab02dff769cd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "bb6eb342645801dabcca6129",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "80302d579498d05ec856bdc0",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "c967396cedf9573fdcf4fcce",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "00efe021aeaf89311f9a10ed",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "1e5aa1c3c83ad69a070ba253",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "a19cf3e25734a162ec95da08",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "58f5aed814a76b56997780dd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "e9d40b56ce4d837f27dfc6a6",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "24a9b0f7aa4dab02dff769cd118818",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "bb6eb342645801dabcca6129335ce6",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "80302d579498d05ec856bdc08426a8",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "c967396cedf9573fdcf4fcce4db818",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "00efe021aeaf89311f9a10ed60178e",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "1e5aa1c3c83ad69a070ba253ed538c",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "a19cf3e25734a162ec95da08768578",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "58f5aed814a76b56997780dda86b91",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6436d",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9_-]{50})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_sun_icon_1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "RapidAPI Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{50})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_sun_icon_1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "RapidAPI Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{50})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_sun_icon_1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "RapidAPI Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{50})",
+    "match": "iconfinder_16769_blackhole_eclipse_star_sun_icon_1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "RapidAPI Access Token"
+  },
+  {
+    "regex": "([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})",
+    "match": "b3610dfe-b8fa-4701-9393-2c36a069038b",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Sendbird Access ID"
+  },
+  {
+    "regex": "([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})",
+    "match": "a332a05d-d774-4fd2-8531-ab97682a63e9",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Sendbird Access ID"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "24a9b0f7aa4dab02dff769cd11881817168706a8",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "bb6eb342645801dabcca6129335ce65c540e73d1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "80302d579498d05ec856bdc08426a88dc094b001",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "c967396cedf9573fdcf4fcce4db81894f67a6fee",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "00efe021aeaf89311f9a10ed60178e0a9741d207",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "1e5aa1c3c83ad69a070ba253ed538ccb71b5e824",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "a19cf3e25734a162ec95da0876857881a3b190c1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "58f5aed814a76b56997780dda86b91eb2cbc4e79",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6436dbdaf362183",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "24a9b0f7aa4dab",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "02dff769cd1188",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "bb6eb342645801",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "dabcca6129335c",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "80302d579498d0",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "5ec856bdc08426",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "c967396cedf957",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "3fdcf4fcce4db8",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "00efe021aeaf89",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "311f9a10ed6017",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "1e5aa1c3c83ad6",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "9a070ba253ed53",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "a19cf3e25734a1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "62ec95da087685",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "58f5aed814a76b",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "56997780dda86b",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "e9d40b56ce4d83",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "7f27dfc6a6b643",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "24a9b0f7aa4dab02dff769",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "bb6eb342645801dabcca61",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "80302d579498d05ec856bd",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "c967396cedf9573fdcf4fc",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "00efe021aeaf89311f9a10",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "1e5aa1c3c83ad69a070ba2",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "a19cf3e25734a162ec95da",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "58f5aed814a76b56997780",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "e9d40b56ce4d837f27dfc6",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "['\"][a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}['\"]",
+    "match": "\"b3610dfe-b8fa-4701-9393-2c36a069038b\"",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "URLScan API Key"
+  },
+  {
+    "regex": "['\"][a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}['\"]",
+    "match": "\"a332a05d-d774-4fd2-8531-ab97682a63e9\"",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "URLScan API Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "24a9b0f7aa4dab02dff769cd11881817168706a8",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "bb6eb342645801dabcca6129335ce65c540e73d1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "80302d579498d05ec856bdc08426a88dc094b001",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "c967396cedf9573fdcf4fcce4db81894f67a6fee",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "00efe021aeaf89311f9a10ed60178e0a9741d207",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "1e5aa1c3c83ad69a070ba253ed538ccb71b5e824",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "a19cf3e25734a162ec95da0876857881a3b190c1",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "58f5aed814a76b56997780dda86b91eb2cbc4e79",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "e9d40b56ce4d837f27dfc6a6b6436dbdaf362183",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)",
+    "match": "06.052.127.092",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "IPs"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "vikram.work.code@gmail.com",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "vikram.work.code@gmail.com",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "vikram.work.code@gmail.com",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "vikram.work.code@gmail.com",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "vikram.work.code@gmail.com",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "vikram.work.code@gmail.com",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "vikram.work.code@gmail.com",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "vikram.work.code@gmail.com",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "vikram.work.code@gmail.com",
+    "file": "tmp\\\\gitlog-WebDevVikramChoudhary-small_projects_for_beginners_using_Html-Css-Js.txt",
+    "regexName": "Emails"
+  }
+]

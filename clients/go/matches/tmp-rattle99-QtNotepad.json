@@ -1,1 +1,2606 @@
-[]
+[
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " 1bf0033716e4ad3c60c74544f560b138aa6f2d00\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " fce0c10dc9dcaca394509065cb18cb93b949268d\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " 374762d07ff9bb35437d57084573455aa2d859c7\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " 0e68874d9f1fe12bca7338739a3693aaabfe714e\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " e63e0f0d8c6044a99ee65bcc97f88c6ed6d1a22c\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " f4779a011d1421cfe4357f39d5e4e70e8445744c\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " d6f5a29d901a1ff6580b500af665df8e4b1cfa3f\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " 33b7ceb71a4b484b23d470abd695080d2f01dfea\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " e935c69e9d8e3b1a648711c7a19b7eebf2f1c1f7\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " dce02da089cc27a392f403034105a824c80e85a1\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " cd53ff2006e3a2c706e5f304bab29321b6c687ea\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " c54d6f3f5c144135d726b457eea4e3e1a00912b0\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " c3bc494bcee07f90d26a00cafd54da103e99ed93\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " c08c34413eec1a96b9374463b813c05062511a07\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " 2c3da49e3a1443309975464d145250b0bd17c267\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "(^|[^a-zA-Z0-9])[a-fA-F0-9]{40}([^a-zA-Z0-9]|$)",
+    "match": " 0bb0b8d46a0d337ec1e62826370649839c076660\n",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "sha1"
+  },
+  {
+    "regex": "basic [a-zA-Z0-9_:\\.=\\-]+",
+    "match": "basic functionalities",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Authorization Basic"
+  },
+  {
+    "regex": "basic [a-zA-Z0-9_:\\.=\\-]+",
+    "match": "basic methods",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Authorization Basic"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "1bf0033716e4ad3c60c74544f560b138",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "fce0c10dc9dcaca394509065cb18cb93",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "374762d07ff9bb35437d57084573455a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "0e68874d9f1fe12bca7338739a3693aa",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "e63e0f0d8c6044a99ee65bcc97f88c6e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "f4779a011d1421cfe4357f39d5e4e70e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "d6f5a29d901a1ff6580b500af665df8e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "33b7ceb71a4b484b23d470abd695080d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "e935c69e9d8e3b1a648711c7a19b7eeb",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "dce02da089cc27a392f403034105a824",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "cd53ff2006e3a2c706e5f304bab29321",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "c54d6f3f5c144135d726b457eea4e3e1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "c3bc494bcee07f90d26a00cafd54da10",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "c08c34413eec1a96b9374463b813c050",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "--------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "2c3da49e3a1443309975464d145250b0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "--------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "--------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9_-]{32})",
+    "match": "0bb0b8d46a0d337ec1e6282637064983",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Adafruit API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "1bf0033716e4ad3c6",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "0c74544f560b138aa",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "fce0c10dc9dcaca39",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "4509065cb18cb93b9",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "374762d07ff9bb354",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "37d57084573455aa2",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "0e68874d9f1fe12bc",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "a7338739a3693aaab",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "e63e0f0d8c6044a99",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "ee65bcc97f88c6ed6",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "f4779a011d1421cfe",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "4357f39d5e4e70e84",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "d6f5a29d901a1ff65",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "80b500af665df8e4b",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "33b7ceb71a4b484b2",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "3d470abd695080d2f",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "e935c69e9d8e3b1a6",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "48711c7a19b7eebf2",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "dce02da089cc27a39",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "2f403034105a824c8",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "cd53ff2006e3a2c70",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "6e5f304bab29321b6",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "c54d6f3f5c144135d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "726b457eea4e3e1a0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "c3bc494bcee07f90d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "26a00cafd54da103e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "c08c34413eec1a96b",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "9374463b813c05062",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "2c3da49e3a1443309",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "975464d145250b0bd",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "0bb0b8d46a0d337ec",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "([a-z0-9]{17})",
+    "match": "1e62826370649839c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Airtable API Key"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "SOFTWARE",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "PROVIDED",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "WARRANTY",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "INCLUDIN",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "WARRANTI",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "MERCHANT",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "PARTICUL",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "NONINFRI",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "LIABILIT",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "CONTRACT",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "OTHERWIS",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "CONNECTI",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "SOFTWARE",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "DEALINGS",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "SOFTWARE",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "RESOURCE",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "MAINWIND",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "TEMPLATE",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "DEPRECAT",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "WARNINGS",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "DEPRECAT",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "MAINWIND",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "MAINWIND",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "(?:[A-Z2-7]{8})*(?:[A-Z2-7]{2}={6}|[A-Z2-7]{4}={4}|[A-Z2-7]{5}={3}|[A-Z2-7]{7}=)?",
+    "match": "MAINWIND",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Base32"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "1bf0033716e4ad3c60c74544f560b138",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "fce0c10dc9dcaca394509065cb18cb93",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "374762d07ff9bb35437d57084573455a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "0e68874d9f1fe12bca7338739a3693aa",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "e63e0f0d8c6044a99ee65bcc97f88c6e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "f4779a011d1421cfe4357f39d5e4e70e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "d6f5a29d901a1ff6580b500af665df8e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "33b7ceb71a4b484b23d470abd695080d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "e935c69e9d8e3b1a648711c7a19b7eeb",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "dce02da089cc27a392f403034105a824",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "cd53ff2006e3a2c706e5f304bab29321",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c54d6f3f5c144135d726b457eea4e3e1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c3bc494bcee07f90d26a00cafd54da10",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c08c34413eec1a96b9374463b813c050",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "2c3da49e3a1443309975464d145250b0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "0bb0b8d46a0d337ec1e6282637064983",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Bittrex Access Key and Access Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "1bf0033716e4ad3c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "60c74544f560b138",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "fce0c10dc9dcaca3",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "94509065cb18cb93",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "374762d07ff9bb35",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "437d57084573455a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "0e68874d9f1fe12b",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "ca7338739a3693aa",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "e63e0f0d8c6044a9",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "9ee65bcc97f88c6e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "f4779a011d1421cf",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "e4357f39d5e4e70e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "d6f5a29d901a1ff6",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "580b500af665df8e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "33b7ceb71a4b484b",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "23d470abd695080d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "e935c69e9d8e3b1a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "648711c7a19b7eeb",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "dce02da089cc27a3",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "92f403034105a824",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "cd53ff2006e3a2c7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "06e5f304bab29321",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "c54d6f3f5c144135",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "d726b457eea4e3e1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "c3bc494bcee07f90",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "d26a00cafd54da10",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "c08c34413eec1a96",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "b9374463b813c050",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "2c3da49e3a144330",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "9975464d145250b0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "0bb0b8d46a0d337e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{16})",
+    "match": "c1e6282637064983",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Confluent Access Token \u0026 Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "1bf0033716e4ad3c60c74544f560b138",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "fce0c10dc9dcaca394509065cb18cb93",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "374762d07ff9bb35437d57084573455a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "0e68874d9f1fe12bca7338739a3693aa",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "e63e0f0d8c6044a99ee65bcc97f88c6e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "f4779a011d1421cfe4357f39d5e4e70e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "d6f5a29d901a1ff6580b500af665df8e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "33b7ceb71a4b484b23d470abd695080d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "e935c69e9d8e3b1a648711c7a19b7eeb",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "dce02da089cc27a392f403034105a824",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "cd53ff2006e3a2c706e5f304bab29321",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c54d6f3f5c144135d726b457eea4e3e1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c3bc494bcee07f90d26a00cafd54da10",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c08c34413eec1a96b9374463b813c050",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "2c3da49e3a1443309975464d145250b0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "0bb0b8d46a0d337ec1e6282637064983",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Droneci Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "1bf0033716e4ad3c60c74544",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "fce0c10dc9dcaca394509065",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "374762d07ff9bb35437d5708",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "0e68874d9f1fe12bca733873",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "e63e0f0d8c6044a99ee65bcc",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "f4779a011d1421cfe4357f39",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "d6f5a29d901a1ff6580b500a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "33b7ceb71a4b484b23d470ab",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "e935c69e9d8e3b1a648711c7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "dce02da089cc27a392f40303",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "cd53ff2006e3a2c706e5f304",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "c54d6f3f5c144135d726b457",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "c3bc494bcee07f90d26a00ca",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "c08c34413eec1a96b9374463",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "2c3da49e3a1443309975464d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "0bb0b8d46a0d337ec1e62826",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Etsy Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "1bf0033716e4ad3c60c74544f560b138",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "fce0c10dc9dcaca394509065cb18cb93",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "374762d07ff9bb35437d57084573455a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "0e68874d9f1fe12bca7338739a3693aa",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "e63e0f0d8c6044a99ee65bcc97f88c6e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "f4779a011d1421cfe4357f39d5e4e70e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "d6f5a29d901a1ff6580b500af665df8e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "33b7ceb71a4b484b23d470abd695080d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "e935c69e9d8e3b1a648711c7a19b7eeb",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "dce02da089cc27a392f403034105a824",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "cd53ff2006e3a2c706e5f304bab29321",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c54d6f3f5c144135d726b457eea4e3e1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c3bc494bcee07f90d26a00cafd54da10",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "c08c34413eec1a96b9374463b813c050",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "2c3da49e3a1443309975464d145250b0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{32})",
+    "match": "0bb0b8d46a0d337ec1e6282637064983",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Flickr Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "1bf0033716e4ad3c60c74544f560b138aa6f2d00",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "fce0c10dc9dcaca394509065cb18cb93b949268d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "374762d07ff9bb35437d57084573455aa2d859c7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "0e68874d9f1fe12bca7338739a3693aaabfe714e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "e63e0f0d8c6044a99ee65bcc97f88c6ed6d1a22c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "f4779a011d1421cfe4357f39d5e4e70e8445744c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "d6f5a29d901a1ff6580b500af665df8e4b1cfa3f",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "33b7ceb71a4b484b23d470abd695080d2f01dfea",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "e935c69e9d8e3b1a648711c7a19b7eebf2f1c1f7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "dce02da089cc27a392f403034105a824c80e85a1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "cd53ff2006e3a2c706e5f304bab29321b6c687ea",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "c54d6f3f5c144135d726b457eea4e3e1a00912b0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "c3bc494bcee07f90d26a00cafd54da103e99ed93",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "c08c34413eec1a96b9374463b813c05062511a07",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "----------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "2c3da49e3a1443309975464d145250b0bd17c267",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "----------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "----------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-z0-9_-]{40})",
+    "match": "0bb0b8d46a0d337ec1e62826370649839c076660",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Gitter Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "1bf0033716e4ad3c60c74544",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "fce0c10dc9dcaca394509065",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "374762d07ff9bb35437d5708",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "0e68874d9f1fe12bca733873",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "e63e0f0d8c6044a99ee65bcc",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "f4779a011d1421cfe4357f39",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "d6f5a29d901a1ff6580b500a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "33b7ceb71a4b484b23d470ab",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "e935c69e9d8e3b1a648711c7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "dce02da089cc27a392f40303",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "cd53ff2006e3a2c706e5f304",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "c54d6f3f5c144135d726b457",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "c3bc494bcee07f90d26a00ca",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "c08c34413eec1a96b9374463",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "2c3da49e3a1443309975464d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{24})",
+    "match": "0bb0b8d46a0d337ec1e62826",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Kucoin Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "1bf0033716e4ad3c60c74544f560b138aa6f2d00",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "fce0c10dc9dcaca394509065cb18cb93b949268d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "374762d07ff9bb35437d57084573455aa2d859c7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "0e68874d9f1fe12bca7338739a3693aaabfe714e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "e63e0f0d8c6044a99ee65bcc97f88c6ed6d1a22c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "f4779a011d1421cfe4357f39d5e4e70e8445744c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "d6f5a29d901a1ff6580b500af665df8e4b1cfa3f",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "33b7ceb71a4b484b23d470abd695080d2f01dfea",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "e935c69e9d8e3b1a648711c7a19b7eebf2f1c1f7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "dce02da089cc27a392f403034105a824c80e85a1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "cd53ff2006e3a2c706e5f304bab29321b6c687ea",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "c54d6f3f5c144135d726b457eea4e3e1a00912b0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "c3bc494bcee07f90d26a00cafd54da103e99ed93",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "c08c34413eec1a96b9374463b813c05062511a07",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "----------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "2c3da49e3a1443309975464d145250b0bd17c267",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "----------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "----------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40})",
+    "match": "0bb0b8d46a0d337ec1e62826370649839c076660",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Launchdarkly Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "1bf0033716e4ad3c60c74544f5",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "fce0c10dc9dcaca394509065cb",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "374762d07ff9bb35437d570845",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "0e68874d9f1fe12bca7338739a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "e63e0f0d8c6044a99ee65bcc97",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "f4779a011d1421cfe4357f39d5",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "d6f5a29d901a1ff6580b500af6",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "33b7ceb71a4b484b23d470abd6",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "e935c69e9d8e3b1a648711c7a1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "dce02da089cc27a392f4030341",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "cd53ff2006e3a2c706e5f304ba",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "c54d6f3f5c144135d726b457ee",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "c3bc494bcee07f90d26a00cafd",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "c08c34413eec1a96b9374463b8",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "2c3da49e3a1443309975464d14",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{26})",
+    "match": "0bb0b8d46a0d337ec1e6282637",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Mattermost Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "1bf0033716e4ad3c60c74544f560b138aa6f2d00",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "fce0c10dc9dcaca394509065cb18cb93b949268d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "374762d07ff9bb35437d57084573455aa2d859c7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "0e68874d9f1fe12bca7338739a3693aaabfe714e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "e63e0f0d8c6044a99ee65bcc97f88c6ed6d1a22c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "f4779a011d1421cfe4357f39d5e4e70e8445744c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "d6f5a29d901a1ff6580b500af665df8e4b1cfa3f",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "33b7ceb71a4b484b23d470abd695080d2f01dfea",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "e935c69e9d8e3b1a648711c7a19b7eebf2f1c1f7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "dce02da089cc27a392f403034105a824c80e85a1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "cd53ff2006e3a2c706e5f304bab29321b6c687ea",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "c54d6f3f5c144135d726b457eea4e3e1a00912b0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "c3bc494bcee07f90d26a00cafd54da103e99ed93",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "c08c34413eec1a96b9374463b813c05062511a07",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "----------------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "2c3da49e3a1443309975464d145250b0bd17c267",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "----------------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "----------------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{40,46})",
+    "match": "0bb0b8d46a0d337ec1e62826370649839c076660",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Netlify Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "1bf0033716e4ad3c60c74544f560b138",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "fce0c10dc9dcaca394509065cb18cb93",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "374762d07ff9bb35437d57084573455a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "0e68874d9f1fe12bca7338739a3693aa",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "e63e0f0d8c6044a99ee65bcc97f88c6e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "f4779a011d1421cfe4357f39d5e4e70e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "d6f5a29d901a1ff6580b500af665df8e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "33b7ceb71a4b484b23d470abd695080d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "e935c69e9d8e3b1a648711c7a19b7eeb",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "dce02da089cc27a392f403034105a824",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "cd53ff2006e3a2c706e5f304bab29321",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "c54d6f3f5c144135d726b457eea4e3e1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "c3bc494bcee07f90d26a00cafd54da10",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "c08c34413eec1a96b9374463b813c050",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "--------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "2c3da49e3a1443309975464d145250b0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "--------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "--------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{32})",
+    "match": "0bb0b8d46a0d337ec1e6282637064983",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Nytimes Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{42})",
+    "match": "------------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Okta Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{42})",
+    "match": "------------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Okta Access Token"
+  },
+  {
+    "regex": "([a-z0-9=_\\-]{42})",
+    "match": "------------------------------------------",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Okta Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "1bf0033716e4ad3c60c74544",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "fce0c10dc9dcaca394509065",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "374762d07ff9bb35437d5708",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "0e68874d9f1fe12bca733873",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "e63e0f0d8c6044a99ee65bcc",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "f4779a011d1421cfe4357f39",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "d6f5a29d901a1ff6580b500a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "33b7ceb71a4b484b23d470ab",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "e935c69e9d8e3b1a648711c7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "dce02da089cc27a392f40303",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "cd53ff2006e3a2c706e5f304",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "c54d6f3f5c144135d726b457",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "c3bc494bcee07f90d26a00ca",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "c08c34413eec1a96b9374463",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "2c3da49e3a1443309975464d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{24})",
+    "match": "0bb0b8d46a0d337ec1e62826",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Client ID"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "1bf0033716e4ad3c60c74544f560b1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "fce0c10dc9dcaca394509065cb18cb",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "374762d07ff9bb35437d5708457345",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "0e68874d9f1fe12bca7338739a3693",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "e63e0f0d8c6044a99ee65bcc97f88c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "f4779a011d1421cfe4357f39d5e4e7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "d6f5a29d901a1ff6580b500af665df",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "33b7ceb71a4b484b23d470abd69508",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "e935c69e9d8e3b1a648711c7a19b7e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "dce02da089cc27a392f403034105a8",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "cd53ff2006e3a2c706e5f304bab293",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "c54d6f3f5c144135d726b457eea4e3",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "c3bc494bcee07f90d26a00cafd54da",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "c08c34413eec1a96b9374463b813c0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "2c3da49e3a1443309975464d145250",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-z0-9]{30})",
+    "match": "0bb0b8d46a0d337ec1e62826370649",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Plaid Secret key"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "1bf0033716e4ad3c60c74544f560b138aa6f2d00",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "fce0c10dc9dcaca394509065cb18cb93b949268d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "374762d07ff9bb35437d57084573455aa2d859c7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "0e68874d9f1fe12bca7338739a3693aaabfe714e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "e63e0f0d8c6044a99ee65bcc97f88c6ed6d1a22c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "f4779a011d1421cfe4357f39d5e4e70e8445744c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "d6f5a29d901a1ff6580b500af665df8e4b1cfa3f",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "33b7ceb71a4b484b23d470abd695080d2f01dfea",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "e935c69e9d8e3b1a648711c7a19b7eebf2f1c1f7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "dce02da089cc27a392f403034105a824c80e85a1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "cd53ff2006e3a2c706e5f304bab29321b6c687ea",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "c54d6f3f5c144135d726b457eea4e3e1a00912b0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "c3bc494bcee07f90d26a00cafd54da103e99ed93",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "c08c34413eec1a96b9374463b813c05062511a07",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "2c3da49e3a1443309975464d145250b0bd17c267",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-f0-9]{40})",
+    "match": "0bb0b8d46a0d337ec1e62826370649839c076660",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Sendbird Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "1bf0033716e4ad",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "3c60c74544f560",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "fce0c10dc9dcac",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "a394509065cb18",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "374762d07ff9bb",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "35437d57084573",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "relinquishment",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "0e68874d9f1fe1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "2bca7338739a36",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "functionalitie",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "e63e0f0d8c6044",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "a99ee65bcc97f8",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "f4779a011d1421",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "cfe4357f39d5e4",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "d6f5a29d901a1f",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "f6580b500af665",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "33b7ceb71a4b48",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "4b23d470abd695",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "e935c69e9d8e3b",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "1a648711c7a19b",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "dce02da089cc27",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "a392f403034105",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "cd53ff2006e3a2",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "c706e5f304bab2",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "c54d6f3f5c1441",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "35d726b457eea4",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "c3bc494bcee07f",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "90d26a00cafd54",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "c08c34413eec1a",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "96b9374463b813",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "pixmapfunction",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "pixmapfunction",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "2c3da49e3a1443",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "309975464d1452",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "pixmapfunction",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "pixmapfunction",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "0bb0b8d46a0d33",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{14})",
+    "match": "7ec1e628263706",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "SumoLogic Access ID"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "1bf0033716e4ad3c60c745",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "fce0c10dc9dcaca3945090",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "374762d07ff9bb35437d57",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "0e68874d9f1fe12bca7338",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "e63e0f0d8c6044a99ee65b",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "f4779a011d1421cfe4357f",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "d6f5a29d901a1ff6580b50",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "33b7ceb71a4b484b23d470",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "e935c69e9d8e3b1a648711",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "dce02da089cc27a392f403",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "cd53ff2006e3a2c706e5f3",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "c54d6f3f5c144135d726b4",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "c3bc494bcee07f90d26a00",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "c08c34413eec1a96b93744",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "2c3da49e3a144330997546",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{22})",
+    "match": "0bb0b8d46a0d337ec1e628",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Travis CI Access Token"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "1bf0033716e4ad3c60c74544f560b138aa6f2d00",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "fce0c10dc9dcaca394509065cb18cb93b949268d",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "374762d07ff9bb35437d57084573455aa2d859c7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "0e68874d9f1fe12bca7338739a3693aaabfe714e",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "e63e0f0d8c6044a99ee65bcc97f88c6ed6d1a22c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "f4779a011d1421cfe4357f39d5e4e70e8445744c",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "d6f5a29d901a1ff6580b500af665df8e4b1cfa3f",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "33b7ceb71a4b484b23d470abd695080d2f01dfea",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "e935c69e9d8e3b1a648711c7a19b7eebf2f1c1f7",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "dce02da089cc27a392f403034105a824c80e85a1",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "cd53ff2006e3a2c706e5f304bab29321b6c687ea",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "c54d6f3f5c144135d726b457eea4e3e1a00912b0",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "c3bc494bcee07f90d26a00cafd54da103e99ed93",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "c08c34413eec1a96b9374463b813c05062511a07",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "2c3da49e3a1443309975464d145250b0bd17c267",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "([a-z0-9]{40})",
+    "match": "0bb0b8d46a0d337ec1e62826370649839c076660",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Zendesk Secret Key"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  },
+  {
+    "regex": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}",
+    "match": "24495512+rattle99@users.noreply.github.com",
+    "file": "tmp\\\\gitlog-rattle99-QtNotepad.txt",
+    "regexName": "Emails"
+  }
+]
