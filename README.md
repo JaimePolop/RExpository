@@ -18,13 +18,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### regexFinder Usage
 
 Usage: regexFinder.go [OPTIONS]
+
 By default regexFinder does not use the regular expresions that gives to much false positives. If you want to activate this function just type ```-c``` at the end of the execution comand.
 ```
 Options:
-  -d <local-directory>                          Find any coincidence with a local directory you want to analyze and the regular expresions.
-  -r <github-repository>                        Find any coincidence with a github repository you want to analyze and the regular expresions.
-  -rs <github-repository> <github-repository>   Find any coincidence with several github repositories you want to analyze and the regular expresions.
-  [-c]                                          Always at the end. Add the regular expresions that gives false positives.
+  -d <local-directory>                          Find matches with a local directory you want to analyze and the regex.
+  -r <github-repository>                        Find matches with a github repository you want to analyze and the regex.
+  -rs <github-repository> <github-repository>   Find matches with several github repositories you want to analyze and the regex.
+  [-c]                                          **Always at the end!!**. Add the regex that gives false positives.
   -h                                            Show the usage of the script. 
 ```
 
