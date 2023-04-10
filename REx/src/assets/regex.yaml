@@ -579,7 +579,7 @@ regular_expresions:
       example: ya29.j8lNIMiRgzGa4KQTehLAlBUx441wduUe9vYLQqp
 
     - name: Google (GCP) Service-account
-      regex: '\"type\": \"service_account\"'
+      regex: '"type.+:.+"service_account'
       example: >
         "type": "service_account"
       
@@ -980,7 +980,7 @@ regular_expresions:
       regex: >
         ([a-f0-9]{8}:[a-f0-9]{8})@(?:gems.contribsys.com|enterprise.contribsys.com)
       example: >
-        https://8ffd9ff3:69359946@enterprisebcontribsysrcom
+        8ffd9ff3:69359946@enterprisebcontribsysrcom
 
     - name: Slack Token
       regex: 'xox[baprs]-([0-9a-zA-Z]{10,48})?'
@@ -1152,28 +1152,33 @@ regular_expresions:
     
     - name: Generic Secret
       regex: >
-        [sS][eE][cC][rR][eE][tT].*['|\"][0-9a-zA-Z]{32,45}['|\"]
+        [sS][eE][cC][rR][eE][tT].*['"][0-9a-zA-Z]{32,45}['"]
       example: >
-        sECret\Ug>F*mS*9tm)n`@&p\-nh!g%)fk#)!tt[mna^wH}r;;!*5:fF&L+;B{$J?r_#a1qK%-fn6vVZW]=M>8[loMQZ*,|a8z6dqyxW2mczzJjWvpHbQPkQIpNy0B3tagp67c5nZ|
+        sECret = "aso3pje4ghu4gbf3rgu3gr3rg34gdiwubeyfvwDEf6ed"
         
     # Disable in winpeas because of RegexDoS (for some reason)
     - name: Basic Auth
       regex: >
         //(.+):(.+)@
       example: >
-        //dD"]hY[(`xkyA1.~_?UXo^5_s@e~T7S2orX7}+Grryb<jWRECE[Qv5gvFd]a=5KaK2W:i$(9Fk6SVE5{~$PKVqP?x;4*"J<Z c)S}|=a%IH2Pq{}r5hQ.>}}5</Vb0:)ZU.z@
+        //UserName237.e4r3%:Compl3x&/Password1763@domain.com
 
     - name: PHP Passwords
       regex: >
         (pwd|passwd|password|PASSWD|PASSWORD|dbuser|dbpass|pass').*[=:].+|define ?\('(\w*pass|\w*pwd|\w*user|\w*datab)
       example: >
-        pwde[yKl#'qw^Q4"p,\2YpAPrZ.=NFX$nZ>[Ht:K((47vqC+*"=,[kn%*mJ;o\UMQ\ 3S.$W
+        dbpass = "asdasd"
     
-    - name: Passwords
+    - name: Config Secrets
+      regex: >
+        passwd.*|creden.*|^kind:[^a-zA-Z0-9_]?Secret|[^a-zA-Z0-9_]env:|secret:|secretName:|^kind:[^a-zA-Z0-9_]?EncryptionConfiguration|\-\-encryption\-provider\-config
+      example: " secret: 'lala'"
+    
+    - name: Simple Passwords
       regex: >
         passw.*[=:].+
       example: >
-        passw=h} /\ xW.F<guBoFP#4joz=]6;]svHFOB@7l`Zb#,s'sz&v5u.}WJV>v`f6/9<{t7%jub}|txM.cb}p=|DZ8[3YP7)IU!{QF
+        passw='sz&v5u.}WJV>v'
     
     - name: Generiac API tokens search
       regex: >
@@ -1205,7 +1210,7 @@ regular_expresions:
       regex: >
         net user .+ /add
       example: >
-        net user hMl^`?3V>XQbF)m[*5knv^8+.Ww?$tA6t-b7ctp7NzXB,K;JmY*+BWn\"EoC*_i2NO0.bN Ig]N:X0,07GOY/wO}^]P1X?y] /add
+        net user UserNamer234234 passwordIg]N:X0,07GOY/wO}]P1Xy] /add
 
     - name: IPs
       regex: '(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)'
@@ -1214,5 +1219,5 @@ regular_expresions:
 
     - name: Emails # Too many false positives
       regex: '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}'
-      example: 'kk0mHpJd+U67GaH.e6WmGypW.s1mnZDV8MFS0O6%7387ee2epiAY8.nib9leQGnnmogpquodLogYtrNGvHf3RV71pm6.FlI@3uL6Me18511iarKpiI2tSWRIZC2t5xxfly.Tu88iAif-d1lzJ0LNppJ-G-0QRWQAXd-tHydG9vkohzR.qkbse'
+      example: 'example_email@sub.domain.com'
       falsePositives: True

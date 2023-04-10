@@ -1,0 +1,14 @@
+[
+  {
+    "regex": "(adobe[a-z0-9_ \\.,\\-]{0,25})(=|\u003e|:=|\\|\\|:|\u003c=|=\u003e|:).{0,5}['\"]([a-f0-9]{32})['\"]",
+    "match": "adobe_key=\"abfbc6ccd7dcc43a0b40864b3053c947\"",
+    "file": "C:\\\\Users\\\\jaime\\\\Angular\\\\REx\\\\clients\\\\go\\\\example\\\\example.txt",
+    "regexName": "Adobe Client Id (Oauth Web)"
+  },
+  {
+    "regex": "(CLOJARS_)[a-zA-Z0-9]{60}",
+    "match": "CLOJARS_zU0NGGFrLJZP4QUC46UdwkOCfHJsD6BBssuWSsI0ubOoNNRE9M3dX3BQouu3",
+    "file": "C:\\\\Users\\\\jaime\\\\Angular\\\\REx\\\\clients\\\\go\\\\example\\\\example.txt",
+    "regexName": "Clojars API Key"
+  }
+]
