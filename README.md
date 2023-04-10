@@ -14,11 +14,17 @@ REx is a project created by Jaime Polop, in colaboration with [PEASS-ng](https:/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
-## TODOs
+## Quick Start
+### regexFinder Usage
 
-- Improve Go client:
-    - Add param to pass the folder to search into
-    - Add param to pass a github folder (`git log -p` & `git checkout branch`)
-        - Add extra para to indicate to search in all branches
-    - Add param to pass a single github repo url
-    - Add param to pass a file with a bunch of github repo urls
+Usage: regexFinder.go [OPTIONS]
+By default regexFinder does not use the regular expresions that gives to much false positives. If you want to activate this function just type ```-c``` at the end of the execution comand.
+```
+Options:
+  -d <local-directory>                          Find any coincidence with a local directory you want to analyze and the regular expresions.
+  -r <github-repository>                        Find any coincidence with a github repository you want to analyze and the regular expresions.
+  -rs <github-repository> <github-repository>   Find any coincidence with several github repositories you want to analyze and the regular expresions.
+  [-c]                                          Always at the end. Add the regular expresions that gives false positives.
+  -h                                            Show the usage of the script. 
+```
+
