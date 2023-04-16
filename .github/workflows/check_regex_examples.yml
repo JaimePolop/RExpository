@@ -24,7 +24,7 @@ jobs:
         cp regex.yaml REx/src/assets
         cd REx
         npm install --legacy-peer-deps
-        cp -R /docs ../
+        cp -r /docs ../
         
 
     - name: Install yq
