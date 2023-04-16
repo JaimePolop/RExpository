@@ -25,7 +25,6 @@ jobs:
         cd /REx
         npm run build
         cd ..
-        cp /REx/docs ./
 
     - name: Install yq
       run: |
