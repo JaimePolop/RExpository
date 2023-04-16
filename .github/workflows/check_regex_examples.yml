@@ -19,13 +19,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Update Web
-      uses: |
-        cp regex.yaml /REx/src/assets
-        cd /REx
-        npm run build
-        cd ..
-
     - name: Install yq
       run: |
         wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
