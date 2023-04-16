@@ -21,11 +21,11 @@ jobs:
 
     - name: Update Web
       run: |
-        cp regex.yaml /REx/src/assets
-        cd /REx
+        cp regex.yaml REx/src/assets
+        cd REx
         npm run build
         cd ..
-        cp /REx/docs ./
+        cp REx/docs ./
 
     - name: Install yq
       run: |
