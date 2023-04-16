@@ -23,7 +23,7 @@ jobs:
       run: |
         cp regex.yaml REx/src/assets
         cd REx
-        npm install @angular/cli@15.0.0-rc.0
+        npm install @angular/cli@14.0.0-rc.0
         npm run build
         cd ..
         cp REx/docs ./
