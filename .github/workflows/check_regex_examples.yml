@@ -24,8 +24,8 @@ jobs:
         cp regex.yaml REx/src/assets
         cd REx
         npm install --force
-        cd ..
-        cp REx/docs .
+        cp docs ../
+        
 
     - name: Install yq
       run: |
