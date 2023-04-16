@@ -25,7 +25,7 @@ jobs:
         cd REx
         npm install --force
         cd ..
-        cp REx/docs ./
+        cp REx/docs .
 
     - name: Install yq
       run: |
