@@ -23,7 +23,7 @@ jobs:
       run: |
         cp regex.yaml REx/src/assets
         cd REx
-        npm install
+        npm install --legacy-peer-deps
         cp -R /docs ../
         
 
