@@ -26,7 +26,7 @@ jobs:
         npm install --legacy-peer-deps
         npm run build
         cd ..
-        cp -r REx/docs/* /docs
+        cp -r REx/docs/* docs/
         
 
     - name: Install yq
