@@ -24,7 +24,8 @@ jobs:
         cp regex.yaml REx/src/assets
         cd REx
         npm install -g @angular/cli@latest
-        npm install @angular-devkit/build-angular
+        npm install --save-dev @angular-devkit/build-angular@15.2.7
+        npm install --save @angular/animations@15.0.0
         npm run build
         cd ..
         cp REx/docs ./
