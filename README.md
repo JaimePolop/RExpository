@@ -1,6 +1,6 @@
 # RExpository
 
-<img src="REx/src/assets/GreenRexPeas.png" width="480">
+<img src="REx/src/assets/GreenRexPeas.png" width="440">
 
 ### Access directly with this link https://jaimepolop.github.io/RExpository/!!
 
