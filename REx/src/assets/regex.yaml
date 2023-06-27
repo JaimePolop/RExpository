@@ -820,7 +820,12 @@ regular_expresions:
         ([a-z0-9=_\-]{42})
       example: 3hyl=yjq9ctnc4dv44c72_ij93c_0auxzad8ybb4e8
       falsePositives: True
-
+    
+    - name: OpenAI API Token
+      regex: >
+        sk-[A-Za-z0-9]{48}
+      example: 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
+    
     - name: ORB Intelligence Access Key
       regex: >
         ['"][a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}['"]
