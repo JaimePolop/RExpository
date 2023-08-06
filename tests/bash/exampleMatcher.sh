@@ -7,6 +7,13 @@ then
     exit
 fi
 
+# check if jq is installed
+if ! command -v jq &> /dev/null
+then
+    echo "jq not found. Please install it: https://github.com/jqlang/jq"
+    exit
+fi
+
 # read the YAML file
 yaml_file="../../regex.yaml"
 verbose=""
