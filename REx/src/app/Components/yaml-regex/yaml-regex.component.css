@@ -86,6 +86,8 @@
 }
 .mat-cell{
     padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .mat-table{
     width: 90%;
