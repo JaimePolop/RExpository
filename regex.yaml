@@ -110,9 +110,8 @@ regular_expresions:
     
     - name: Airtable API Key
       regex: >
-        ([a-z0-9]{17})
-      example: 7u11v0ktvh2ebisfm
-      falsePositives: True
+        [\"']?air[-_]?table[-_]?api[-_]?key[\"']?[=:][\"']?.+[\"']"
+      example: air-table-api-key="5asbtwsfcvfc9zEzFV<p=1PKPlFsaFfasf'"
 
     - name: Alchemi API Key
       regex: >
@@ -1185,26 +1184,128 @@ regular_expresions:
       example: >
         passw='sz&v5u.}WJV>v'
     
-    - name: Generiac API tokens search
+    - name: Generiac API tokens search (A-C)
       regex: >
-        (access_key|access_token|admin_pass|admin_user|algolia_admin_key|algolia_api_key|alias_pass|alicloud_access_key|
-        amazon_secret_access_key|amazonaws|ansible_vault_password|aos_key|api_key|api_key_secret|api_key_sid|api_secret|
-        api.googlemaps AIza|apidocs|apikey|apiSecret|app_debug|app_id|app_key|app_log_level|app_secret|appkey|appkeysecret|
-        application_key|appsecret|appspot|auth_token|authorizationToken|authsecret|aws_access|aws_access_key_id|aws_bucket|
-        aws_key|aws_secret|aws_secret_key|aws_token|AWSSecretKey|b2_app_key|bashrc password|
-        bintray_apikey|bintray_gpg_password|bintray_key|bintraykey|bluemix_api_key|bluemix_pass|browserstack_access_key|
-        bucket_password|bucketeer_aws_access_key_id|bucketeer_aws_secret_access_key|built_branch_deploy_key|bx_password|cache_driver|
-        cache_s3_secret_key|cattle_access_key|cattle_secret_key|certificate_password|ci_deploy_password|client_secret|
-        client_zpk_secret_key|clojars_password|cloud_api_key|cloud_watch_aws_access_key|cloudant_password|
-        cloudflare_api_key|cloudflare_auth_key|cloudinary_api_secret|cloudinary_name|codecov_token|conn.login|
-        connectionstring|consumer_key|consumer_secret|credentials|cypress_record_key|database_password|database_schema_test|
-        datadog_api_key|datadog_app_key|db_password|db_server|db_username|dbpasswd|dbpassword|dbuser|deploy_password|
-        digitalocean_ssh_key_body|digitalocean_ssh_key_ids|docker_hub_password|docker_key|docker_pass|docker_passwd|
-        docker_password|dockerhub_password|dockerhubpassword|dot-files|dotfiles|droplet_travis_password|dynamoaccesskeyid|
-        dynamosecretaccesskey|elastica_host|elastica_port|elasticsearch_password|encryption_key|encryption_password|
-        env.heroku_api_key|env.sonatype_password|eureka.awssecretkey)[a-z0-9_ .,<\-]{0,25}(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z_=\-]{8,64})['"]
+        (access_key|access_token|account_sid|admin_email|admin_pass|admin_user|adzerk_api_key|algolia_admin_key|algolia_api_key|
+        algolia_search_key|alias_pass|alicloud_access_key|alicloud_secret_key|amazon_bucket_name|amazon_secret_access_key|
+        amazonaws|anaconda_token|android_docs_deploy_token|ansible_vault_password|aos_key|aos_sec|
+        api_key|api_key_secret|api_key_sid|api_secret|apiary_api_key|apigw_access_token|api.googlemaps|AIza|apidocs|
+        apikey|apiSecret|app_bucket_perm|appclientsecret|app_debug|app_id|appkey|appkeysecret|app_key|app_log_level|app_report_token_key|
+        app_secret|app_token|apple_id_password|application_key|appsecret|appspot|argos_token|artifactory_key|artifacts_aws_access_key_id|
+        artifacts_aws_secret_access_key|artifacts_bucket|artifacts_key|artifacts_secret|assistant_iam_apikey|auth0_api_clientsecret|
+        auth0_client_secret|auth_token|authorizationToken|author_email_addr|author_npm_api_key|authsecret|awsaccesskeyid|aws_access|
+        aws_access_key|aws_access_key_id|aws_bucket|aws_config_accesskeyid|aws_key|aws_secret|aws_secret_access_key|awssecretkey|
+        aws_secret_key|aws_secrets|aws_ses_access_key_id|aws_ses_secret_access_key|aws_token|awscn_access_key_id|awscn_secret_access_key|
+        AWSSecretKey|b2_app_key|b2_bucket|bashrc password|bintray_api_key|bintray_apikey|bintray_gpg_password|bintray_key|
+        bintray_token|bintraykey|bluemix_api_key|bluemix_auth|bluemix_pass|bluemix_pass_prod|bluemix_password|bluemix_pwd|bluemix_username
+        brackets_repo_oauth_token|browser_stack_access_key|browserstack_access_key|bucket_password|bucketeer_aws_access_key_id|
+        bucketeer_aws_secret_access_key|built_branch_deploy_key|bundlesize_github_token|bx_password|bx_username|cache_driver|
+        cache_s3_secret_key|cargo_token|cattle_access_key|cattle_agent_instance_auth|cattle_secret_key|censys_secret|certificate_password|
+        cf_password|cheverny_token|chrome_client_secret|chrome_refresh_token|ci_deploy_password|ci_project_url|ci_registry_user|
+        ci_server_name|ci_user_token|claimr_database|claimr_db|claimr_superuser|claimr_token|cli_e2e_cma_token|client_secret|
+        client_zpk_secret_key|clojars_password|cloud_api_key|cloud_watch_aws_access_key|
+        cloudant_archived_database|cloudant_audited_database|cloudant_database|cloudant_instance|cloudant_order_database|
+        cloudant_parsed_database|cloudant_password|cloudant_processed_database|cloudant_service_database|
+        cloudflare_api_key|cloudflare_auth_email|cloudflare_auth_key|cloudflare_email|cloudinary_api_secret|cloudinary_name|
+        cloudinary_url|cloudinary_url_staging|clu_repo_url|clu_ssh_private_key_base64|cn_access_key_id|cn_secret_access_key|
+        cocoapods_trunk_email|cocoapods_trunk_token|codacy_project_token|codeclimate_repo_token|codecov_token|coding_token|
+        conekta_apikey|conn.login|connectionstring|consumerkey|consumer_key|consumer_secret|contentful_access_token|
+        contentful_cma_test_token|contentful_integration_management_token|contentful_integration_management_token|
+        contentful_management_api_access_token|contentful_management_api_access_token_new|contentful_php_management_test_token|
+        contentful_test_org_cma_token|contentful_v2_access_token|conversation_password|conversation_username|cos_secrets|
+        coveralls_api_token|coveralls_repo_token|coveralls_token|coverity_scan_token|credentials|
+        cypress_record_key)[a-z0-9_ .,<\-]{0,25}(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z_=\-]{8,64})['"]
       example: >
         aws_token='-A1nivVI1TSm_e4Og2akP_3vI9FxGj'
+
+    - name: Generiac API tokens search (D-H)
+      regex: >
+        (danger_github_api_token|database_host|database_name|database_password|database_port|database_schema_test|
+        database_user|database_username|datadog_api_key|datadog_app_key|db_connection|db_database|db_host|db_password|
+        db_pw|db_server|db_user|db_username|dbpasswd|dbpassword|dbuser|ddg_test_email|ddg_test_email_pw|ddgc_github_token|
+        deploy_password|deploy_secure|deploy_token|deploy_user|dgpg_passphrase|digitalocean_access_token|
+        digitalocean_ssh_key_body|digitalocean_ssh_key_ids|docker_hub_password|docker_key|docker_pass|docker_passwd|
+        docker_password|docker_postgres_url|docker_token|dockerhub_password|dockerhubpassword|doordash_auth_token|
+        dot-files|dotfiles|dropbox_oauth_bearer|droplet_travis_password|dsonar_login|dsonar_projectkey|dynamoaccesskeyid|
+        dynamosecretaccesskey|elastic_cloud_auth|elastica_host|elastica_port|elasticsearch_password|encryption_key|
+        encryption_password|end_user_password|env_github_oauth_token|env_heroku_api_key|env_key|env_secret|env_secret_access_key|
+        env_sonatype_password|eureka_awssecretkey|env.heroku_api_key|env.sonatype_password|eureka.awssecretkey|exp_password|
+        file_password|firebase_api_json|firebase_api_token|firebase_key|firebase_project_develop|firebase_token|firefox_secret|
+        flask_secret_key|flickr_api_key|flickr_api_secret|fossa_api_key|ftp_host|ftp_login|ftp_password|ftp_pw|ftp_user|ftp_username|
+        gcloud_bucket|gcloud_project|gcloud_service_key|gcr_password|gcs_bucket|gh_api_key|gh_email|gh_next_oauth_client_secret|
+        gh_next_unstable_oauth_client_id|gh_next_unstable_oauth_client_secret|gh_oauth_client_secret|gh_oauth_token|gh_repo_token|
+        gh_token|gh_unstable_oauth_client_secret|ghb_token|ghost_api_key|git_author_email|git_author_name|git_committer_email|
+        git_committer_name|git_email|git_name|git_token|github_access_token|github_api_key|github_api_token|github_auth|github_auth_token|
+        github_auth_token|github_client_secret|github_deploy_hb_doc_pass|github_deployment_token|github_hunter_token|github_hunter_username|
+        github_key|github_oauth|github_oauth_token|github_oauth_token|github_password|github_pwd|github_release_token|github_repo|
+        github_token|github_tokens|gitlab_user_email|gogs_password|google_account_type|google_client_email|google_client_id|google_client_secret|
+        google_maps_api_key|google_private_key|gpg_key_name|gpg_keyname|gpg_ownertrust|gpg_passphrase|gpg_private_key|gpg_secret_keys|
+        gradle_publish_key|gradle_publish_secret|gradle_signing_key_id|gradle_signing_password|gren_github_token|grgit_user|hab_auth_token|
+        hab_key|hb_codesign_gpg_pass|hb_codesign_key_pass|heroku_api_key|heroku_email|heroku_token|hockeyapp_token|homebrew_github_api_token|
+        hub_dxia2_password)[a-z0-9_ .,<\-]{0,25}(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z_=\-]{8,64})['"]
+      example: >
+        flickr_api_key='-A1nivVI1TSm_e4Og2akP_3vI9FxGj'
+        
+    - name: Generiac API tokens search (I-R)
+      regex: >
+        (ij_repo_password|ij_repo_username|index_name|integration_test_api_key|integration_test_appid|internal_secrets|
+        ios_docs_deploy_token|itest_gh_token|jdbc_databaseurl|jdbc_host|jdbc:mysql|jwt_secret|kafka_admin_url|kafka_instance_name|kafka_rest_url|
+        keystore_pass|kovan_private_key|kubecfg_s3_path|kubeconfig|kxoltsn3vogdop92m|leanplum_key|lektor_deploy_password|lektor_deploy_username|
+        lighthouse_api_key|linkedin_client_secretorlottie_s3_api_key|linux_signing_key|ll_publish_url|ll_shared_key|looker_test_runner_client_secret|
+        lottie_happo_api_key|lottie_happo_secret_key|lottie_s3_secret_key|lottie_upload_cert_key_password|lottie_upload_cert_key_store_password|
+        mail_password|mailchimp_api_key|mailchimp_key|mailer_password|mailgun_api_key|mailgun_apikey|mailgun_password|mailgun_priv_key|
+        mailgun_pub_apikey|mailgun_pub_key|mailgun_secret_api_key|manage_key|manage_secret|management_token|managementapiaccesstoken|mandrill_api_key|
+        manifest_app_token|manifest_app_url|mapbox_access_token|mapbox_api_token|mapbox_aws_access_key_id|mapbox_aws_secret_access_key|
+        mapboxaccesstoken|mg_api_key|mg_public_api_key|mh_apikey|mh_password|mile_zero_key|minio_access_key|minio_secret_key|multi_bob_sid|
+        multi_connect_sid|multi_disconnect_sid|multi_workflow_sid|multi_workspace_sid|my_secret_env|mysql_database|mysql_hostname|mysql_password|
+        mysql_root_password|mysql_user|mysql_username|mysqlmasteruser|mysqlsecret|nativeevents|netlify_api_key|new_relic_beta_token|nexus_password|
+        nexuspassword|ngrok_auth_token|ngrok_token|node_env|node_pre_gyp_accesskeyid|node_pre_gyp_github_token|node_pre_gyp_secretaccesskey|
+        non_token|now_token|npm_api_key|npm_api_token|npm_auth_token|npm_email|npm_password|npm_secret_key|npm_token|nuget_api_key|nuget_apikey|
+        nuget_key|numbers_service_pass|oauth_token|object_storage_password|object_storage_region_name|object_store_bucket|object_store_creds|
+        oc_pass|octest_app_password|octest_app_username|octest_password|ofta_key|ofta_region|ofta_secret|okta_client_token|okta_oauth2_client_secret|
+        okta_oauth2_clientsecret|onesignal_api_key|onesignal_user_auth_key|open_whisk_key|openwhisk_key|org_gradle_project_sonatype_nexus_password|
+        org_project_gradle_sonatype_nexus_password|os_auth_url|os_password|ossrh_jira_password|ossrh_pass|ossrh_password|ossrh_secret|
+        ossrh_username|packagecloud_token|pagerduty_apikey|parse_js_key|passwordtravis|paypal_client_secret|percy_project|percy_token|personal_key|
+        personal_secret|pg_database|pg_host|places_api_key|places_apikey|plotly_apikey|plugin_password|postgresql_db|postgresql_pass|
+        postgres_env_postgres_db|postgres_env_postgres_password|preferred_username|pring_mail_username|private_signing_password|prod_access_key_id|
+        prod_password|prod_secret_key|project_config|publish_access|publish_key|publish_secret|pushover_token|pypi_passowrd|qiita_token|
+        quip_token|rabbitmq_password|randrmusicapiaccesstoken|redis_stunnel_urls|rediscloud_url|refresh_token|registry_pass|registry_secure|
+        release_gh_token|release_token|reporting_webdav_pwd|reporting_webdav_url|repotoken|rest_api_key|rinkeby_private_key|ropsten_private_key|
+        route53_access_key_id|rtd_key_pass|rtd_store_pass|rubygems_auth_token)[a-z0-9_ .,<\-]{0,25}(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z_=\-]{8,64})['"]
+      example: >
+        packagecloud_token='-A1nivVI1TSm_e4Og2akP_3vI9FxGj'
+        
+    - name: Generiac API tokens search (S-Z)
+      regex: >
+        (s3_access_key|s3_access_key_id|s3_bucket_name_app_logs|s3_bucket_name_assets|s3_external_3_amazonaws_com|s3_key|
+        s3_key_app_logs|s3_key_assets|s3_secret_app_logs|s3_secret_assets|s3_secret_key|s3_user_secret|sacloud_access_token|
+        sacloud_access_token_secret|sacloud_api|salesforce_bulk_test_password|salesforce_bulk_test_security_token|
+        sandbox_access_token|sandbox_aws_access_key_id|sandbox_aws_secret_access_key|sauce_access_key|scrutinizer_token|sdr_token|secret_0|
+        secret_1|secret_10|secret_11|secret_2|secret_3|secret_4|secret_5|secret_6|secret_7|secret_8|secret_9|secret_key_base|secretaccesskey|
+        secret_key_base|segment_api_key|selion_log_level_dev|selion_selenium_host|sendgrid|sendgrid_api_key|sendgrid_key|sendgrid_password|sendgrid_user|
+        sendgrid_username|sendwithus_key|sentry_auth_token|sentry_default_org|sentry_endpoint|sentry_secret|sentry_key|service_account_secret|ses_access_key|
+        ses_secret_key|setdstaccesskey|setdstsecretkey|setsecretkey|signing_key|signing_key_password|signing_key_secret|signing_key_sid|slash_developer_space|
+        slash_developer_space_key|slate_user_email|snoowrap_client_secret|snoowrap_password|snoowrap_refresh_token|snyk_api_token|snyk_token|
+        socrata_app_token|socrata_password|sonar_organization_key|sonar_project_key|sonar_token|sonatype_gpg_key_name|sonatype_gpg_passphrase|
+        sonatype_nexus_password|sonatype_pass|sonatype_password|sonatype_token_password|sonatype_token_user|sonatypepassword|soundcloud_client_secret|
+        soundcloud_password|spaces_access_key_id|spaces_secret_access_key|spotify_api_access_token|spotify_api_client_secret|spring_mail_password|sqsaccesskey|
+        sqssecretkey|square_reader_sdk_repository_password|srcclr_api_token|sshpass|ssmtp_config|staging_base_url_runscope|star_test_aws_access_key_id|
+        star_test_bucket|star_test_location|star_test_secret_access_key|starship_account_sid|starship_auth_token|stormpath_api_key_id|stormpath_api_key_secret|
+        strip_publishable_key|strip_secret_key|stripe_private|stripe_public|surge_login|surge_token|svn_pass|tesco_api_key|test_github_token|
+        test_test|tester_keys_password|thera_oss_access_key|token_core_java|travis_access_token|travis_api_token|travis_branch|travis_com_token|travis_e2e_token|
+        travis_gh_token|travis_pull_request|travis_secure_env_vars|travis_token|trex_client_token|trex_okta_client_token|twilio_api_key|twilio_api_secret|
+        twilio_chat_account_api_service|twilio_configuration_sid|twilio_sid|twilio_token|twine_password|twitter_consumer_key|twitter_consumer_secret|twitteroauthaccesssecret|
+        twitteroauthaccesstoken|unity_password|unity_serial|urban_key|urban_master_secret|urban_secret|us_east_1_elb_amazonaws_com|use_ssh|
+        user_assets_access_key_id|user_assets_secret_access_key|usertravis|v_sfdc_client_secret|v_sfdc_password|vip_github_build_repo_deploy_key|vip_github_deploy_key|
+        vip_github_deploy_key_pass|virustotal_apikey|visual_recognition_api_key|vscetoken|wakatime_api_key|watson_conversation_password|watson_device_password|
+        watson_password|widget_basic_password|widget_basic_password_2|widget_basic_password_3|widget_basic_password_4|widget_basic_password_5|widget_fb_password|
+        widget_fb_password_2|widget_fb_password_3|widget_test_server|wincert_password|wordpress_db_password|wordpress_db_user|wpjm_phpunit_google_geocode_api_key|
+        wporg_password|wpt_db_password|wpt_db_user|wpt_prepare_dir|wpt_report_api_key|wpt_ssh_connect|wpt_ssh_private_key_base64|www_googleapis_com|
+        yangshun_gh_password|yangshun_gh_token|yt_account_client_secret|yt_account_refresh_token|yt_api_key|yt_client_secret|yt_partner_client_secret|
+        yt_partner_refresh_token|yt_server_api_key|zensonatypepassword|zhuliang_gh_token|zopim_account_key)[a-z0-9_ .,<\-]{0,25}(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z_=\-]{8,64})['"]
+      example: >
+        user_assets_secret_access_key='-A1nivVI1TSm_e4Og2akP_3vI9FxGj'
+
     - name: Usernames
       regex: >
         username.*[=:].+
