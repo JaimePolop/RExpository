@@ -1167,11 +1167,17 @@ regular_expresions:
       example: >
         //UserName237.e4r3%:Compl3x&/Password1763@domain.com
 
-    - name: PHP Passwords
+    - name: Code asigning passwords
       regex: >
-        (pwd|passwd|password|PASSWD|PASSWORD|dbuser|dbpass|pass').*[=:].+|define ?\('(\w*pass|\w*pwd|\w*user|\w*datab)
+        (pwd|passwd|password|PASSWD|PASSWORD|dbuser|dbpass|pass').*[=:].+
       example: >
         dbpass = "asdasd"
+
+    - name: PHP defined password
+      regex: >
+        define ?\(['"](\w*pass|\w*pwd|\w*user|\w*datab)
+      example: >
+        define('password', 'somerandomvalue')
     
     - name: Config Secrets
       regex: >
