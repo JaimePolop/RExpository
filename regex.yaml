@@ -110,7 +110,7 @@ regular_expresions:
     
     - name: Airtable API Key
       regex: >
-        [\"']?air[-_]?table[-_]?api[-_]?key[\"']?[=:][\"']?.+[\"']"
+        ["']?air[-_]?table[-_]?api[-_]?key["']?[=:]["']?.+["']"
       example: air-table-api-key="5asbtwsfcvfc9zEzFV<p=1PKPlFsaFfasf'"
 
     - name: Alchemi API Key
