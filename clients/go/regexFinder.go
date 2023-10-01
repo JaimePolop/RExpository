@@ -1,22 +1,24 @@
 package main
 
 import (
+	"bufio"
+	"encoding/json"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"regexp"
 	"strings"
-	"os/exec"
-	"encoding/json"
 
 	"gopkg.in/yaml.v2"
 )
 
 type Regex struct {
-	Name    string `yaml:"name"`
-	Regex   string `yaml:"regex"`
-	Example string `yaml:"example"`
+	Name           string `yaml:"name"`
+	Regex          string `yaml:"regex"`
+	Example        string `yaml:"example"`
 	FalsePositives string `yaml:"falsePositives"`
 }
 
@@ -29,7 +31,6 @@ type Config struct {
 	RegularExpressions []Pattern `yaml:"regular_expresions"`
 }
 
-
 type Match struct {
 	Regex     string `json:"regex"`
 	Match     string `json:"match"`
@@ -38,35 +39,57 @@ type Match struct {
 }
 
 func main() {
-	// Read YAML config file
-	configFile, err := ioutil.ReadFile("../../regex.yaml")
+	configPath := ""
+	usage := "Usage: -r </path/to/regex.yaml> [-d regex-search <dir> | -g <github-repo> | -gs <github-repo> <github-repo>] [-c]"
+
+	args := os.Args[1:]
+
+	// Check for -r parameter for the regex.yaml path
+	for i, arg := range args {
+		if arg == "-r" && i+1 < len(args) {
+			configPath = args[i+1]
+			// Remove the -r and its value from args
+			args = append(args[:i], args[i+2:]...)
+			break
+		}
+	}
+
+	// If the configPath hasn't changed from the default, it means -r wasn't provided.
+	if configPath == "" {
+		fmt.Println("You must provide the '-r' parameter followed by the path to regex.yaml.")
+		fmt.Println(usage)
+		return
+	}
+
+	// Read YAML config file using the determined path
+	configFile, err := ioutil.ReadFile(configPath)
 	if err != nil {
 		panic(err)
 	}
+
 	var config Config
 	var isFaslePos bool
-    
-	args := os.Args[1:]
+
 	if len(args) == 0 {
-		fmt.Println("Usage: -d <dir> | -r <github-repo> | -rs <github-repo> <github-repo>")
+		fmt.Println(usage)
 		return
 	}
 
 	isFaslePos = checkIfFaslePos(args)
-	if(isFaslePos){
+	if isFaslePos {
 		// Parse YAML config file
 		err = yaml.Unmarshal(configFile, &config)
 		if err != nil {
 			panic(err)
 		}
 
-	}else{
+	} else {
 		// Parse YAML config file
 		err = yaml.Unmarshal(configFile, &config)
 		if err != nil {
 			panic(err)
 		}
-			
+
 		// Remove the regexes with falsePositives set to true
 		for i, pattern := range config.RegularExpressions {
 			filteredRegexes := make([]Regex, 0, len(pattern.Regexes))
@@ -80,14 +103,14 @@ func main() {
 	}
 	switch arg := args[0]; arg {
 	case "-h":
-		fmt.Println("Usage: -d regex-search <dir> | -r <github-repo> | -rs <github-repo> <github-repo> [-c]")
+		fmt.Println(usage)
 	case "-d":
-		if(isFaslePos){
+		if isFaslePos {
 			if len(args) < 3 {
 				fmt.Println("Usage: regex-search -d <dir> -c")
 				return
 			}
-		}else{
+		} else {
 			if len(args) < 2 {
 				fmt.Println("Usage: regex-search -d <dir>")
 				return
@@ -95,58 +118,58 @@ func main() {
 		}
 		dir := args[1]
 		searchRegexInDir(dir, config, "")
-	case "-r":
-		if(isFaslePos){
+	case "-g":
+		if isFaslePos {
 			if len(args) < 3 {
-				fmt.Println("Usage: regex-search -r <github-repo> -c")
+				fmt.Println("Usage: regex-search -g <github-repo> -c")
 				return
 			}
-		}else{
+		} else {
 			if len(args) < 2 {
-				fmt.Println("Usage: regex-search -r <github-repo>")
+				fmt.Println("Usage: regex-search -g <github-repo>")
 				return
 			}
 		}
 		repoUrl := args[1]
 		searchRegexInRepoGithub(repoUrl, config)
-		
-	case "-rs":
-		if(isFaslePos){
+
+	case "-gs":
+		if isFaslePos {
 			if len(args) < 3 {
-				fmt.Println("Usage: regex-search -rs <github-repo> <github-repo> -c")
+				fmt.Println("Usage: regex-search -gs <github-repo> <github-repo> -c")
 				return
 			}
 			if len(args) == 3 {
-				fmt.Println("Usage: regex-search -rs <github-repo> <github-repo> -c. Add more repos or change to -r")
+				fmt.Println("Usage: regex-search -gs <github-repo> <github-repo> -c. Add more repos or use -g")
 				return
 			}
 			for i := 2; i < len(os.Args)-1; i++ {
-				repoUrl := os.Args[i];
-				searchRegexInRepoGithub(repoUrl,config)
+				repoUrl := os.Args[i]
+				searchRegexInRepoGithub(repoUrl, config)
 			}
-		}else{
+		} else {
 			if len(args) < 2 {
-				fmt.Println("Usage: regex-search -rs <github-repo> <github-repo>")
+				fmt.Println("Usage: regex-search -gs <github-repo> <github-repo>")
 				return
 			}
 			if len(args) == 2 {
-				fmt.Println("Usage: regex-search -rs <github-repo> <github-repo>. Add more repos or change to -r")
+				fmt.Println("Usage: regex-search -gs <github-repo> <github-repo>. Add more repos or use -r")
 				return
 			}
 			for i := 2; i < len(os.Args); i++ {
-				repoUrl := os.Args[i];
-				searchRegexInRepoGithub(repoUrl,config)
+				repoUrl := os.Args[i]
+				searchRegexInRepoGithub(repoUrl, config)
 			}
 		}
 	default:
-		fmt.Println("Usage: -d regex-search <dir> | -r <github-repo> | -rs <github-repo> <github-repo> optional[-c]")
+		fmt.Println(usage)
 	}
 }
 
-func checkIfFaslePos(args []string) bool{
+func checkIfFaslePos(args []string) bool {
 	var isFaslePos bool = false
 	for i := 0; i < len(args); i++ {
-        if args[i] == "-c" {
+		if args[i] == "-c" {
 			isFaslePos := true
 			return isFaslePos
 		}
@@ -154,126 +177,126 @@ func checkIfFaslePos(args []string) bool{
 	return isFaslePos
 }
 
-func searchRegexInDir(dir string, config Config, repoName string){
-	
-	// Loop over all files in directory
+func searchRegexInDir(dir string, config Config, repoName string) {
+
+	// Loop over all files in the directory
 	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
-	// Skip directories and hidden files
-	if info.IsDir() || filepath.Base(path)[0] == '.' {
-		return nil
-	}
-
-	// Read file content
-	content, err := ioutil.ReadFile(path)
-	if err != nil {
-		fmt.Printf("Error reading file %s: %v\n", path, err)
-		return nil
-	}
-
-	if err := os.MkdirAll("matches", 0777); err != nil {
-		panic(err)
-	}
-
-	matches := make([]Match, 0)
-	
-	// Check file content against each regex pattern
-	for _, pattern := range config.RegularExpressions {
-		for _, regex := range pattern.Regexes {
-			rex := strings.Replace(regex.Regex, "\n", "", -1)
-			re := regexp.MustCompile(rex)
-			foundMatches := re.FindAllString(string(content), -1)
-			for _, foundMatch := range foundMatches {
-				if foundMatch != "" {
-					match := Match{
-						RegexName: regex.Name,
-						Regex:     rex,
-						Match:     foundMatch,
-						File:      strings.ReplaceAll(path,"\\","\\\\"),
-					}
-					matches = append(matches, match)
-				}
-        	}
+		// Skip directories and hidden files
+		if info.IsDir() || filepath.Base(path)[0] == '.' {
+			return nil
 		}
-	}
-	jsonData, err := json.MarshalIndent(matches, "", "  ")
-	if err != nil {
-		fmt.Println("Error marshaling matches to JSON:", err)
+
+		// Read file content
+		content, err := ioutil.ReadFile(path)
+		if err != nil {
+			fmt.Printf("Error reading file %s: %v\n", path, err)
+			return nil
+		}
+
+		// Check file content against each regex pattern
+		for _, pattern := range config.RegularExpressions {
+			for _, regex := range pattern.Regexes {
+				rex := strings.Replace(regex.Regex, "\n", "", -1)
+				re := regexp.MustCompile(rex)
+				foundMatches := re.FindAllString(string(content), -1)
+				for _, foundMatch := range foundMatches {
+					if foundMatch != "" {
+						// Truncate match if it's longer than 500 chars
+						if len(foundMatch) < 500 {
+							match := Match{
+								RegexName: regex.Name,
+								Regex:     rex,
+								Match:     foundMatch,
+								File:      filepath.Base(path),
+							}
+							jsonData, err := json.Marshal(match)
+							if err != nil {
+								fmt.Println("Error marshaling match to JSON:", err)
+								continue
+							}
+
+							fmt.Println(string(jsonData))
+						}
+					}
+				}
+			}
+		}
+
 		return nil
-	}
-
-	fmt.Println(string(jsonData))
-
-	//Getting name for matches.json
-	_, direc := filepath.Split(dir)
-
-	//Create the json file
-	jsonName := direc + "-" + repoName + ".json"
-	jsonDir := "matches/" + jsonName
-	jsonFile, err := os.Create(jsonDir)
-	if err != nil {
-		panic(err)
-	}
-	defer jsonFile.Close()
-	if _, err := jsonFile.Write(jsonData); err != nil {
-		panic(err)
-	}
-
-	return nil
-})
+	})
 }
 
 func searchRegexInRepoGithub(repoUrl string, config Config) {
+	// Download the github repo and split the github log file in chunks of 5MB
+	// Then call the filesystem analysis
 
-	// Create the log directory if it doesn't exist
-	if err := os.MkdirAll("tmp", 0777); err != nil {
+	const chunkSize = 5 * 1024 * 1024 // 5MB in bytes
+
+	// Create a unique temporary directory
+	tempDir, err := ioutil.TempDir(os.TempDir(), "repoClone_")
+	if err != nil {
 		panic(err)
 	}
+	defer os.RemoveAll(tempDir) // Ensure removal of temp directory upon function exit
+
 	// Clone the repository
-	if err := os.RemoveAll("repo"); err != nil {
-		panic(err)
-	}
-	cmd := exec.Command("git", "clone", repoUrl, "repo")
+	repoPath := fmt.Sprintf("%s/repo", tempDir)
+	cmd := exec.Command("git", "clone", repoUrl, repoPath)
 	if err := cmd.Run(); err != nil {
 		panic(err)
 	}
-	
-	// Change to repository directory
-	if err := os.Chdir("repo"); err != nil {
-		panic(err)
-	}
-	
-	// Generate git log
-	logCmd := exec.Command("git", "log", "-p")
-	logOutput, err := logCmd.Output()
-	if err != nil {
-		panic(err)
-	}
 
-	// Change back to original directory
-	if err := os.Chdir("../"); err != nil {
-		panic(err)
-	}
-
-	//Name the gitlog-file
+	// Name the gitlog-file
 	rmGitUrl := strings.Replace(repoUrl, "https://github.com/", "", 1)
 	logUrl := strings.Replace(rmGitUrl, "/", "-", 1)
-	logDir := "tmp/gitlog-" + logUrl +".txt"
-	logFile, err := os.Create(logDir)
+
+	// Generate git log and write it directly to logFile
+	logCmd := exec.Command("git", "-C", repoPath, "log", "-p")
+	output, err := logCmd.StdoutPipe()
 	if err != nil {
 		panic(err)
 	}
 
-	if _, err := logFile.Write(logOutput); err != nil {
+	if err := logCmd.Start(); err != nil {
 		panic(err)
 	}
 
-	searchRegexInDir("tmp", config, logUrl);
+	reader := bufio.NewReader(output)
+	chunkCount := 0
 
-	// Remove the cloned repository
-	if err := os.RemoveAll("repo"); err != nil {
+	for {
+		chunk := make([]byte, chunkSize)
+		_, err := io.ReadFull(reader, chunk)
+		if err == io.EOF {
+			break
+		}
+		if err != nil && err != io.ErrUnexpectedEOF {
+			panic(err)
+		}
+
+		logDir := fmt.Sprintf("%s/gitlog-%s-part%d.txt", tempDir, logUrl, chunkCount)
+		logFile, err := os.Create(logDir)
+		if err != nil {
+			panic(err)
+		}
+
+		_, err = logFile.Write(chunk)
+		if err != nil {
+			logFile.Close()
+			panic(err)
+		}
+		logFile.Close()
+		chunkCount++
+	}
+
+	if err := logCmd.Wait(); err != nil {
 		panic(err)
 	}
-	if err := os.RemoveAll("tmp"); err != nil {
+
+	// Remove the cloned repository as it's no longer needed
+	if err := os.RemoveAll(repoPath); err != nil {
 		panic(err)
 	}
+
+	searchRegexInDir(tempDir, config, logUrl)
 }
