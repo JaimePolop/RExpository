@@ -39,23 +39,19 @@ type Match struct {
 }
 
 func main() {
-	configPath := ""
-	usage := "Usage: -r </path/to/regex.yaml> [-d regex-search <dir> | -g <github-repo> | -gs <github-repo> <github-repo>] [-c]"
+	usage := "Usage: Rex [-d <dir> | -g <github-repo>] -r </path/to/regex.yaml> [-t gh_token] [-c]"
 
-	args := os.Args[1:]
-
-	// Check for -r parameter for the regex.yaml path
-	for i, arg := range args {
-		if arg == "-r" && i+1 < len(args) {
-			configPath = args[i+1]
-			// Remove the -r and its value from args
-			args = append(args[:i], args[i+2:]...)
-			break
+	params := map[string]string{}
+	for i := 0; i < len(os.Args)-1; i++ {
+		switch os.Args[i] {
+		case "-r", "-t":
+			params[os.Args[i]] = os.Args[i+1]
+			i++
 		}
 	}
 
-	// If the configPath hasn't changed from the default, it means -r wasn't provided.
-	if configPath == "" {
+	configPath, hasConfigPath := params["-r"]
+	if !hasConfigPath {
 		fmt.Println("You must provide the '-r' parameter followed by the path to regex.yaml.")
 		fmt.Println(usage)
 		return
@@ -68,29 +64,13 @@ func main() {
 	}
 
 	var config Config
-	var isFaslePos bool
-
-	if len(args) == 0 {
-		fmt.Println(usage)
-		return
+	err = yaml.Unmarshal(configFile, &config)
+	if err != nil {
+		panic(err)
 	}
 
-	isFaslePos = checkIfFaslePos(args)
-	if isFaslePos {
-		// Parse YAML config file
-		err = yaml.Unmarshal(configFile, &config)
-		if err != nil {
-			panic(err)
-		}
-
-	} else {
-		// Parse YAML config file
-		err = yaml.Unmarshal(configFile, &config)
-		if err != nil {
-			panic(err)
-		}
-
-		// Remove the regexes with falsePositives set to true
+	if checkIfFaslePos(os.Args) {
+		// If not looking for false positives, filter regexes
 		for i, pattern := range config.RegularExpressions {
 			filteredRegexes := make([]Regex, 0, len(pattern.Regexes))
 			for _, regex := range pattern.Regexes {
@@ -101,67 +81,25 @@ func main() {
 			config.RegularExpressions[i].Regexes = filteredRegexes
 		}
 	}
-	switch arg := args[0]; arg {
+
+	switch arg := os.Args[1]; arg {
 	case "-h":
 		fmt.Println(usage)
-	case "-d":
-		if isFaslePos {
-			if len(args) < 3 {
-				fmt.Println("Usage: regex-search -d <dir> -c")
-				return
-			}
-		} else {
-			if len(args) < 2 {
-				fmt.Println("Usage: regex-search -d <dir>")
-				return
-			}
-		}
-		dir := args[1]
-		searchRegexInDir(dir, config, "")
-	case "-g":
-		if isFaslePos {
-			if len(args) < 3 {
-				fmt.Println("Usage: regex-search -g <github-repo> -c")
-				return
-			}
-		} else {
-			if len(args) < 2 {
-				fmt.Println("Usage: regex-search -g <github-repo>")
-				return
-			}
-		}
-		repoUrl := args[1]
-		searchRegexInRepoGithub(repoUrl, config)
 
-	case "-gs":
-		if isFaslePos {
-			if len(args) < 3 {
-				fmt.Println("Usage: regex-search -gs <github-repo> <github-repo> -c")
-				return
-			}
-			if len(args) == 3 {
-				fmt.Println("Usage: regex-search -gs <github-repo> <github-repo> -c. Add more repos or use -g")
-				return
-			}
-			for i := 2; i < len(os.Args)-1; i++ {
-				repoUrl := os.Args[i]
-				searchRegexInRepoGithub(repoUrl, config)
-			}
-		} else {
-			if len(args) < 2 {
-				fmt.Println("Usage: regex-search -gs <github-repo> <github-repo>")
-				return
-			}
-			if len(args) == 2 {
-				fmt.Println("Usage: regex-search -gs <github-repo> <github-repo>. Add more repos or use -r")
-				return
-			}
-			for i := 2; i < len(os.Args); i++ {
-				repoUrl := os.Args[i]
-				searchRegexInRepoGithub(repoUrl, config)
-			}
+	case "-d", "-g":
+		if len(os.Args) < 3 {
+			fmt.Printf("Usage: Rex %s <value>\n", arg)
+			return
 		}
+		value := os.Args[2]
+		if arg == "-d" {
+			searchRegexInDir(value, config, "")
+		} else {
+			searchRegexInRepoGithub(value, config, params["-t"])
+		}
+
 	default:
+		fmt.Println("The first argument must be '-g' or '-d'", arg)
 		fmt.Println(usage)
 	}
 }
@@ -226,11 +164,16 @@ func searchRegexInDir(dir string, config Config, repoName string) {
 	})
 }
 
-func searchRegexInRepoGithub(repoUrl string, config Config) {
+func searchRegexInRepoGithub(repoUrl string, config Config, githubToken string) {
 	// Download the github repo and split the github log file in chunks of 5MB
 	// Then call the filesystem analysis
 
 	const chunkSize = 5 * 1024 * 1024 // 5MB in bytes
+
+	// If githubToken is not an empty string, then modify the repoUrl to include it
+	if githubToken != "" {
+		repoUrl = fmt.Sprintf("https://%s@%s", githubToken, strings.TrimPrefix(repoUrl, "https://"))
+	}
 
 	// Create a unique temporary directory
 	tempDir, err := ioutil.TempDir(os.TempDir(), "repoClone_")
