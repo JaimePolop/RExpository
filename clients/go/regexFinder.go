@@ -190,8 +190,11 @@ func searchRegexInRepoGithub(repoUrl string, config Config, githubToken string) 
 	}
 
 	// Name the gitlog-file
-	rmGitUrl := strings.Replace(repoUrl, "https://github.com/", "", 1)
-	logUrl := strings.Replace(rmGitUrl, "/", "-", 1)
+	sanitizedUrl := strings.Replace(repoUrl, "https://github.com/", "", 1)
+	sanitizedUrl = strings.ReplaceAll(sanitizedUrl, "/", "-")
+	sanitizedUrl = strings.ReplaceAll(sanitizedUrl, ":", "-")
+	sanitizedUrl = strings.ReplaceAll(sanitizedUrl, "@", "-")
+	logUrl := strings.Replace(sanitizedUrl, "/", "-", 1)
 
 	// Generate git log and write it directly to logFile
 	logCmd := exec.Command("git", "-C", repoPath, "log", "-p")
