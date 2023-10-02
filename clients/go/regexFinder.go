@@ -165,9 +165,6 @@ func searchRegexInDir(dir string, config Config, repoName string) {
 }
 
 func searchRegexInRepoGithub(repoUrl string, config Config, githubToken string) {
-	// Download the github repo and split the github log file in chunks of 5MB
-	// Then call the filesystem analysis
-
 	const chunkSize = 5 * 1024 * 1024 // 5MB in bytes
 
 	// If githubToken is not an empty string, then modify the repoUrl to include it
@@ -180,7 +177,7 @@ func searchRegexInRepoGithub(repoUrl string, config Config, githubToken string) 
 	if err != nil {
 		panic(err)
 	}
-	defer os.RemoveAll(tempDir) // Ensure removal of temp directory upon function exit
+	defer os.RemoveAll(tempDir)
 
 	// Clone the repository
 	repoPath := fmt.Sprintf("%s/repo", tempDir)
@@ -190,33 +187,44 @@ func searchRegexInRepoGithub(repoUrl string, config Config, githubToken string) 
 	}
 
 	// Name the gitlog-file
-	sanitizedUrl := strings.Replace(repoUrl, "https://github.com/", "", 1)
+	sanitizedUrl := strings.ReplaceAll(repoUrl, "https://github.com/", "")
 	sanitizedUrl = strings.ReplaceAll(sanitizedUrl, "/", "-")
 	sanitizedUrl = strings.ReplaceAll(sanitizedUrl, ":", "-")
 	sanitizedUrl = strings.ReplaceAll(sanitizedUrl, "@", "-")
-	logUrl := strings.Replace(sanitizedUrl, "/", "-", 1)
+	logUrl := strings.ReplaceAll(sanitizedUrl, "/", "-")
 
-	// Generate git log and write it directly to logFile
-	logCmd := exec.Command("git", "-C", repoPath, "log", "-p")
-	output, err := logCmd.StdoutPipe()
+	// Generate git log and write it directly to a large temporary logFile
+	logCmd := exec.Command("git", "-C", repoPath, "log", "-p", "-n", "1000", "--since", "5.years.ago")
+	tempLogFile := fmt.Sprintf("%s/gitlog-%s-large.txt", tempDir, logUrl)
+	file, err := os.Create(tempLogFile)
 	if err != nil {
 		panic(err)
 	}
 
-	if err := logCmd.Start(); err != nil {
+	logCmd.Stdout = file
+	if err := logCmd.Run(); err != nil {
+		file.Close()
 		panic(err)
 	}
+	file.Close()
 
-	reader := bufio.NewReader(output)
+	// Now, read from the large logFile and split it into 5MB chunks
+	inputFile, err := os.Open(tempLogFile)
+	if err != nil {
+		panic(err)
+	}
+	defer inputFile.Close()
+
+	reader := bufio.NewReader(inputFile)
 	chunkCount := 0
 
 	for {
 		chunk := make([]byte, chunkSize)
-		_, err := io.ReadFull(reader, chunk)
+		bytesRead, err := reader.Read(chunk)
 		if err == io.EOF {
 			break
 		}
-		if err != nil && err != io.ErrUnexpectedEOF {
+		if err != nil {
 			panic(err)
 		}
 
@@ -226,7 +234,7 @@ func searchRegexInRepoGithub(repoUrl string, config Config, githubToken string) 
 			panic(err)
 		}
 
-		_, err = logFile.Write(chunk)
+		_, err = logFile.Write(chunk[:bytesRead])
 		if err != nil {
 			logFile.Close()
 			panic(err)
@@ -235,14 +243,11 @@ func searchRegexInRepoGithub(repoUrl string, config Config, githubToken string) 
 		chunkCount++
 	}
 
-	if err := logCmd.Wait(); err != nil {
-		panic(err)
-	}
-
-	// Remove the cloned repository as it's no longer needed
+	// Remove the cloned repository and large temp log file as they're no longer needed
 	if err := os.RemoveAll(repoPath); err != nil {
 		panic(err)
 	}
+	os.Remove(tempLogFile)
 
 	searchRegexInDir(tempDir, config, logUrl)
 }
