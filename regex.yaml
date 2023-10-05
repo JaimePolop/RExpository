@@ -664,6 +664,7 @@ regular_expresions:
       regex: >
         ([a-z0-9\/=_\+\-]{80,90})
       example: 78v5z=/0wzau+a3hmj2dtw3og5zl64_g-7hy/w8tpa68evvu+2yx73dnhr7xff-p7w0simau/8qlz0p=b
+      falsePositives: True
 
     - name: Kucoin Access Token
       regex: >
@@ -675,6 +676,7 @@ regular_expresions:
       regex: >
         ([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})
       example: 94a1b7bd-3d95-1358-cfe5-dc139bf0fd38
+      falsePositives: True
 
     #L
     - name: Launchdarkly Access Token
@@ -1127,6 +1129,7 @@ regular_expresions:
       regex: >
         (YC[a-zA-Z0-9_\-]{38})
       example: YCeKYhqk9alQFHsIvTkb6_0lciJm0ZkEmaaKM2ml
+      falsePositives: true
     
     #W
     - name: Web3 API Key
@@ -1317,7 +1320,8 @@ regular_expresions:
         username.*[=:].+
       example: >
         usernameF~K\68*X[:Pz("\`*BAZn4de%I1P8Lce`pIh)EJ9Og[*;Xy+*!xc4#|f%GpE8TN2AjEl>A>9&6(C[=;42X6%zhifQvai%G*IB^tm{%b&E#(>m'<}!\(qehQwy&*K{HM{m_sj
-    
+      falsePositives: True
+      
     - name: Net user add
       regex: >
         net user .+ /add
