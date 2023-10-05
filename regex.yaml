@@ -949,6 +949,7 @@ regular_expresions:
       regex: >
         ([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})
       example: 99525f82-5f75-cc96-dd2a-f5ae9fb78002
+      alsePositives: True
 
     - name: Sendbird Access Token
       regex: >
@@ -1155,26 +1156,20 @@ regular_expresions:
         ((key|api|token|secret|password)[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z_=\-]{8,64})['"]
       example: >
         secret-key="FLdz-Wt1CQYcl9EywqaeZ2_IL65oH5HwL7jUWpdFucN"
-      falsePositives: True  
+      falsePositives: True
     
     - name: Generic Secret
       regex: >
         [sS][eE][cC][rR][eE][tT].*['"][0-9a-zA-Z]{32,45}['"]
       example: >
         sECret = "aso3pje4ghu4gbf3rgu3gr3rg34gdiwubeyfvwDEf6ed"
-        
-    # Disable in winpeas because of RegexDoS (for some reason)
-    - name: Basic Auth
-      regex: >
-        //(.+):(.+)@
-      example: >
-        //UserName237.e4r3%:Compl3x&/Password1763@domain.com
 
     - name: Code asigning passwords
       regex: >
         (pwd|passwd|password|PASSWD|PASSWORD|dbuser|dbpass|pass').*[=:].+
       example: >
         dbpass = "asdasd"
+      falsePositives: True
 
     - name: PHP defined password
       regex: >
@@ -1186,6 +1181,7 @@ regular_expresions:
       regex: >
         passwd.*|creden.*|^kind:[^a-zA-Z0-9_]?Secret|[^a-zA-Z0-9_]env:|secret:|secretName:|^kind:[^a-zA-Z0-9_]?EncryptionConfiguration|\-\-encryption\-provider\-config
       example: " secret: 'lala'"
+      falsePositives: True
     
     - name: Simple Passwords
       regex: >
