@@ -947,6 +947,7 @@ regular_expresions:
       regex: >
         ([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})
       example: 99525f82-5f75-cc96-dd2a-f5ae9fb78002
+      falsePositives: True
 
     - name: Sendbird Access Token
       regex: >
@@ -1081,6 +1082,7 @@ regular_expresions:
       regex: >
         (A{22}[a-zA-Z0-9%]{80,100})
       example: AAAAAAAAAAAAAAAAAAAAAAsrIRuumqNo14xDR667rmftkzr3Wf2l7RjZaDkn8dNPoW6AZ7SLNEkY3DUwlcadFYI9TGeY0fhJfQ85kM5lt5X3vm%BpAOe2E5Hm
+      falsePositives: true
 
     - name: Twitter Oauth
       regex: >
@@ -1152,7 +1154,7 @@ regular_expresions:
         ((key|api|token|secret|password)[a-z0-9_ \.,\-]{0,25})(=|>|:=|\|\|:|<=|=>|:).{0,5}['"]([0-9a-zA-Z_=\-]{8,64})['"]
       example: >
         secret-key="FLdz-Wt1CQYcl9EywqaeZ2_IL65oH5HwL7jUWpdFucN"
-      falsePositives: True  
+      falsePositives: True
     
     - name: Generic Secret
       regex: >
@@ -1183,6 +1185,7 @@ regular_expresions:
         passw.*[=:].+
       example: >
         passw='sz&v5u.}WJV>v'
+      falsePositives: True
     
     - name: Generiac API tokens search (A-C)
       regex: >
