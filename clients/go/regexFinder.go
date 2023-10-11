@@ -69,6 +69,7 @@ func main() {
 		panic(err)
 	}
 
+	
 	if checkIfFaslePos(os.Args) {
 		// If not looking for false positives, filter regexes
 		for i, pattern := range config.RegularExpressions {

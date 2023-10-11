@@ -55,19 +55,16 @@ jobs:
       run: |
         cd clients/go
         GOOS=linux GOARCH=amd64 go build -o rex-linux-amd64
-      if: success()
 
     - name: Build Rex Client for macOS
       run: |
         cd clients/go
         GOOS=darwin GOARCH=amd64 go build -o rex-darwin-amd64
-      if: success()
 
     - name: Build Rex Client for Windows
       run: |
         cd clients/go
         GOOS=windows GOARCH=amd64 go build -o rex-windows-amd64.exe
-      if: success()
 
     - name: Upload Artifacts
       id: upload-artifacts
