@@ -49,7 +49,6 @@ jobs:
       run: |
         cd tests/go
         go install
-        go mod tidy
         go run exampleMatcher.go
 
     - name: Build for Linux
