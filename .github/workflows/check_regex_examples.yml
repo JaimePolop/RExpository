@@ -19,14 +19,14 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Update Web
-      run: |
-        cp regex.yaml REx/src/assets
-        cd REx
-        npm install --legacy-peer-deps
-        npm run build
-        cd ..
-        cp -r REx/docs/ ../
+    # - name: Update Web
+    #   run: |
+    #     cp regex.yaml REx/src/assets
+    #     cd REx
+    #     npm install --legacy-peer-deps
+    #     npm run build
+    #     cd ..
+    #     cp -r REx/docs/ ../
         
 
     - name: Install yq
@@ -59,7 +59,7 @@ jobs:
 
     - name: Build for Windows
       run: GOOS=windows GOARCH=amd64 go build -o regexFinder_windows.exe clients/go/regexFinder.go
-
+ 
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
