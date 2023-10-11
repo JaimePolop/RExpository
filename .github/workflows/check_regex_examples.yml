@@ -49,4 +49,54 @@ jobs:
       run: |
         cd tests/go
         go install
-        go run exampleMatcher.go
+        go run exampleMatcher.
+        
+    name: Compile Rex Client
+
+
+#Compilar client/go
+on:
+  push:
+    paths:
+      - 'clients/go/**' # Se ejecutará cuando se realicen cambios en esta carpeta
+  pull_request:
+    paths:
+      - 'clients/go/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.20
+
+    - name: Compile for Linux
+      run: |
+        cd clients/go
+        GOOS=linux GOARCH=amd64 go build -o rex-client-linux
+
+    - name: Compile for macOS
+      run: |
+        cd clients/go
+        GOOS=darwin GOARCH=amd64 go build -o rex-client-macos
+
+    - name: Compile for Windows
+      run: |
+        cd clients/go
+        GOOS=windows GOARCH=amd64 go build -o rex-client-windows.exe
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: rex-client
+        path: |
+          clients/go/rex-client-linux
+          clients/go/rex-client-macos
+          clients/go/rex-client-windows.exe
