@@ -65,13 +65,3 @@ jobs:
       run: |
         cd clients/go
         GOOS=windows GOARCH=amd64 go build -o rex-windows-amd64.exe
-
-    - name: Upload Artifacts
-      id: upload-artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: rex-artifacts
-        path: |
-          clients/go/rex-linux-amd64
-          clients/go/rex-darwin-amd64
-          clients/go/rex-windows-amd64.exe
