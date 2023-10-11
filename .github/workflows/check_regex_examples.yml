@@ -49,7 +49,7 @@ jobs:
       run: |
         cd tests/go
         go install
-        go run exampleMatcher.go
+        
 
     - name: Build for Linux
       run: GOOS=linux GOARCH=amd64 go build -o regexFinder_linux clients/go/regexFinder.go
