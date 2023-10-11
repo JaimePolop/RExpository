@@ -15,8 +15,7 @@ jobs:
   run_bash_script:
     runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout repository
+    steps:    - name: Checkout repository
       uses: actions/checkout@v2
 
     - name: Update Web
