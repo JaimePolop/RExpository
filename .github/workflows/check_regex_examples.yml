@@ -22,11 +22,11 @@ jobs:
     - name: Update Web
       run: |
         cp regex.yaml REx/src/assets
-        cd REx
-        npm install --legacy-peer-deps
-        npm run build
-        cd ..
-        cp -r REx/docs/ ../
+#        cd REx
+#        npm install --legacy-peer-deps
+#        npm run build
+#        cd ..
+#        cp -r REx/docs/ ../
         
 
     - name: Install yq
@@ -43,13 +43,7 @@ jobs:
     - name: Setup Go
       uses: actions/setup-go@v2
       with:
-        go-version: '1.16'
-
-    - name: Run Go module (exampleMatcher.go)
-      run: |
-        cd tests/go
-        go install
-        go run exampleMatcher.go
+        go-version: '1.20'
 
     - name: Build for Linux
       run: GOOS=linux GOARCH=amd64 go build -o regexFinder_linux clients/go/regexFinder.go
@@ -65,3 +59,9 @@ jobs:
       with:
         name: regex-finder-artifacts
         path: regexFinder_linux, regexFinder_macos, regexFinder_windows.exe
+
+    - name: Run Go module (exampleMatcher.go)
+      run: |
+        cd tests/go
+        go install
+        go run exampleMatcher.go
