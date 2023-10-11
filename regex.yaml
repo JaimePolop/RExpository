@@ -758,7 +758,7 @@ regular_expresions:
       regex: > 
         ([a-z0-9]{32}-us[0-9]{2})
       example: 2f7f6571bbd4eb5bf3d496335d4d1d38-us12
-
+  
     - name: Mapbox API Key
       regex: '(pk\.[a-z0-9]{60}\.[a-z0-9]{22})'
       caseinsensitive: True
