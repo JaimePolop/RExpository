@@ -51,7 +51,6 @@ jobs:
         go install
         go run exampleMatcher.go
     
-    
     - name: Build Rex Client for Linux
       run: |
         cd clients/go
