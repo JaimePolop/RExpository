@@ -110,7 +110,7 @@ regular_expresions:
     
     - name: Airtable API Key
       regex: >
-        [\"']?air[-_]?table[-_]?api[-_]?key[\"']?[=:][\"']?.+[\"']"
+        ["']?air[-_]?table[-_]?api[-_]?key["']?[=:]["']?.+["']"
       example: air-table-api-key="5asbtwsfcvfc9zEzFV<p=1PKPlFsaFfasf'"
 
     - name: Alchemi API Key
@@ -664,6 +664,7 @@ regular_expresions:
       regex: >
         ([a-z0-9\/=_\+\-]{80,90})
       example: 78v5z=/0wzau+a3hmj2dtw3og5zl64_g-7hy/w8tpa68evvu+2yx73dnhr7xff-p7w0simau/8qlz0p=b
+      falsePositives: True
 
     - name: Kucoin Access Token
       regex: >
@@ -675,6 +676,7 @@ regular_expresions:
       regex: >
         ([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})
       example: 94a1b7bd-3d95-1358-cfe5-dc139bf0fd38
+      falsePositives: True
 
     #L
     - name: Launchdarkly Access Token
@@ -751,7 +753,12 @@ regular_expresions:
       regex: >
         [a-h0-9]{32}-[a-h0-9]{8}-[a-h0-9]{8}
       example: 332f30ehda61ggg1gc3cd272c1eh275c-d6cadcge-abd44751
-
+    
+    - name: Mandrill API Key
+      regex: > 
+        ([a-z0-9]{32}-us[0-9]{2})
+      example: 2f7f6571bbd4eb5bf3d496335d4d1d38-us12
+  
     - name: Mapbox API Key
       regex: '(pk\.[a-z0-9]{60}\.[a-z0-9]{22})'
       caseinsensitive: True
@@ -947,7 +954,7 @@ regular_expresions:
       regex: >
         ([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})
       example: 99525f82-5f75-cc96-dd2a-f5ae9fb78002
-      falsePositives: True
+      alsePositives: True
 
     - name: Sendbird Access Token
       regex: >
@@ -1082,7 +1089,6 @@ regular_expresions:
       regex: >
         (A{22}[a-zA-Z0-9%]{80,100})
       example: AAAAAAAAAAAAAAAAAAAAAAsrIRuumqNo14xDR667rmftkzr3Wf2l7RjZaDkn8dNPoW6AZ7SLNEkY3DUwlcadFYI9TGeY0fhJfQ85kM5lt5X3vm%BpAOe2E5Hm
-      falsePositives: true
 
     - name: Twitter Oauth
       regex: >
@@ -1129,6 +1135,7 @@ regular_expresions:
       regex: >
         (YC[a-zA-Z0-9_\-]{38})
       example: YCeKYhqk9alQFHsIvTkb6_0lciJm0ZkEmaaKM2ml
+      falsePositives: true
     
     #W
     - name: Web3 API Key
@@ -1161,31 +1168,31 @@ regular_expresions:
         [sS][eE][cC][rR][eE][tT].*['"][0-9a-zA-Z]{32,45}['"]
       example: >
         sECret = "aso3pje4ghu4gbf3rgu3gr3rg34gdiwubeyfvwDEf6ed"
-        
-    # Disable in winpeas because of RegexDoS (for some reason)
-    - name: Basic Auth
-      regex: >
-        //(.+):(.+)@
-      example: >
-        //UserName237.e4r3%:Compl3x&/Password1763@domain.com
 
-    - name: PHP Passwords
+    - name: Code asigning passwords
       regex: >
-        (pwd|passwd|password|PASSWD|PASSWORD|dbuser|dbpass|pass').*[=:].+|define ?\('(\w*pass|\w*pwd|\w*user|\w*datab)
+        (pwd|passwd|password|PASSWD|PASSWORD|dbuser|dbpass|pass').*[=:].+
       example: >
         dbpass = "asdasd"
+      falsePositives: True
+
+    - name: PHP defined password
+      regex: >
+        define ?\(['"](\w*pass|\w*pwd|\w*user|\w*datab)
+      example: >
+        define('password', 'somerandomvalue')
     
     - name: Config Secrets
       regex: >
         passwd.*|creden.*|^kind:[^a-zA-Z0-9_]?Secret|[^a-zA-Z0-9_]env:|secret:|secretName:|^kind:[^a-zA-Z0-9_]?EncryptionConfiguration|\-\-encryption\-provider\-config
       example: " secret: 'lala'"
+      falsePositives: True
     
     - name: Simple Passwords
       regex: >
         passw.*[=:].+
       example: >
         passw='sz&v5u.}WJV>v'
-      falsePositives: True
     
     - name: Generiac API tokens search (A-C)
       regex: >
@@ -1314,7 +1321,8 @@ regular_expresions:
         username.*[=:].+
       example: >
         usernameF~K\68*X[:Pz("\`*BAZn4de%I1P8Lce`pIh)EJ9Og[*;Xy+*!xc4#|f%GpE8TN2AjEl>A>9&6(C[=;42X6%zhifQvai%G*IB^tm{%b&E#(>m'<}!\(qehQwy&*K{HM{m_sj
-    
+      falsePositives: True
+      
     - name: Net user add
       regex: >
         net user .+ /add
