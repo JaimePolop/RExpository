@@ -19,14 +19,14 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    # - name: Update Web
-    #   run: |
-    #     cp regex.yaml REx/src/assets
-    #     cd REx
-    #     npm install --legacy-peer-deps
-    #     npm run build
-    #     cd ..
-    #     cp -r REx/docs/ ../
+    - name: Update Web
+      run: |
+        cp regex.yaml REx/src/assets
+        cd REx
+        npm install --legacy-peer-deps
+        npm run build
+        cd ..
+        cp -r REx/docs/ ../
         
 
     - name: Install yq
@@ -49,7 +49,8 @@ jobs:
       run: |
         cd tests/go
         go install
-        
+        go mod tidy
+        go run exampleMatcher.go
 
     - name: Build for Linux
       run: GOOS=linux GOARCH=amd64 go build -o regexFinder_linux clients/go/regexFinder.go
