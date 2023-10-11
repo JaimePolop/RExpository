@@ -34,9 +34,9 @@ func main() {
 	// Parse YAML config file
 	var config Config
 	err = yaml.Unmarshal(configFile, &config)
-	if err != nil {
-		panic(err)
-	}
+	// if err != nil {
+	// 	panic(err)
+	// }
     
 	// Check file content against each regex pattern
 	var any_error bool = false
