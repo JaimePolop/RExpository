@@ -26,7 +26,7 @@ jobs:
 #        npm install --legacy-peer-deps
 #        npm run build
 #        cd ..
-#        cp -r REx/docs/ ../
+#        cp -r REx/docs/* docs/
         
 
     - name: Install yq
@@ -44,21 +44,6 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: '1.20'
-
-    - name: Build for Linux
-      run: GOOS=linux GOARCH=amd64 go build -o regexFinder_linux clients/go/regexFinder.go
-
-    - name: Build for macOS
-      run: GOOS=darwin GOARCH=amd64 go build -o regexFinder_macos clients/go/regexFinder.go
-
-    - name: Build for Windows
-      run: GOOS=windows GOARCH=amd64 go build -o regexFinder_windows.exe clients/go/regexFinder.go
- 
-    - name: Upload Artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: regex-finder-artifacts
-        path: regexFinder_linux, regexFinder_macos, regexFinder_windows.exe
 
     - name: Run Go module (exampleMatcher.go)
       run: |
