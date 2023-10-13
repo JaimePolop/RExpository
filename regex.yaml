@@ -756,8 +756,8 @@ regular_expresions:
     
     - name: Mandrill API Key
       regex: > 
-        ([a-z0-9]{32}-us[0-9]{2})
-      example: 2f7f6571bbd4eb5bf3d496335d4d1d38-us12
+        md-[a-z0-9A-Z_-]{22}
+      example: md-I0r_LsRbtC6Z7BHs9EfMgQ
   
     - name: Mapbox API Key
       regex: '(pk\.[a-z0-9]{60}\.[a-z0-9]{22})'
@@ -1194,7 +1194,7 @@ regular_expresions:
       example: >
         passw='sz&v5u.}WJV>v'
     
-    - name: Generiac API tokens search (A-C)
+    - name: Generic API tokens search (A-C)
       regex: >
         (access_key|access_token|account_sid|admin_email|admin_pass|admin_user|adzerk_api_key|algolia_admin_key|algolia_api_key|
         algolia_search_key|alias_pass|alicloud_access_key|alicloud_secret_key|amazon_bucket_name|amazon_secret_access_key|
@@ -1228,7 +1228,7 @@ regular_expresions:
       example: >
         aws_token='-A1nivVI1TSm_e4Og2akP_3vI9FxGj'
 
-    - name: Generiac API tokens search (D-H)
+    - name: Generic API tokens search (D-H)
       regex: >
         (danger_github_api_token|database_host|database_name|database_password|database_port|database_schema_test|
         database_user|database_username|datadog_api_key|datadog_app_key|db_connection|db_database|db_host|db_password|
@@ -1256,7 +1256,7 @@ regular_expresions:
       example: >
         flickr_api_key='-A1nivVI1TSm_e4Og2akP_3vI9FxGj'
         
-    - name: Generiac API tokens search (I-R)
+    - name: Generic API tokens search (I-R)
       regex: >
         (ij_repo_password|ij_repo_username|index_name|integration_test_api_key|integration_test_appid|internal_secrets|
         ios_docs_deploy_token|itest_gh_token|jdbc_databaseurl|jdbc_host|jdbc:mysql|jwt_secret|kafka_admin_url|kafka_instance_name|kafka_rest_url|
@@ -1264,7 +1264,7 @@ regular_expresions:
         lighthouse_api_key|linkedin_client_secretorlottie_s3_api_key|linux_signing_key|ll_publish_url|ll_shared_key|looker_test_runner_client_secret|
         lottie_happo_api_key|lottie_happo_secret_key|lottie_s3_secret_key|lottie_upload_cert_key_password|lottie_upload_cert_key_store_password|
         mail_password|mailchimp_api_key|mailchimp_key|mailer_password|mailgun_api_key|mailgun_apikey|mailgun_password|mailgun_priv_key|
-        mailgun_pub_apikey|mailgun_pub_key|mailgun_secret_api_key|manage_key|manage_secret|management_token|managementapiaccesstoken|mandrill_api_key|
+        mailgun_pub_apikey|mailgun_pub_key|mailgun_secret_api_key|manage_key|manage_secret|management_token|managementapiaccesstoken|
         manifest_app_token|manifest_app_url|mapbox_access_token|mapbox_api_token|mapbox_aws_access_key_id|mapbox_aws_secret_access_key|
         mapboxaccesstoken|mg_api_key|mg_public_api_key|mh_apikey|mh_password|mile_zero_key|minio_access_key|minio_secret_key|multi_bob_sid|
         multi_connect_sid|multi_disconnect_sid|multi_workflow_sid|multi_workspace_sid|my_secret_env|mysql_database|mysql_hostname|mysql_password|
@@ -1285,7 +1285,7 @@ regular_expresions:
       example: >
         packagecloud_token='-A1nivVI1TSm_e4Og2akP_3vI9FxGj'
         
-    - name: Generiac API tokens search (S-Z)
+    - name: Generic API tokens search (S-Z)
       regex: >
         (s3_access_key|s3_access_key_id|s3_bucket_name_app_logs|s3_bucket_name_assets|s3_external_3_amazonaws_com|s3_key|
         s3_key_app_logs|s3_key_assets|s3_secret_app_logs|s3_secret_assets|s3_secret_key|s3_user_secret|sacloud_access_token|
