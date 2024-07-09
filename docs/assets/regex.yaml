@@ -756,8 +756,8 @@ regular_expresions:
     
     - name: Mandrill API Key
       regex: > 
-        md-[a-z0-9A-Z_-]{22}
-      example: md-I0r_LsRbtC6Z7BHs9EfMgQ
+        md-[A-Za-z0-9]{22}
+      example: md-I0rALsRbtC6Z7BHs9EfMgQ
   
     - name: Mapbox API Key
       regex: '(pk\.[a-z0-9]{60}\.[a-z0-9]{22})'
