@@ -1071,7 +1071,7 @@ regular_expresions:
 
     - name: Twilio API Key
       regex: 'SK[0-9a-fA-F]{32}'
-      example: SK7dAsbd7E729f7B15aBf2E23936dB1f1E
+      example: SK7dAbbd7E729f7B15aBf2E23936dB1f1E
 
     - name: Twitch API Key
       regex: >
