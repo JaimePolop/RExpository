@@ -1,4 +1,4 @@
-const DATA_URL = "../../regex.yaml";
+const DATA_URL = "regex.yaml";
 
 const searchInput = document.getElementById("search-input");
 const categorySelect = document.getElementById("category-select");
