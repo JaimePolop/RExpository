@@ -3,14 +3,88 @@
 <head>
   <meta charset="utf-8">
   <title>RExpository</title>
-  <base href="./">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="assets/GreenRexPeas.png">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-  <link href="styles.css" type="text/css">
-  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
-<body class="mat-typography">
-  <app-root></app-root>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <img src="assets/GreenRexPeas.png" alt="RExpository logo">
+        <div>
+          <p class="eyebrow">Pattern Catalog</p>
+          <h1>RExpository</h1>
+        </div>
+      </div>
+      <a class="repo-badge" href="https://github.com/JaimePolop/RExpository" target="_blank" rel="noreferrer">
+        <span class="repo-orb" aria-hidden="true">
+          <span class="orb-core"></span>
+          <span class="orb-ring"></span>
+          <span class="orb-ring orbit"></span>
+        </span>
+        <span class="repo-text">
+          <span class="repo-label">Repository</span>
+          <span class="repo-name">github.com/JaimePolop/RExpository</span>
+        </span>
+      </a>
+      <div class="header-copy">
+        <p class="tagline">Search and explore categorized regular expressions for security audits, log analysis, and detection engineering.</p>
+        <div class="stats">
+          <div>
+            <span class="stat-label">Library size</span>
+            <strong id="stat-total">0</strong>
+          </div>
+          <div>
+            <span class="stat-label">Categories</span>
+            <strong id="stat-categories">0</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="intro">
+        <p>Welcome to <a class="link-with-icon" href="https://github.com/JaimePolop/RExpository" target="_blank" rel="noreferrer"><span>RExpository</span><span class="github-icon" aria-hidden="true"><svg viewBox="0 0 24 24" role="img" focusable="false"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.09.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.38-3.37-1.38-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.56 2.37 1.11 2.95.85.09-.67.35-1.11.64-1.37-2.22-.26-4.56-1.13-4.56-5.03 0-1.11.39-2.02 1.03-2.74-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 2.5-.35c.85 0 1.7.12 2.5.35 1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.74 0 3.91-2.35 4.77-4.58 5.02.36.32.69.95.69 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.59.69.49 3.97-1.36 6.83-5.19 6.83-9.71C22 6.58 17.52 2 12 2z" fill="currentColor"/></svg></span></a>, a collection of regular expressions, also known as regex, a sequence of characters that define a search pattern. They allow you to search for and manipulate text with precision and speed.</p>
+        <p>RExpository contains a wide variety of regular expressions, organized by category, to help you find the perfect expression. These regular expressions can be used in a variety of APIs or applications.</p>
+        <p>RExpository is a project created by <a href="https://github.com/JaimePolop" target="_blank" rel="noreferrer">Jaime Polop</a>, in colaboration with <a href="https://github.com/peass-ng/PEASS-ng" target="_blank" rel="noreferrer">PEASS-ng</a>, where everyone can contribute with additional regular expresions. We regularly update our repository with new regular expressions and updates to existing ones, so be sure to check back often for the latest additions!!</p>
+      </section>
+      <section class="search-panel">
+        <div class="search-field">
+          <label for="search-input">Find patterns</label>
+          <input id="search-input" type="search" placeholder="Search by name, category, regex, or example">
+        </div>
+        <div class="search-field">
+          <label for="category-select">Category</label>
+          <select id="category-select">
+            <option value="all">All categories</option>
+          </select>
+        </div>
+        <button id="clear-button" class="ghost-button" type="button">Clear</button>
+      </section>
+
+      <section class="results">
+        <div class="results-head">
+          <p class="results-title">Results</p>
+          <p id="results-count" class="results-count">0 patterns</p>
+        </div>
+        <div id="results-grid" class="results-grid" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state" hidden>
+          <h2>No patterns match your search.</h2>
+          <p>Try a shorter keyword or switch the category filter.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Source data: <span class="mono">regex.yaml</span> · Built for fast, offline-friendly lookup.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
