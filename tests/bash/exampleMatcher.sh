@@ -34,7 +34,8 @@ while IFS=$'\t' read -r rex_name rex_regex rex_example _; do
 
   # Add cont
   cont=$((cont+1))
-done < <(yq -o=json $yaml_file | jq -r '.regular_expresions[] | .regexes[] | [.name, .regex, .example] | @tsv')
+# grep -E cannot parse RE2-only inline flags, non-capturing groups, or \z.
+done < <(yq -o=json $yaml_file | jq -r '.regular_expresions[] | .regexes[] | select(.example != null and .example != "" and ((.regex | contains("(?")) | not) and ((.regex | contains("\\z")) | not)) | [.name, .regex, .example] | @tsv')
 
 
 echo "Checked $cont examples"

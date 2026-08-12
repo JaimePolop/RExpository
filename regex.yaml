@@ -363,13 +363,13 @@ regular_expresions:
       caseinsensitive: True
       example: >
         discord-apikey="231ahdc61b46afg8hd39bbbf75f40f9e1e1a637df02de861751ahab6fhgf210e"
-
+    
     - name: Discord Bot & User Token
       regex: >
-        (mfa\.[\w-]{84}|[\w-]{23,28}\.[\w-]{6}\.[\w-]{27,40})
+        (mfa\.[A-Za-z0-9_-]{84}|[A-Za-z0-9_-]{23,28}\.[A-Za-z0-9_-]{6}\.[A-Za-z0-9_-]{27,40})
       caseinsensitive: False
-      example: > NTAxMjM0NzI0NjExMzE5NDM0.GoAkaX.hra4hAaISpa1_2o2qOL4eHAb7j5Fhck2Dm3hKg
-    
+      example: >
+        NTAxMjM0NzI0NjExMzE5NDM0.GoAkaX.hra4hAaISpa1_2o2qOL4eHAb7j5Fhck2Dm3hKg
     - name: Droneci Access Token
       regex: >
         ([a-z0-9]{32})
@@ -1159,6 +1159,391 @@ regular_expresions:
       falsePositives: True
     
 
+    - name: 1Password Secret Key
+      regex: |
+        \bA3-[A-Z0-9]{6}-(?:(?:[A-Z0-9]{11})|(?:[A-Z0-9]{6}-[A-Z0-9]{5}))-[A-Z0-9]{5}-[A-Z0-9]{5}-[A-Z0-9]{5}\b
+      example: >
+        A3-USKDOT-TWTFHIX7WBP-SCG5O-NNGUU-KXBWZ
+    - name: 1Password Service Account Token
+      regex: |
+        ops_eyJ[a-zA-Z0-9+/]{250,}={0,3}
+      example: >
+        ops_eyJJIBRRDUTZXKIAUFWQVQQABRHLAQGZQWOAJDKKLGEHMUDZUMYOZJWWJQSOFUWSNIRMZMVACBFOPNRJUGHKNUJACEMUXTUCKUUDCJLABASMAECLIUAAPNSSZYVGBQNBKOWNWMLXZZPFBYLSFTDPIIDHKPKRLWBMSFLNVMIAUBQEHCTWTFRYFMRPBXHSKIZTWUDONDRPIBIQRTEZDIGWGIUMGUTWVEKPZEIQHEEQSQUTVNGSNPMQWSEWFDFXF
+    - name: Airtable Personal Access Token
+      regex: |
+        \b(pat[[:alnum:]]{14}\.[a-f0-9]{64})\b
+      example: >
+        patIkR8IwHIxr2Oz5.d555d390e59edc9580da616c3cd0ee273e08b0c3de61172e4dfd4f9363d5b9f2
+    - name: Algolia API Key
+      regex: |
+        (?i)[\w.-]{0,50}?(?:algolia)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9]{32})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        algolia_api_key="kgghifjpifgicbixcxikjstbfaviwgdv"
+    - name: Anthropic Admin API Key
+      regex: |
+        \b(sk-ant-admin01-[a-zA-Z0-9_\-]{93}AA)(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        sk-ant-admin01-KZU8HY2TLKIQC0V9ZQMHB9DV7SQZYBRAEKQQ8BTD0VY8LDKFV7J1PDZXGIMJRCS99SAUCSMTQQ26HYLHQXA6LS737FB4NAA
+    - name: Anthropic API Key
+      regex: |
+        \b(sk-ant-api03-[a-zA-Z0-9_\-]{93}AA)(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        sk-ant-api03-0PY3BBS7JICIMO1G297PM9QFNEZ1W2QF4IRO3LJ5A32MGJA6K0UKM2RVLKAYHAUJFOA479C94TE4RZNW8RDYJJVFNJF1QAA
+    - name: Artifactory API Key
+      regex: |
+        \bAKCp[A-Za-z0-9]{69}\b
+      example: >
+        AKCpHSQRHQQKFBVHJWURTIHUVTFEIOFOUUTERVJPAVPWNZDIHZGUGFQXWAUWTRHHUGMUWQQMH
+    - name: Artifactory Reference Token
+      regex: |
+        \bcmVmd[A-Za-z0-9]{59}\b
+      example: >
+        cmVmdRARKKCRVWJGCLDRBGNGZRYCQOHFDSRZWQIVRSWOFHSHUPXXEBLMEAUFCVLA
+    - name: Authress Service Client Access Key
+      regex: |
+        \b((?:sc|ext|scauth|authress)_(?i)[a-z0-9]{5,30}\.[a-z0-9]{4,6}\.(?-i:acc)[_-][a-z0-9-]{10,32}\.[a-z0-9+/_=-]{30,120})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        sc_uuqb5xa2.glaj4k.acc-vwcc2ao2rk8i.ZwTqks1/5auN36QOMHW1FjJU6VhhAGYAvBAV
+    - name: AWS Amazon Bedrock API Key Long-Lived
+      regex: |
+        \b(ABSK[A-Za-z0-9+/]{109,269}={0,2})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        ABSKUMIIVXHSFQPLPUCWXFHQSILYQXNBDOTWLXKKPBNWEQVTMMVKBQQKAADCOWFRGWTXPEZLAURPYJGOQQIECJNEZEKFYLCNNUDGDOPVGNYZJMNGW
+    - name: AWS Amazon Bedrock API Key Short-Lived
+      regex: |
+        bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t
+      example: >
+        bedrock-api-key-YmVkcm9jay5hbWF6b25hd3MuY29t
+    - name: Azure AD Client Secret
+      regex: |
+        (?:^|[\\'"\x60\s>=:(,)])([a-zA-Z0-9_~.]{3}\dQ~[a-zA-Z0-9_~.-]{31,34})(?:$|[\\'"\x60\s<),])
+      example: >
+        client_secret=abc7Q~K9BQBF6NL006FKS0TGAIKK9DCFL3Y5DR
+    - name: Cisco Meraki API Key
+      regex: |
+        [\w.-]{0,50}?(?i:[\w.-]{0,50}?(?:(?-i:[Mm]eraki|MERAKI))(?:[ \t\w.-]{0,20})[\s'"]{0,3})(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([0-9a-f]{40})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        meraki_api_key="4c3d4f786f51c0118f43287df219e7607276a566"
+    - name: ClickHouse Cloud API Secret Key
+      regex: |
+        \b(4b1d[A-Za-z0-9]{38})\b
+      example: >
+        4b1dLWCOKASXBDQUUMXKBUKLXPKAYTYJHQPEVHNVEG
+    - name: Cloudflare API Key
+      regex: |
+        (?i)[\w.-]{0,50}?(?:cloudflare)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9_-]{40})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        cloudflare_api_key="wyzkvlbqtzfhgnbiatxhircsaicavckotvlgqrer"
+    - name: Cloudflare Global API Key
+      regex: |
+        (?i)[\w.-]{0,50}?(?:cloudflare)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-f0-9]{37})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        cloudflare_global_api_key="424f554897022ba7777ab18fcf10f02d4ebbf"
+    - name: Cloudflare Origin CA Key
+      regex: |
+        \b(v1\.0-[a-f0-9]{24}-[a-f0-9]{146})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        v1.0-7dfd4d02d6ffd5325c4d6696-21aa65c226d5abc98c21a3dc91a47fe39266264cc71432ca3db0c3c165b82ddd34b5c8eabd1c283d62a9dbf9b5db1a13fed9c055606a522714e63c55a09ac45cfa7ecb28495d1aefde
+    - name: Codecov Access Token
+      regex: |
+        (?i)[\w.-]{0,50}?(?:codecov)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9]{32})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        codecov_token="grzmgjjtnfmdcmdwnfrinklghsdrlvav"
+    - name: Cohere API Token
+      regex: |
+        [\w.-]{0,50}?(?i:[\w.-]{0,50}?(?:cohere|CO_API_KEY)(?:[ \t\w.-]{0,20})[\s'"]{0,3})(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-zA-Z0-9]{40})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        cohere_api_key="ABBFOEKPRFXHUXAUJOJQZOBOGKFUHDMINTNSYKSN"
+    - name: Datadog Access Token
+      regex: |
+        (?i)[\w.-]{0,50}?(?:datadog)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9]{40})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        datadog_api_key="fjuchuqwpiavodioowsygbblpyzwkeumrlvpejnj"
+    - name: DigitalOcean Access Token
+      regex: |
+        \b(doo_v1_[a-f0-9]{64})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        doo_v1_8181f60cfc038176edaf732bbd1a97454e5f94738d6a58bd320d0a5c2cfb0afe
+    - name: DigitalOcean PAT
+      regex: |
+        \b(dop_v1_[a-f0-9]{64})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        dop_v1_f35ab2c226eade8402e27c628e3cfc2702f20baff7c7afeced0bf0892f6680c5
+    - name: DigitalOcean Refresh Token
+      regex: |
+        (?i)\b(dor_v1_[a-f0-9]{64})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        dor_v1_781f90784482b1b25c4fe77cfd9e3461447f0e1dca7abc26172e6f3cfa16e637
+    - name: Facebook Access Token (Modern)
+      regex: |
+        (?i)\b(\d{15,16}(\||%)[0-9a-z\-_]{27,40})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        384726195083471|lpz3u58osadworiudy6fktjd9tw3vj
+    - name: Facebook Page Access Token
+      regex: |
+        \b(EAA[MC](?i)[a-z0-9]{100,})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        EAACRWGEEKIMEPDIZLIDTDKZCHTISMLWWKSMIPYRBBLNLXWRIXDUYENGCSWKNRRXTIUNCZZENUNRBWWOPCTYTAUPDJDWQLKCRNVIOKRH
+    - name: Finnhub Access Token
+      regex: |
+        (?i)[\w.-]{0,50}?(?:finnhub)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9]{20})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        finnhub_token="fuyqyrhaufeftrchgaal"
+    - name: Fly.io Access Token
+      regex: |
+        \b((?:fo1_[\w-]{43}|fm1[ar]_[a-zA-Z0-9+\/]{100,}={0,3}|fm2_[a-zA-Z0-9+\/]{100,}={0,3}))(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        fo1_ROAOECFNICRPAEIXNJPDPJDAWCMJGNFDNIANYUPZUIW
+    - name: Freemius Secret Key
+      regex: |
+        (?i)["']secret_key["']\s*=>\s*["'](sk_[\S]{29})["']
+      example: >
+        "secret_key" => "sk_FEXQARIMZKXIMGIKXKSVUYKDDTVGY"
+    - name: GitLab CI/CD Job Token
+      regex: |
+        glcbt-[0-9a-zA-Z]{1,5}_[0-9a-zA-Z_-]{20}
+      example: >
+        glcbt-7TnyM_LNEHFtBJhC867Al0foms
+    - name: GitLab Deploy Token
+      regex: |
+        gldt-[0-9a-zA-Z_\-]{20}
+      example: >
+        gldt-KYSNCWKTWRGKDGZVHGBU
+    - name: GitLab Feature Flag Client Token
+      regex: |
+        glffct-[0-9a-zA-Z_\-]{20}
+      example: >
+        glffct-ALAMAFMVBAGDLHREIYPW
+    - name: GitLab Feed Token
+      regex: |
+        glft-[0-9a-zA-Z_\-]{20}
+      example: >
+        glft-DPLUIENLICBYCBPRJOFS
+    - name: GitLab Incoming Mail Token
+      regex: |
+        glimt-[0-9a-zA-Z_\-]{25}
+      example: >
+        glimt-INDJAQHTAGOYCGVGJRBOEPARW
+    - name: GitLab Kubernetes Agent Token
+      regex: |
+        glagent-[0-9a-zA-Z_\-]{50}
+      example: >
+        glagent-HIONQJUKAMGLKBTJTMURCUONGYQEWMTFYXIJJIAAQPQODZYUCL
+    - name: GitLab OAuth App Secret
+      regex: |
+        gloas-[0-9a-zA-Z_\-]{64}
+      example: >
+        gloas-HPAJXAUGQWMYXRVHMHXEYEDXESOJUOANPMJSTBXZPCGDNFGFBEBKAUBEQPCUJNUV
+    - name: GitLab Routable PAT
+      regex: |
+        \bglpat-[0-9a-zA-Z_-]{27,300}\.[0-9a-z]{2}[0-9a-z]{7}\b
+      example: >
+        glpat-FHRDHVZXGXNQQCQIURVAKYSINCK.ab1234567
+    - name: GitLab Runner Authentication Token
+      regex: |
+        glrt-[0-9a-zA-Z_\-]{20}
+      example: >
+        glrt-GHAHMGQMBZZWBBUEQSNI
+    - name: GitLab Routable Runner Authentication Token
+      regex: |
+        \bglrt-t\d_[0-9a-zA-Z_\-]{27,300}\.[0-9a-z]{2}[0-9a-z]{7}\b
+      example: >
+        glrt-t1_JLMUAHGVYSGCMOFLTESTBLZRHWH.ab1234567
+    - name: GitLab SCIM Token
+      regex: |
+        glsoat-[0-9a-zA-Z_\-]{20}
+      example: >
+        glsoat-SLPKBFWAWXEIUNMRTQPD
+    - name: GitLab Session Cookie
+      regex: |
+        _gitlab_session=[0-9a-z]{32}
+      example: >
+        _gitlab_session=rqudpmjkxhqcebpcxpblumisenzwkbjr
+    - name: Harness API Key
+      regex: |
+        (?:pat|sat)\.[a-zA-Z0-9_-]{22}\.[a-zA-Z0-9]{24}\.[a-zA-Z0-9]{20}
+      example: >
+        pat.GMNENIKPMVMNLWSFJAMPXA.YRTUTROOTKUCMONVMGOMVPXM.MJTHQNTKVIKPLDEJWOFF
+    - name: Heroku API Key v2
+      regex: |
+        \b((HRKU-AA[0-9a-zA-Z_-]{58}))(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        HRKU-AAE4LLSDA7XKWMO4V7EZJA9DXA05GZBGZBALWKSYTUTOEES60CJQYCY1L9SV
+    - name: Hugging Face Access Token
+      regex: |
+        \b(hf_(?i:[a-z]{34}))(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        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
+    - name: Hugging Face Organization API Token
+      regex: |
+        \b(api_org_(?i:[a-z]{34}))(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        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
+    - name: Infracost API Token
+      regex: |
+        \b(ico-[a-zA-Z0-9]{32})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        ico-JXIIZQBSUXLUVDAMXLEYDMGFXVLCJTRF
+    - name: Intra42 Client Secret
+      regex: |
+        \b(s-s4t2(?:ud|af)-(?i)[abcdef0123456789]{64})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        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
+    - name: JFrog API Key
+      regex: |
+        (?i)[\w.-]{0,50}?(?:jfrog|artifactory|bintray|xray)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9]{73})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        jfrog_api_key="jadblvpmsutvbevrdnofjfyjttekkgcnoupxonwcfrptokiulotnamqgscroonekgnutxwhsh"
+    - name: JFrog Identity Token
+      regex: |
+        (?i)[\w.-]{0,50}?(?:jfrog|artifactory|bintray|xray)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9]{64})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        jfrog_identity_token="edcpklnrmhoqfykwttdukddkfqdzrjxmcvkjtezvinzfhpwcrqpmyqethipslopz"
+    - name: JWT (Base64)
+      regex: |
+        \bZXlK(?:(?P<alg>aGJHY2lPaU)|(?P<apu>aGNIVWlPaU)|(?P<apv>aGNIWWlPaU)|(?P<aud>aGRXUWlPaU)|(?P<b64>aU5qUWlP)|(?P<crit>amNtbDBJanBi)|(?P<cty>amRIa2lPaU)|(?P<epk>bGNHc2lPbn)|(?P<enc>bGJtTWlPaU)|(?P<jku>cWEzVWlPaU)|(?P<jwk>cWQyc2lPb)|(?P<iss>cGMzTWlPaU)|(?P<iv>cGRpSTZJ)|(?P<kid>cmFXUWlP)|(?P<key_ops>clpYbGZiM0J6SWpwY)|(?P<kty>cmRIa2lPaUp)|(?P<nonce>dWIyNWpaU0k2)|(?P<p2c>d01tTWlP)|(?P<p2s>d01uTWlPaU)|(?P<ppt>d2NIUWlPaU)|(?P<sub>emRXSWlPaU)|(?P<svt>emRuUWlP)|(?P<tag>MFlXY2lPaU)|(?P<typ>MGVYQWlPaUp)|(?P<url>MWNtd2l)|(?P<use>MWMyVWlPaUp)|(?P<ver>MlpYSWlPaU)|(?P<version>MlpYSnphVzl1SWpv)|(?P<x>NElqb2)|(?P<x5c>NE5XTWlP)|(?P<x5t>NE5YUWlPaU)|(?P<x5ts256>NE5YUWpVekkxTmlJNkl)|(?P<x5u>NE5YVWlPaU)|(?P<zip>NmFYQWlPaU))[a-zA-Z0-9\/\\_+\-\r\n]{40,}={0,2}
+      example: >
+        ZXlKaGJHY2lPaUXMIVZEFPKVJBAPZMCHWCJDHXMZIHOVJCIFHCVQGS
+    - name: Looker Client ID
+      regex: |
+        (?i)[\w.-]{0,50}?(?:looker)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9]{20})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        looker_client_id="evumyvfttchkjduhvxwl"
+    - name: Looker Client Secret
+      regex: |
+        (?i)[\w.-]{0,50}?(?:looker)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9]{24})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        looker_client_secret="hqzpowudzrqkifecyibhoeea"
+    - name: MaxMind License Key
+      regex: |
+        \b([A-Za-z0-9]{6}_[A-Za-z0-9]{29}_mmk)(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        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
+    - name: New Relic Insert Key
+      regex: |
+        (?i)[\w.-]{0,50}?(?:new-relic|newrelic|new_relic)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}(NRII-[a-z0-9-]{32})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        newrelic_insert_key="NRII-awaidhaihaowhnfjeycstuyqnwugjyfj"
+    - name: Notion API Token
+      regex: |
+        \b(ntn_[0-9]{11}[A-Za-z0-9]{32}[A-Za-z0-9]{3})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        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
+    - name: Octopus Deploy API Key
+      regex: |
+        \b(API-[A-Z0-9]{26})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        API-47TDHCECIHMDI9T830A16H0O3E
+    - name: OpenAI API Key
+      regex: |
+        \b(sk-(?:proj|svcacct|admin)-(?:[A-Za-z0-9_-]{74}|[A-Za-z0-9_-]{58})T3BlbkFJ(?:[A-Za-z0-9_-]{74}|[A-Za-z0-9_-]{58})\b|sk-[a-zA-Z0-9]{20}T3BlbkFJ[a-zA-Z0-9]{20})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        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
+    - name: OpenShift User Token
+      regex: |
+        \b(sha256~[\w-]{43})(?:[^\w-]|\z)
+      example: >
+        sha256~KMVNGTIGDBXFYFKQKXVQLEQSRSOYBWYYDZMKLHFNYYF
+    - name: Perplexity API Key
+      regex: |
+        \b(pplx-[a-zA-Z0-9]{48})(?:[\x60'"\s;]|\\[nr]|$|\b)
+      example: >
+        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
+    - name: PrivateAI API Token
+      regex: |
+        [\w.-]{0,50}?(?i:[\w.-]{0,50}?(?:private[_-]?ai)(?:[ \t\w.-]{0,20})[\s'"]{0,3})(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9]{32})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        private_ai_api_key="bvefmqqsxmurubogohzduhdyilummgvy"
+    - name: Scalingo API Token
+      regex: |
+        \b(tk-us-[\w-]{48})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        tk-us-UHLBKNJVKEXMDFEPHTTBPREYUCLCSFLJPKJCVZHPJFSKPBOI
+    - name: Sentry Organization Token
+      regex: |
+        \bsntrys_eyJpYXQiO[a-zA-Z0-9+/]{10,200}(?:LCJyZWdpb25fdXJs|InJlZ2lvbl91cmwi|cmVnaW9uX3VybCI6)[a-zA-Z0-9+/]{10,200}={0,2}_[a-zA-Z0-9+/]{43}(?:[^a-zA-Z0-9+/]|\z)
+      example: >
+        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
+    - name: Sentry User Token
+      regex: |
+        \b(sntryu_[a-f0-9]{64})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        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
+    - name: SettleMint Application Access Token
+      regex: |
+        \b(sm_aat_[a-zA-Z0-9]{16})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        sm_aat_WXUYCEEANWNMDYEO
+    - name: SettleMint Personal Access Token
+      regex: |
+        \b(sm_pat_[a-zA-Z0-9]{16})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        sm_pat_VJTVGBYTIFQQGLFI
+    - name: SettleMint Service Access Token
+      regex: |
+        \b(sm_sat_[a-zA-Z0-9]{16})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        sm_sat_HMNAZFDUUHAMMBHK
+    - name: Slack App Token
+      regex: |
+        (?i)xapp-\d-[A-Z0-9]+-\d+-[a-z0-9]+
+      example: >
+        xapp-1-VTDI37HB-3-ulxc6964ser9
+    - name: Slack Configuration Access Token
+      regex: |
+        (?i)xoxe.xox[bp]-\d-[A-Z0-9]{163,166}
+      example: >
+        xoxe.xoxb-1-KSKNXXSUQDZMOMVVSVYFTMHQQLLPJHGUWPEUOIZJEUDECCOTZCOBFAEVIGQHGBGWZNWXUZRSQTCFNQTXETXHCNNFZLDVWVKVTKPMZGNLHYQRVYMAEKFFFQVULKTTLZODVSETHTWYNRWPMSBLXVTRVYMSQXMTHZNQXRS
+    - name: Slack Configuration Refresh Token
+      regex: |
+        (?i)xoxe-\d-[A-Z0-9]{146}
+      example: >
+        xoxe-1-VXMRZHKBTRUBWOOTLPNETVVNOWZINDZEAKLISZTHEYTEPKYRWGLUZDQLCFJKRGWSTULCPBNNXFJELPCSYNBMBCEXAKACTQGTRTZTEKIVDKMGILIOGRBKPWSVBMZQHPCCYRCSXDAIUYACBGLSWL
+    - name: Snyk API Token
+      regex: |
+        (?i)[\w.-]{0,50}?(?:snyk[_.-]?(?:(?:api|oauth)[_.-]?)?(?:key|token))(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        snyk_api_token="d6f1a2b3-4c5d-678e-9f01-23456789abcd"
+    - name: Sonar API Token
+      regex: |
+        (?i)[\w.-]{0,50}?(?:sonar[_.-]?(login|token))(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}((?:squ_|sqp_|sqa_)?[a-z0-9=_\-]{40})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        sonar_token="squ_axjpvauvktyajpexpcctapuhjijujyeuclbkjvws"
+    - name: Sourcegraph Access Token
+      regex: |
+        (?i)\b(\b(sgp_(?:[a-fA-F0-9]{16}|local)_[a-fA-F0-9]{40}|sgp_[a-fA-F0-9]{40}|[a-fA-F0-9]{40})\b)(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        sgp_1d99ee3890a9e2ffc0d559c367ca9aa92a4099c0
+    - name: Squarespace Access Token
+      regex: |
+        (?i)[\w.-]{0,50}?(?:squarespace)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        squarespace_access_token="d6f1a2b3-4c5d-678e-9f01-23456789abcd"
+    - name: Twitter Access Secret
+      regex: |
+        (?i)[\w.-]{0,50}?(?:twitter)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9]{45})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        twitter_access_secret="hgiwijatgmsngukotbzfwdfkgrwdfwjllutkxgohoxuxl"
+    - name: Twitter Access Token
+      regex: |
+        (?i)[\w.-]{0,50}?(?:twitter)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([0-9]{15,25}-[a-zA-Z0-9]{20,40})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        twitter_access_token="583104927615384-qIxCY1NeWpVEBOSxk3CQ"
+    - name: Twitter API Secret
+      regex: |
+        (?i)[\w.-]{0,50}?(?:twitter)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}([a-z0-9]{50})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        twitter_api_secret="mccofjphsybguyhxpzzaiuhceoprrzwdjeeojtekfuypodlabx"
+    - name: Vault Batch Token
+      regex: |
+        \b(hvb\.[\w-]{138,300})(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        hvb.PYQSXOFKTFNABZBIQKLSRABLVZGQDDSEHZXLQCRAXZUFKVVGYQKJASNRBNMHNPGQFKKAITSZZBLZXNXJNMRUBBYTVHLVGIAYFEJTVRHNRGSJOPKDSFSLDLWELAKAVWBBQVSVQUMXHL
+    - name: Vault Service Token
+      regex: |
+        \b((?:hvs\.[\w-]{90,120}|s\.(?i:[a-z0-9]{24})))(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        hvs.EFZRJMVGQTWWGNTHMTRODUVLMXHODPXOMESWASXBGATGYLYVGSPXCGSDSTHCKBRVOAKEQPYKSRTUNTWSAUGSNZYVGQ
  # Misc
   - name: Misc
     regexes:
@@ -1344,3 +1729,27 @@ regular_expresions:
       regex: '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}'
       example: 'example_email@sub.domain.com'
       falsePositives: True
+    - name: cURL Authorization Header
+      regex: |
+        \bcurl\b(?:.*?|.*?(?:[\r\n]{1,2}.*?){1,5})[ \t\n\r](?:-H|--header)(?:=|[ \t]{0,5})(?:"(?i)(?:Authorization:[ \t]{0,5}(?:Basic[ \t]([a-z0-9+/]{8,}={0,3})|(?:Bearer|(?:Api-)?Token)[ \t]([\w=~@.+/-]{8,})|([\w=~@.+/-]{8,}))|(?:(?:X-(?:[a-z]+-)?)?(?:Api-?)?(?:Key|Token)):[ \t]{0,5}([\w=~@.+/-]{8,}))"|'(?i)(?:Authorization:[ \t]{0,5}(?:Basic[ \t]([a-z0-9+/]{8,}={0,3})|(?:Bearer|(?:Api-)?Token)[ \t]([\w=~@.+/-]{8,})|([\w=~@.+/-]{8,}))|(?:(?:X-(?:[a-z]+-)?)?(?:Api-?)?(?:Key|Token)):[ \t]{0,5}([\w=~@.+/-]{8,}))')(?:\B|\s|\z)
+      example: >
+        curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.K7mQ2vL9xR4pT8sW" https://api.acme.test/v1/check
+    - name: cURL Basic Authentication
+      regex: |
+        \bcurl\b(?:.*|.*(?:[\r\n]{1,2}.*){1,5})[ \t\n\r](?:-u|--user)(?:=|[ \t]{0,5})("(:[^"]{3,}|[^:"]{3,}:|[^:"]{3,}:[^"]{3,})"|'([^:']{3,}:[^']{3,})'|((?:"[^"]{3,}"|'[^']{3,}'|[\w$@.-]+):(?:"[^"]{3,}"|'[^']{3,}'|[\w${}@.-]+)))(?:\s|\z)
+      example: >
+        curl -u deploy_bot:815g4s87ZOtvx4 https://api.acme.test/v1/check
+    - name: HashiCorp TF Password
+      regex: |
+        (?i)[\w.-]{0,50}?(?:administrator_login_password|password)(?:[ \t\w.-]{0,20})[\s'"]{0,3}(?:=|>|:{1,3}=|\|\||:|=>|\?=|,)[\x60'"\s=]{0,5}("[a-z0-9=_\-]{8,20}")(?:[\x60'"\s;]|\\[nr]|$)
+      example: >
+        administrator_login_password = "r1ic9q19104oof"
+    - name: Kubernetes Secret YAML
+      regex: |
+        (?i)(?:\bkind:[ \t]*["']?\bsecret\b["']?(?s:.){0,200}?\bdata:(?s:.){0,100}?\s+([\w.-]+:(?:[ \t]*(?:\||>[-+]?)\s+)?[ \t]*(?:["']?[a-z0-9+/]{10,}={0,3}["']?|\{\{[ \t\w"|$:=,.-]+}}|""|''))|\bdata:(?s:.){0,100}?\s+([\w.-]+:(?:[ \t]*(?:\||>[-+]?)\s+)?[ \t]*(?:["']?[a-z0-9+/]{10,}={0,3}["']?|\{\{[ \t\w"|$:=,.-]+}}|""|''))(?s:.){0,200}?\bkind:[ \t]*["']?\bsecret\b["']?)
+      example: "data:\n  password: dSiNTlgUL5X3UXQU2AcBhlCy\nkind: Secret"
+    - name: NuGet Config Password
+      regex: |
+        (?i)<add key=\"(?:(?:ClearText)?Password)\"\s*value=\"(.{8,})\"\s*/>
+      example: >
+        <add key="Password" value="1Ou74nSbUV5k2HxC" />
