@@ -363,6 +363,12 @@ regular_expresions:
       caseinsensitive: True
       example: >
         discord-apikey="231ahdc61b46afg8hd39bbbf75f40f9e1e1a637df02de861751ahab6fhgf210e"
+
+    - name: Discord Bot & User Token
+      regex: >
+        (mfa\.[\w-]{84}|[\w-]{23,28}\.[\w-]{6}\.[\w-]{27,40})
+      caseinsensitive: False
+      example: > NTAxMjM0NzI0NjExMzE5NDM0.GoAkaX.hra4hAaISpa1_2o2qOL4eHAb7j5Fhck2Dm3hKg
     
     - name: Droneci Access Token
       regex: >
