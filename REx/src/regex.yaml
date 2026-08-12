@@ -1346,7 +1346,7 @@ regular_expresions:
         glrt-GHAHMGQMBZZWBBUEQSNI
     - name: GitLab Routable Runner Authentication Token
       regex: |
-        \bglrt-t\d_[0-9a-zA-Z_\-]{27,300}\.[0-9a-z]{2}[0-9a-z]{7}\b
+        \bglrt-t[0-9]_[0-9a-zA-Z_-]{27,300}\.[0-9a-z]{2}[0-9a-z]{7}\b
       example: >
         glrt-t1_JLMUAHGVYSGCMOFLTESTBLZRHWH.ab1234567
     - name: GitLab SCIM Token
